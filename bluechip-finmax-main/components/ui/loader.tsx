@@ -181,7 +181,7 @@ export function PageLoader() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
-          bluechipfinmax
+          Quikkred
         </motion.h2>
 
         {/* Tagline */}

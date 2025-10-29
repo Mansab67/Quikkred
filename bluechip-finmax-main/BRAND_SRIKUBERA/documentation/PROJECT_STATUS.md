@@ -1,4 +1,4 @@
-# bluechipfinmax Project Status
+# Quikkred Project Status
 
 ## 🎯 Project Overview
 Revolutionary AI-powered NBFC platform for instant payday loans targeting salaried employees.

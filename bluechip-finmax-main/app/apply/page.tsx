@@ -183,7 +183,7 @@ export default function ApplyPage() {
 
       console.log(`Uploading ${apiFieldName}...`, file.name, file.size, file.type);
 
-      const response = await fetch("https://api.bluechipfinmax.com/api/document/upload", {
+      const response = await fetch("https://api.Quikkred.com/api/document/upload", {
         method: "POST",
         headers: {
           "Authorization": `Bearer ${token}`,
@@ -260,7 +260,7 @@ export default function ApplyPage() {
 
       console.log('Uploading all documents in one request...');
 
-      const response = await fetch("https://api.bluechipfinmax.com/api/document/upload", {
+      const response = await fetch("https://api.Quikkred.com/api/document/upload", {
         method: "POST",
         headers: {
           "Authorization": `Bearer ${token}`,
@@ -368,7 +368,7 @@ export default function ApplyPage() {
         payload.mobile = formData.phone;
       }
 
-      const response = await fetch("https://api.bluechipfinmax.com/api/auth/customer/create", {
+      const response = await fetch("https://api.Quikkred.com/api/auth/customer/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -422,7 +422,7 @@ export default function ApplyPage() {
     setVerifying(prev => ({ ...prev, email: true }));
 
     try {
-      const response = await fetch("https://api.bluechipfinmax.com/api/auth/customer/verify", {
+      const response = await fetch("https://api.Quikkred.com/api/auth/customer/verify", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -502,7 +502,7 @@ export default function ApplyPage() {
         payload.email = formData.email;
       }
 
-      const response = await fetch("https://api.bluechipfinmax.com/api/auth/customer/create", {
+      const response = await fetch("https://api.Quikkred.com/api/auth/customer/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -556,7 +556,7 @@ export default function ApplyPage() {
     setVerifying(prev => ({ ...prev, phone: true }));
 
     try {
-      const response = await fetch("https://api.bluechipfinmax.com/api/auth/customer/verify", {
+      const response = await fetch("https://api.Quikkred.com/api/auth/customer/verify", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -672,7 +672,7 @@ export default function ApplyPage() {
         return false;
       }
 
-      const response = await fetch("https://api.bluechipfinmax.com/api/customer/profile", {
+      const response = await fetch("https://api.Quikkred.com/api/customer/profile", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -779,7 +779,7 @@ export default function ApplyPage() {
         return false;
       }
 
-      const response = await fetch("https://api.bluechipfinmax.com/api/employment/create", {
+      const response = await fetch("https://api.Quikkred.com/api/employment/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -918,7 +918,7 @@ export default function ApplyPage() {
 
       console.log('Submitting loan application:', applicationData);
 
-      const response = await fetch("https://api.bluechipfinmax.com/api/loans/apply", {
+      const response = await fetch("https://api.Quikkred.com/api/loans/apply", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1932,7 +1932,7 @@ export default function ApplyPage() {
                         I hereby declare that all the information provided is true and accurate.
                         I agree to the <Link href="/terms" className="text-[#34d399] underline">Terms & Conditions</Link> and
                         <Link href="/privacy" className="text-[#34d399] underline ml-1">Privacy Policy</Link>.
-                        I authorize bluechipfinmax to verify my details and check my credit score.
+                        I authorize Quikkred to verify my details and check my credit score.
                       </span>
                     </label>
                   </div>
@@ -2025,7 +2025,7 @@ export default function ApplyPage() {
               <Phone className="w-5 h-5" />
               Call: +91 88888 81111
             </a>
-            <a href="mailto:support@bluechipfinmax.com" className="flex items-center gap-2 text-[#34d399] hover:underline">
+            <a href="mailto:support@quikkred.com" className="flex items-center gap-2 text-[#34d399] hover:underline">
               <Mail className="w-5 h-5" />
               Email Support
             </a>

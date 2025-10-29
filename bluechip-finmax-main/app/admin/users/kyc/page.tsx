@@ -151,7 +151,7 @@ export default function AdminKYCVerification() {
         addressVerification: false
       },
       priority: "HIGH",
-      assignedTo: "admin@bluechipfinmax.com",
+      assignedTo: "admin@Quikkred.com",
       comments: [],
       riskScore: 25,
       complianceFlags: []
@@ -183,11 +183,11 @@ export default function AdminKYCVerification() {
         addressVerification: true
       },
       priority: "URGENT",
-      assignedTo: "admin2@bluechipfinmax.com",
+      assignedTo: "admin2@Quikkred.com",
       comments: [
         {
           id: "C001",
-          author: "admin2@bluechipfinmax.com",
+          author: "admin2@Quikkred.com",
           message: "Duplicate PAN number found in system. Investigating further.",
           timestamp: "2024-11-29T16:30:00Z",
           type: "VERIFICATION"
@@ -209,7 +209,7 @@ export default function AdminKYCVerification() {
       backImageUrl: "/placeholder-dl-back.jpg",
       uploadedAt: "2024-11-28T09:15:00Z",
       status: "REJECTED",
-      verifiedBy: "admin@bluechipfinmax.com",
+      verifiedBy: "admin@Quikkred.com",
       verifiedAt: "2024-11-28T14:20:00Z",
       rejectionReason: "Document image quality is poor and text is not clearly visible",
       extractedData: {
@@ -229,11 +229,11 @@ export default function AdminKYCVerification() {
         addressVerification: true
       },
       priority: "MEDIUM",
-      assignedTo: "admin@bluechipfinmax.com",
+      assignedTo: "admin@Quikkred.com",
       comments: [
         {
           id: "C002",
-          author: "admin@bluechipfinmax.com",
+          author: "admin@Quikkred.com",
           message: "Document rejected due to poor image quality. Customer requested to re-upload.",
           timestamp: "2024-11-28T14:20:00Z",
           type: "REJECTION"

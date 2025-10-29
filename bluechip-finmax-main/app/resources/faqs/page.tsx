@@ -473,7 +473,7 @@ export default function FAQsPage() {
                   Call Support
                 </button>
               </a>
-              <a href="mailto:support@bluechipfinmax.com">
+              <a href="mailto:support@quikkred.com">
                 <button className="w-full bg-transparent border-2 border-white py-3 px-6 rounded-lg font-semibold hover:bg-white hover:text-[#1976D2] transition-all">
                   <Mail className="w-4 h-4 inline mr-2" />
                   Email Us

@@ -152,7 +152,7 @@ export default function SupportDashboard() {
     {
       id: 'AGT-001',
       name: 'Rahul Kumar',
-      email: 'rahul.kumar@bluechipfinmax.com',
+      email: 'rahul.kumar@Quikkred.com',
       status: 'ONLINE',
       activeTickets: 12,
       totalTickets: 245,
@@ -165,7 +165,7 @@ export default function SupportDashboard() {
     {
       id: 'AGT-002',
       name: 'Sneha Reddy',
-      email: 'sneha.reddy@bluechipfinmax.com',
+      email: 'sneha.reddy@Quikkred.com',
       status: 'ONLINE',
       activeTickets: 8,
       totalTickets: 189,

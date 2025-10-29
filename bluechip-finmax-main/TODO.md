@@ -1,4 +1,4 @@
-# bluechipfinmax NBFC Platform - TODO List
+# Quikkred NBFC Platform - TODO List
 
 ## ✅ Completed Tasks
 

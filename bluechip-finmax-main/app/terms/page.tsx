@@ -41,8 +41,8 @@ export default function TermsPage() {
                 1. Introduction
               </h2>
               <p className="text-gray-600 mb-4">
-                Welcome to bluechipfinmax. These Terms and Conditions govern your use of our services
-                and form a binding legal agreement between you and bluechipfinmax Financial Services
+                Welcome to Quikkred. These Terms and Conditions govern your use of our services
+                and form a binding legal agreement between you and Quikkred Financial Services
                 Private Limited, a Non-Banking Financial Company (NBFC) registered with the
                 Reserve Bank of India.
               </p>
@@ -195,7 +195,7 @@ export default function TermsPage() {
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4">7. Amendments</h2>
               <p className="text-gray-600">
-                bluechipfinmax reserves the right to modify these terms at any time. Changes will be
+                Quikkred reserves the right to modify these terms at any time. Changes will be
                 effective immediately upon posting on our website. Continued use of our services
                 after any modifications constitutes acceptance of the updated terms.
               </p>
@@ -205,10 +205,10 @@ export default function TermsPage() {
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4">8. Contact Information</h2>
               <div className="bg-gray-50 rounded-lg p-6">
-                <p className="font-semibold mb-2">bluechipfinmax Financial Services Pvt. Ltd.</p>
+                <p className="font-semibold mb-2">Quikkred Financial Services Pvt. Ltd.</p>
                 <p className="text-gray-600">
                   RBI Registration No: B-14.03215<br />
-                  Email: legal@bluechipfinmax.com<br />
+                  Email: legal@Quikkred.com<br />
                   Phone: 1800-123-5555<br />
                   Registered Office: Mumbai, Maharashtra
                 </p>

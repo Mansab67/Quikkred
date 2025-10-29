@@ -458,7 +458,7 @@ export default function HowToApplyPage() {
               <p className="text-sm text-gray-600 mb-4">
                 Send your queries and we'll guide you through
               </p>
-              <a href="mailto:support@bluechipfinmax.com">
+              <a href="mailto:support@quikkred.com">
                 <button className="w-full px-4 py-2 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-700 transition-colors">
                   Email Us
                 </button>

@@ -140,21 +140,21 @@ export default function UserDashboard() {
 
       // Fetch loans, documents, and credit score (profile already loaded by AuthContext)
       const [loansResponse, documentsResponse, creditScoreResponse] = await Promise.all([
-        fetch('https://api.bluechipfinmax.com/api/loans/my-loans', {
+        fetch('https://api.Quikkred.com/api/loans/my-loans', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`
           }
         }),
-        fetch('https://api.bluechipfinmax.com/api/document/get', {
+        fetch('https://api.Quikkred.com/api/document/get', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`
           }
         }),
-        fetch('https://api.bluechipfinmax.com/api/creditScore/get', {
+        fetch('https://api.Quikkred.com/api/creditScore/get', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

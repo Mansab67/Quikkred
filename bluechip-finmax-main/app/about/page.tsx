@@ -52,7 +52,7 @@ const milestones: any[] = [
   // {
   //   year: "2024",
   //   title: "Foundation",
-  //   description: "bluechipfinmax was founded with a vision to revolutionize lending in India"
+  //   description: "Quikkred was founded with a vision to revolutionize lending in India"
   // },
   // {
   //   year: "2024",
@@ -112,7 +112,7 @@ export default function AboutPage() {
             className="text-center max-w-4xl mx-auto"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-sora mb-6 text-white">
-              About bluechipfinmax
+              About Quikkred
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white">
               Transforming Lives Through Responsible Lending
@@ -165,7 +165,7 @@ export default function AboutPage() {
 
             <div className="prose prose-lg mx-auto">
               <p className="text-[rgb(var(--text-secondary))] leading-relaxed mb-6">
-                bluechipfinmax was born from a simple observation: millions of Indians need quick,
+                Quikkred was born from a simple observation: millions of Indians need quick,
                 small-ticket loans for emergencies, opportunities, and dreams, but traditional
                 banking systems weren't designed to serve them efficiently.
               </p>

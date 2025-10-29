@@ -125,7 +125,7 @@ export default function AdminLoanManagement() {
       priority: "HIGH",
       applicationDate: "2024-11-28T10:30:00Z",
       lastUpdated: "2024-11-30T14:20:00Z",
-      assignedTo: "admin@bluechipfinmax.com",
+      assignedTo: "admin@Quikkred.com",
       documents: [
         { type: "Aadhaar", status: "VERIFIED", uploadedDate: "2024-11-28" },
         { type: "PAN", status: "VERIFIED", uploadedDate: "2024-11-28" },
@@ -155,7 +155,7 @@ export default function AdminLoanManagement() {
       comments: [
         {
           id: "C001",
-          author: "admin@bluechipfinmax.com",
+          author: "admin@Quikkred.com",
           message: "Salary slip verification pending. Customer contacted for latest slip.",
           timestamp: "2024-11-30T14:20:00Z",
           type: "INTERNAL"
@@ -222,7 +222,7 @@ export default function AdminLoanManagement() {
       priority: "MEDIUM",
       applicationDate: "2024-11-25T16:45:00Z",
       lastUpdated: "2024-11-29T11:30:00Z",
-      assignedTo: "admin2@bluechipfinmax.com",
+      assignedTo: "admin2@Quikkred.com",
       documents: [
         { type: "Aadhaar", status: "VERIFIED", uploadedDate: "2024-11-25" },
         { type: "PAN", status: "VERIFIED", uploadedDate: "2024-11-25" },
@@ -252,7 +252,7 @@ export default function AdminLoanManagement() {
       comments: [
         {
           id: "C002",
-          author: "admin2@bluechipfinmax.com",
+          author: "admin2@Quikkred.com",
           message: "All verifications completed. Loan approved for disbursement.",
           timestamp: "2024-11-29T11:30:00Z",
           type: "INTERNAL"

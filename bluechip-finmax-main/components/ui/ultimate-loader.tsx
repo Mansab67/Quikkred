@@ -168,7 +168,7 @@ export function GoldenPotLoader() {
             repeat: Infinity,
           }}
         >
-          bluechipfinmax
+          Quikkred
         </motion.h1>
 
         {/* Tagline */}
@@ -478,7 +478,7 @@ export function DNALoader() {
         />
 
         <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 text-center">
-          <p className="text-white text-xl font-bold">bluechipfinmax</p>
+          <p className="text-white text-xl font-bold">Quikkred</p>
           <p className="text-emerald-400 text-sm">Processing...</p>
         </div>
       </div>
@@ -589,10 +589,10 @@ export function QuantumLoader() {
 }
 
 // ================================
-// VARIANT 7: HYPER-REALISTIC PROFESSIONAL VAULT LOADER - bluechipfinmax
+// VARIANT 7: HYPER-REALISTIC PROFESSIONAL VAULT LOADER - Quikkred
 // ================================
 // ================================
-// PROFESSIONAL WEALTH VAULT - bluechipfinmax (Wealth Delivery Theme)
+// PROFESSIONAL WEALTH VAULT - Quikkred (Wealth Delivery Theme)
 // ================================
 export function GatewayVaultLoader() {
   const [vaultOpen, setVaultOpen] = useState(false);
@@ -972,7 +972,7 @@ export function GatewayVaultLoader() {
                       <div className="relative rounded-3xl overflow-hidden bg-white/10 backdrop-blur-xl p-6 shadow-2xl">
                         <Image
                           src="/logo 2.png"
-                          alt="bluechipfinmax Logo"
+                          alt="Quikkred Logo"
                           width={400}
                           height={120}
                           className="w-auto h-32 object-contain"
@@ -1009,7 +1009,7 @@ export function GatewayVaultLoader() {
 
                     {/* Brand name - professional typography */}
                     <h2 className="text-5xl font-light tracking-wider text-zinc-100 mb-2">
-                      bluechipfinmax
+                      Quikkred
                     </h2>
 
                     {/* WEALTH-FOCUSED TAGLINE */}

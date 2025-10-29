@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Bluechip Finmax",
+    "appName": "Quikkred",
     "tagline": "Your Gateway to Prosperity",
     "apply": "Apply Now",
     "learnMore": "Learn More",
@@ -159,7 +159,7 @@
     }
   },
   "features": {
-    "title": "Why Choose Bluechip Finmax",
+    "title": "Why Choose Quikkred",
     "subtitle": "Experience the future of digital lending",
     "list": {
       "instant": {
@@ -257,7 +257,7 @@
   },
   "footer": {
     "about": {
-      "title": "About Bluechip Finmax",
+      "title": "About Quikkred",
       "description": "Your trusted partner for instant personal loans with minimal documentation and quick approval."
     },
     "quickLinks": {
@@ -326,7 +326,7 @@
       "title": "Contact Us",
       "address": "Mumbai, Maharashtra",
       "phone": "+91 1800-123-4567",
-      "email": "support@bluechipfinmax.com",
+      "email": "support@quikkred.com",
       "hours": "Mon-Sat: 9 AM - 6 PM"
     },
     "social": {
@@ -343,8 +343,8 @@
       "comingSoon": "Coming Soon!",
       "comingSoonMessage": "Our mobile app will be available soon. Stay tuned!"
     },
-    "copyright": "© 2025 Bluechip Finmax. All rights reserved.",
-    "disclaimer": "Bluechip Finmax is a registered NBFC regulated by RBI"
+    "copyright": "© 2025 Quikkred. All rights reserved.",
+    "disclaimer": "Quikkred is a registered NBFC regulated by RBI"
   },
   "contact": {
     "title": "Get in Touch",
@@ -371,7 +371,7 @@
     }
   },
   "about": {
-    "title": "About Bluechip Finmax",
+    "title": "About Quikkred",
     "subtitle": "Your Gateway to Financial Freedom",
     "ourStory": "Our Story",
     "ourStoryDesc": "Journey of innovation",
@@ -571,7 +571,7 @@
     },
     "sections": {
       "whyChoose": {
-        "badge": "Why Choose Bluechip Finmax",
+        "badge": "Why Choose Quikkred",
         "title": "Revolutionary Features",
         "subtitle": "Experience the future of digital lending with our cutting-edge technology and customer-first approach"
       },
@@ -602,7 +602,7 @@
         "badge": "Customer Stories",
         "title": "Trusted by",
         "titleHighlight": "Thousands",
-        "subtitle": "Real stories from real customers who transformed their lives with Bluechip Finmax",
+        "subtitle": "Real stories from real customers who transformed their lives with Quikkred",
         "loanAmount": "Loan Amount"
       },
       "cta": {
@@ -640,7 +640,7 @@
     "footer": "Get approval in 30 seconds • Money in bank within minutes"
   },
   "newsletter": {
-    "title": "Stay Updated with Bluechip Finmax",
+    "title": "Stay Updated with Quikkred",
     "subtitle": "Get exclusive offers, financial tips, and updates on new loan products",
     "placeholder": "Enter your email",
     "button": "Subscribe",

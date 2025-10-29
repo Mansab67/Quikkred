@@ -1,4 +1,4 @@
-# 🚀 bluechipfinmax NBFC - Complete Implementation Plan
+# 🚀 Quikkred NBFC - Complete Implementation Plan
 
 ## 📋 Implementation Strategy
 

@@ -4,13 +4,13 @@ import { useState, useEffect } from "react";
 import { AlertTriangle, X } from "lucide-react";
 
 const messages = [
-  { lang: "English", text: "⚠️ IMPORTANT: Only make loan repayments through our official website bluechipfinmax.com or bluechipfinmax mobile app. Never share OTP or passwords." },
-  { lang: "हिन्दी", text: "⚠️ महत्वपूर्ण: केवल हमारी आधिकारिक वेबसाइट bluechipfinmax.com या bluechipfinmax मोबाइल ऐप के माध्यम से ही लोन का भुगतान करें। कभी भी OTP या पासवर्ड साझा न करें।" },
-  { lang: "मराठी", text: "⚠️ महत्त्वाचे: केवळ आमच्या अधिकृत वेबसाइट bluechipfinmax.com किंवा bluechipfinmax मोबाइल अॅपद्वारे कर्ज परतफेड करा. कधीही OTP किंवा पासवर्ड शेअर करू नका." },
-  { lang: "ગુજરાતી", text: "⚠️ મહત્વપૂર્ણ: માત્ર અમારી સત્તાવાર વેબસાઇટ bluechipfinmax.com અથવા bluechipfinmax મોબાઇલ એપ દ્વારા જ લોન ચુકવણી કરો. ક્યારેય OTP અથવા પાસવર્ડ શેર કરશો નહીં." },
-  { lang: "বাংলা", text: "⚠️ গুরুত্বপূর্ণ: শুধুমাত্র আমাদের অফিসিয়াল ওয়েবসাইট bluechipfinmax.com বা bluechipfinmax মোবাইল অ্যাপের মাধ্যমে ঋণ পরিশোধ করুন। কখনও OTP বা পাসওয়ার্ড শেয়ার করবেন না।" },
-  { lang: "தமிழ்", text: "⚠️ முக்கியம்: எங்கள் அதிகாரப்பூர்வ இணையதளம் bluechipfinmax.com அல்லது bluechipfinmax மொபைல் ஆப் மூலம் மட்டுமே கடனை திருப்பிச் செலுத்துங்கள். OTP அல்லது கடவுச்சொல்லை பகிர வேண்டாம்." },
-  { lang: "తెలుగు", text: "⚠️ ముఖ్యం: మా అధికారిక వెబ్‌సైట్ bluechipfinmax.com లేదా bluechipfinmax మొబైల్ యాప్ ద్వారా మాత్రమే లోన్ చెల్లింపులు చేయండి. OTP లేదా పాస్‌వర్డ్‌లను ఎప్పుడూ షేర్ చేయవద్దు." },
+  { lang: "English", text: "⚠️ IMPORTANT: Only make loan repayments through our official website Quikkred.com or Quikkred mobile app. Never share OTP or passwords." },
+  { lang: "हिन्दी", text: "⚠️ महत्वपूर्ण: केवल हमारी आधिकारिक वेबसाइट Quikkred.com या Quikkred मोबाइल ऐप के माध्यम से ही लोन का भुगतान करें। कभी भी OTP या पासवर्ड साझा न करें।" },
+  { lang: "मराठी", text: "⚠️ महत्त्वाचे: केवळ आमच्या अधिकृत वेबसाइट Quikkred.com किंवा Quikkred मोबाइल अॅपद्वारे कर्ज परतफेड करा. कधीही OTP किंवा पासवर्ड शेअर करू नका." },
+  { lang: "ગુજરાતી", text: "⚠️ મહત્વપૂર્ણ: માત્ર અમારી સત્તાવાર વેબસાઇટ Quikkred.com અથવા Quikkred મોબાઇલ એપ દ્વારા જ લોન ચુકવણી કરો. ક્યારેય OTP અથવા પાસવર્ડ શેર કરશો નહીં." },
+  { lang: "বাংলা", text: "⚠️ গুরুত্বপূর্ণ: শুধুমাত্র আমাদের অফিসিয়াল ওয়েবসাইট Quikkred.com বা Quikkred মোবাইল অ্যাপের মাধ্যমে ঋণ পরিশোধ করুন। কখনও OTP বা পাসওয়ার্ড শেয়ার করবেন না।" },
+  { lang: "தமிழ்", text: "⚠️ முக்கியம்: எங்கள் அதிகாரப்பூர்வ இணையதளம் Quikkred.com அல்லது Quikkred மொபைல் ஆப் மூலம் மட்டுமே கடனை திருப்பிச் செலுத்துங்கள். OTP அல்லது கடவுச்சொல்லை பகிர வேண்டாம்." },
+  { lang: "తెలుగు", text: "⚠️ ముఖ్యం: మా అధికారిక వెబ్‌సైట్ Quikkred.com లేదా Quikkred మొబైల్ యాప్ ద్వారా మాత్రమే లోన్ చెల్లింపులు చేయండి. OTP లేదా పాస్‌వర్డ్‌లను ఎప్పుడూ షేర్ చేయవద్దు." },
 ];
 
 export function SecurityBanner() {

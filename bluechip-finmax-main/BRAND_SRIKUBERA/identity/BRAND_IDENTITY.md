@@ -1,4 +1,4 @@
-# bluechipfinmax Brand Identity
+# Quikkred Brand Identity
 
 ## 🎯 Brand Overview
 **Tagline:** "Prosperity Through Technology"
@@ -22,7 +22,7 @@
 ### Gradient Combinations
 ```css
 gradient-prosperity: from-violet-600 to-purple-600
-gradient-bluechipfinmax: from-[var(--royal-blue)] via-[var(--emerald-green)] to-[var(--gold)]
+gradient-Quikkred: from-[var(--royal-blue)] via-[var(--emerald-green)] to-[var(--gold)]
 gradient-primary: from-[var(--royal-blue)] to-[var(--emerald-green)]
 ```
 
@@ -219,7 +219,7 @@ gradient-primary: from-[var(--royal-blue)] to-[var(--emerald-green)]
 ## 📱 Digital Presence
 
 ### Website
-- Domain: bluechipfinmax.com
+- Domain: Quikkred.com
 - Platform: Next.js 14 with TypeScript
 - Hosting: Vercel/AWS
 - CDN: CloudFlare

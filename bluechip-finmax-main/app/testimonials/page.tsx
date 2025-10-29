@@ -14,7 +14,7 @@ export default function TestimonialsPage() {
     //   location: "Mumbai, Maharashtra",
     //   role: "Small Business Owner",
     //   rating: 5,
-    //   comment: "bluechipfinmax helped me expand my business with a quick loan approval. The entire process was seamless and transparent. Highly recommended!",
+    //   comment: "Quikkred helped me expand my business with a quick loan approval. The entire process was seamless and transparent. Highly recommended!",
     //   loanType: "Business Loan",
     //   color: "#006837",
     //   image: "👨‍💼"
@@ -24,7 +24,7 @@ export default function TestimonialsPage() {
     //   location: "Delhi, NCR",
     //   role: "Software Engineer",
     //   rating: 5,
-    //   comment: "I needed urgent funds for a medical emergency. bluechipfinmax approved my loan in just 30 seconds! Amazing service and support team.",
+    //   comment: "I needed urgent funds for a medical emergency. Quikkred approved my loan in just 30 seconds! Amazing service and support team.",
     //   loanType: "Emergency Loan",
     //   color: "#1976D2",
     //   image: "👩‍💻"
@@ -44,7 +44,7 @@ export default function TestimonialsPage() {
     //   location: "Pune, Maharashtra",
     //   role: "Teacher",
     //   rating: 5,
-    //   comment: "As a woman entrepreneur, I appreciate bluechipfinmax's special programs. The financial literacy workshops were incredibly helpful too!",
+    //   comment: "As a woman entrepreneur, I appreciate Quikkred's special programs. The financial literacy workshops were incredibly helpful too!",
     //   loanType: "Women Entrepreneur Loan",
     //   color: "#4A148C",
     //   image: "👩‍🏫"
@@ -64,7 +64,7 @@ export default function TestimonialsPage() {
     //   location: "Chennai, Tamil Nadu",
     //   role: "Doctor",
     //   rating: 5,
-    //   comment: "Transparent pricing, no hidden fees, and quick disbursement. bluechipfinmax has set a new standard in the lending industry.",
+    //   comment: "Transparent pricing, no hidden fees, and quick disbursement. Quikkred has set a new standard in the lending industry.",
     //   loanType: "Medical Professional Loan",
     //   color: "#006837",
     //   image: "👩‍⚕️"
@@ -84,7 +84,7 @@ export default function TestimonialsPage() {
     //   location: "Mumbai, Maharashtra",
     //   role: "CA Student",
     //   rating: 5,
-    //   comment: "Needed funds for my CA coaching. bluechipfinmax's education loan was perfect. Very supportive and understanding team.",
+    //   comment: "Needed funds for my CA coaching. Quikkred's education loan was perfect. Very supportive and understanding team.",
     //   loanType: "Education Loan",
     //   color: "#1976D2",
     //   image: "👩‍🎓"
@@ -139,7 +139,7 @@ export default function TestimonialsPage() {
             </div>
 
             <p className="text-xl mb-8 opacity-90 max-w-3xl">
-              Real stories from real customers. Discover how bluechipfinmax has helped thousands achieve their financial goals.
+              Real stories from real customers. Discover how Quikkred has helped thousands achieve their financial goals.
             </p>
 
             {/* Features */}
@@ -270,7 +270,7 @@ export default function TestimonialsPage() {
             <div className="text-6xl mb-4">🎥</div>
             <h2 className="text-3xl font-bold mb-4">Video Testimonials</h2>
             <p className="text-lg mb-6 opacity-90 max-w-2xl mx-auto">
-              Watch our customers share their success stories and experiences with bluechipfinmax
+              Watch our customers share their success stories and experiences with Quikkred
             </p>
             <button
               className="px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition-all"

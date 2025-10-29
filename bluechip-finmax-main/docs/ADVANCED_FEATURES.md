@@ -1,4 +1,4 @@
-# 🚀 bluechipfinmax Advanced NBFC Features Roadmap
+# 🚀 Quikkred Advanced NBFC Features Roadmap
 
 ## 🧠 AI-Powered Intelligence Layer
 
@@ -199,7 +199,7 @@ const dashboards = {
 
 ## 📊 Performance Benchmarks
 
-| Feature | Traditional NBFC | bluechipfinmax | Improvement |
+| Feature | Traditional NBFC | Quikkred | Improvement |
 |---------|-----------------|----------|-------------|
 | Credit Decision Time | 24-72 hours | 30 seconds | 2880x faster |
 | NPA Prediction Accuracy | 60% | 94% | 56% better |

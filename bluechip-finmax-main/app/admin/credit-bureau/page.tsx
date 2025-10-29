@@ -73,7 +73,7 @@ export default function CreditBureauPage() {
         dpd90Plus: 0
       },
       reportUrl: '/reports/cibil_001.pdf',
-      requestedBy: 'admin@bluechipfinmax.com',
+      requestedBy: 'admin@Quikkred.com',
       cost: 50
     },
     {
@@ -105,7 +105,7 @@ export default function CreditBureauPage() {
         dpd90Plus: 0
       },
       reportUrl: '/reports/experian_002.pdf',
-      requestedBy: 'underwriter@bluechipfinmax.com',
+      requestedBy: 'underwriter@Quikkred.com',
       cost: 45
     },
     {
@@ -137,7 +137,7 @@ export default function CreditBureauPage() {
         dpd90Plus: 0
       },
       reportUrl: '/reports/equifax_003.pdf',
-      requestedBy: 'admin@bluechipfinmax.com',
+      requestedBy: 'admin@Quikkred.com',
       cost: 40
     }
   ]);

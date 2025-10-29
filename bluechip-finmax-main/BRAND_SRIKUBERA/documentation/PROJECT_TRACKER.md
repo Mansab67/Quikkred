@@ -1,4 +1,4 @@
-# 🚀 bluechipfinmax - Revolutionary AI-First NBFC Platform
+# 🚀 Quikkred - Revolutionary AI-First NBFC Platform
 
 ## 🎯 Vision
 Building India's most advanced AI-powered lending platform that delivers instant, ethical, and inclusive financial services.
@@ -63,7 +63,7 @@ Building India's most advanced AI-powered lending platform that delivers instant
 
 ## 📊 Innovation Metrics
 
-| Feature | Traditional | bluechipfinmax | Impact |
+| Feature | Traditional | Quikkred | Impact |
 |---------|------------|----------|---------|
 | KYC Completion | 15 mins | 90 seconds | 10x faster |
 | Credit Decision | 24 hours | 30 seconds | 2880x faster |

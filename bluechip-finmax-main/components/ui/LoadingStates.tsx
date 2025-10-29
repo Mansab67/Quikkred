@@ -68,7 +68,7 @@ export function DashboardLoading({ role = 'USER', message = 'Loading dashboard..
           transition={{ delay: 0.1 }}
           className="text-xl font-semibold text-slate-200 mb-2"
         >
-          bluechipfinmax
+          Quikkred
         </motion.h2>
 
         <motion.p

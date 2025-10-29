@@ -26,7 +26,7 @@ export default function ReportFraudPage() {
     },
     {
       title: "Fake Websites",
-      description: "Fraudulent websites impersonating bluechipfinmax",
+      description: "Fraudulent websites impersonating Quikkred",
       icon: AlertTriangle
     }
   ];
@@ -34,8 +34,8 @@ export default function ReportFraudPage() {
   const safetyTips = [
     "Never share your OTP, password, or PIN with anyone",
     "Always verify the website URL before entering sensitive information",
-    "bluechipfinmax will never ask for your full password or card details via email/call",
-    "Be cautious of unsolicited calls or messages claiming to be from bluechipfinmax",
+    "Quikkred will never ask for your full password or card details via email/call",
+    "Be cautious of unsolicited calls or messages claiming to be from Quikkred",
     "Enable two-factor authentication for added security",
     "Regularly monitor your account for suspicious activities"
   ];
@@ -114,9 +114,9 @@ export default function ReportFraudPage() {
                     <Phone className="w-6 h-6" />
                     1800-123-456 (Toll Free)
                   </a>
-                  <a href="mailto:fraud@bluechipfinmax.com" className="flex items-center gap-3 text-red-900 font-semibold hover:underline">
+                  <a href="mailto:fraud@Quikkred.com" className="flex items-center gap-3 text-red-900 font-semibold hover:underline">
                     <Mail className="w-5 h-5" />
-                    fraud@bluechipfinmax.com
+                    fraud@Quikkred.com
                   </a>
                 </div>
                 <p className="text-sm text-red-700 mt-4">

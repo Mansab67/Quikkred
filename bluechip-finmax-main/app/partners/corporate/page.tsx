@@ -472,7 +472,7 @@ export default function CorporateTieupsPage() {
                   Schedule Call
                 </button>
               </a>
-              <a href="mailto:corporate@bluechipfinmax.com">
+              <a href="mailto:corporate@Quikkred.com">
                 <button className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#006837] transition-all">
                   <Mail className="w-5 h-5 inline mr-2" />
                   Email Us

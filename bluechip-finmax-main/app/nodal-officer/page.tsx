@@ -90,8 +90,8 @@ export default function NodalOfficerPage() {
                 <Mail className="w-6 h-6 text-[#006837] flex-shrink-0" />
                 <div>
                   <h3 className="font-bold mb-1">Email Address</h3>
-                  <a href="mailto:nodal@bluechipfinmax.com" className="text-[#006837] hover:underline">
-                    nodal@bluechipfinmax.com
+                  <a href="mailto:nodal@Quikkred.com" className="text-[#006837] hover:underline">
+                    nodal@Quikkred.com
                   </a>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function NodalOfficerPage() {
                 <div>
                   <h3 className="font-bold mb-1">Office Address</h3>
                   <p className="text-sm text-gray-600">
-                    bluechipfinmax Finance Ltd.<br />
+                    Quikkred Finance Ltd.<br />
                     123 Business Hub, Mumbai - 400001
                   </p>
                 </div>
@@ -194,7 +194,7 @@ export default function NodalOfficerPage() {
               <div className="space-y-2">
                 <p className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  <span>principal.nodal@bluechipfinmax.com</span>
+                  <span>principal.nodal@Quikkred.com</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />

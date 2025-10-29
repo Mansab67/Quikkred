@@ -154,7 +154,7 @@ export default function CareersPage() {
             </h1>
 
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Join bluechipfinmax and help millions access financial services.
+              Join Quikkred and help millions access financial services.
               Work with cutting-edge technology and make a real impact.
             </p>
 
@@ -226,7 +226,7 @@ export default function CareersPage() {
             className="text-center mb-12"
           >
             <h2 className="text-4xl font-bold text-slate-800 mb-4">
-              Why Join bluechipfinmax?
+              Why Join Quikkred?
             </h2>
             <p className="text-xl text-slate-600">
               Perks and benefits that make a difference
@@ -335,7 +335,7 @@ export default function CareersPage() {
                   </div>
 
                   <motion.a
-                    href={`mailto:careers@bluechipfinmax.com?subject=Application for ${job.title}`}
+                    href={`mailto:careers@Quikkred.com?subject=Application for ${job.title}`}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="inline-flex items-center gap-2 px-6 py-3 gradient-primary text-white rounded-xl font-semibold hover:shadow-glow transition-all whitespace-nowrap"
@@ -368,7 +368,7 @@ export default function CareersPage() {
               and we'll keep you in mind for future opportunities.
             </p>
             <motion.a
-              href="mailto:careers@bluechipfinmax.com"
+              href="mailto:careers@Quikkred.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-slate-800 rounded-full font-semibold hover:shadow-glow transition-all"

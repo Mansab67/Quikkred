@@ -124,7 +124,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
       const apiSubject = formData.subject ? subjectMap[formData.subject] : "GENERAL_INQUIRY";
 
-      const response = await fetch('https://api.bluechipfinmax.com/api/contactUs/create', {
+      const response = await fetch('https://api.Quikkred.com/api/contactUs/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -177,8 +177,8 @@ const handleSubmit = async (e: React.FormEvent) => {
     {
       icon: Mail,
       title: "Email Us",
-      primary: "support@bluechipfinmax.com",
-      secondary: "loans@bluechipfinmax.com",
+      primary: "support@quikkred.com",
+      secondary: "loans@Quikkred.com",
       description: "Get email support",
       available: "Response within 2 hours"
     },
@@ -198,7 +198,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       type: "Head Office",
       address: "Level 15, One World Center, Tower 2A, Jupiter Mill Compound, Senapati Bapat Marg, Lower Parel, Mumbai - 400013",
       phone: "+91-22-4567-8900",
-      email: "mumbai@bluechipfinmax.com",
+      email: "mumbai@Quikkred.com",
       hours: "Mon-Sat: 9:00 AM - 6:00 PM"
     },
     {
@@ -206,7 +206,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       type: "Branch Office",
       address: "4th Floor, Prestige Meridian, No. 29, MG Road, Bangalore - 560001",
       phone: "+91-80-4567-8900",
-      email: "bangalore@bluechipfinmax.com",
+      email: "bangalore@Quikkred.com",
       hours: "Mon-Sat: 9:00 AM - 6:00 PM"
     },
     {
@@ -214,7 +214,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       type: "Branch Office",
       address: "8th Floor, DLF Cyber City, Phase III, Gurgaon, Delhi NCR - 122002",
       phone: "+91-124-4567-8900",
-      email: "delhi@bluechipfinmax.com",
+      email: "delhi@Quikkred.com",
       hours: "Mon-Sat: 9:00 AM - 6:00 PM"
     }
   ];
@@ -280,7 +280,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           className="text-center mb-16"
         >
           <Link href="/" className="inline-flex items-center justify-center mb-6">
-            <Image src="/logo 2.png" alt="Bluechip Finmax" width={200} height={200} className="w-40 sm:w-48 md:w-56 lg:w-64 h-auto object-contain" />
+            <Image src="/logo 2.png" alt="Quikkred" width={200} height={200} className="w-40 sm:w-48 md:w-56 lg:w-64 h-auto object-contain" />
           </Link>
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-full mb-6">
             <HeadphonesIcon className="w-8 h-8 text-white" />

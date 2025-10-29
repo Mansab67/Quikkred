@@ -159,7 +159,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
               {sidebarOpen && (
                 <div>
                   <h1 className="text-lg font-bold gradient-text">Admin Panel</h1>
-                  <p className="text-xs text-slate-500">bluechipfinmax NBFC</p>
+                  <p className="text-xs text-slate-500">Quikkred NBFC</p>
                 </div>
               )}
             </motion.div>
@@ -329,7 +329,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
                     >
                       <div className="p-3 border-b border-slate-700">
                         <p className="font-medium text-slate-200">Admin User</p>
-                        <p className="text-sm text-slate-400">admin@bluechipfinmax.com</p>
+                        <p className="text-sm text-slate-400">admin@Quikkred.com</p>
                       </div>
                       <div className="py-2">
                         <button className="w-full flex items-center gap-3 p-3 hover:bg-slate-800 rounded-lg transition-colors text-slate-300">

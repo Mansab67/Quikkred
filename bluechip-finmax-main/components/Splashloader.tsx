@@ -38,7 +38,7 @@ export default function LoadingSplash() {
         >
           <Image
             src="/logo 2.png"
-            alt="bluechipfinmax"
+            alt="Quikkred"
             width={200}
             height={200}
             priority

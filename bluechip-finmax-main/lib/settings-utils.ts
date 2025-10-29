@@ -182,8 +182,8 @@ export interface AuditLog {
 // Default settings
 export const DEFAULT_SETTINGS: SystemSettings = {
   general: {
-    companyName: 'bluechipfinmax NBFC',
-    companyEmail: 'contact@bluechipfinmax.com',
+    companyName: 'Quikkred NBFC',
+    companyEmail: 'contact@Quikkred.com',
     companyPhone: '+91-1234567890',
     companyAddress: 'Mumbai, Maharashtra, India',
     timezone: 'Asia/Kolkata',
@@ -246,7 +246,7 @@ export const DEFAULT_SETTINGS: SystemSettings = {
     emailProvider: {
       provider: 'sendgrid',
       apiKey: '',
-      fromEmail: 'noreply@bluechipfinmax.com'
+      fromEmail: 'noreply@Quikkred.com'
     },
     creditBureau: {
       enabled: false,
@@ -275,7 +275,7 @@ export const DEFAULT_SETTINGS: SystemSettings = {
     regulatoryReporting: {
       enabled: true,
       frequency: 'monthly',
-      recipients: ['compliance@bluechipfinmax.com']
+      recipients: ['compliance@Quikkred.com']
     }
   },
   features: {

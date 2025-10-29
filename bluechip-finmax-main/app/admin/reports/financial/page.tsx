@@ -78,7 +78,7 @@ export default function FinancialReportsPage() {
       period: 'January 2024',
       status: 'published',
       generatedAt: '2024-02-01T10:00:00Z',
-      generatedBy: 'admin@bluechipfinmax.com',
+      generatedBy: 'admin@Quikkred.com',
       fileSize: '2.4 MB',
       sections: ['P&L', 'Balance Sheet', 'Cash Flow', 'Ratios']
     },
@@ -89,7 +89,7 @@ export default function FinancialReportsPage() {
       period: 'Q4 2023',
       status: 'approved',
       generatedAt: '2024-01-15T14:30:00Z',
-      generatedBy: 'finance@bluechipfinmax.com',
+      generatedBy: 'finance@Quikkred.com',
       fileSize: '4.8 MB',
       sections: ['P&L', 'Balance Sheet', 'Cash Flow', 'Budget Analysis', 'YoY Comparison']
     },
@@ -100,7 +100,7 @@ export default function FinancialReportsPage() {
       period: '2023',
       status: 'published',
       generatedAt: '2024-01-05T09:00:00Z',
-      generatedBy: 'cfo@bluechipfinmax.com',
+      generatedBy: 'cfo@Quikkred.com',
       fileSize: '12.6 MB',
       sections: ['P&L', 'Balance Sheet', 'Cash Flow', 'Audit Report', 'Director Report']
     }

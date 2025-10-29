@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 🎨 bluechipfinmax Brand Colors - Trust. Grow. Shine. */
+/* 🎨 Quikkred Brand Colors - Trust. Grow. Shine. */
 :root {
   /* Primary Brand Colors - Dark Green (Main brand color from logo) */
   --primary-50: 232 245 233;
@@ -166,7 +166,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* bluechipfinmax Brand Gradients - Exact Logo Colors */
+/* Quikkred Brand Gradients - Exact Logo Colors */
 .gradient-primary {
   background: linear-gradient(135deg, #006837 0%, #2E7D32 100%);
 }
@@ -183,7 +183,7 @@ body {
   background: linear-gradient(135deg, rgb(var(--accent-600)) 0%, rgb(var(--accent-500)) 100%);
 }
 
-.gradient-bluechipfinmax {
+.gradient-Quikkred {
   background: linear-gradient(135deg, #006837 0%, #FFC107 50%, #FFD700 100%);
 }
 
@@ -231,7 +231,7 @@ body {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
 }
 
-/* bluechipfinmax Button Styles - Exact Logo Colors */
+/* Quikkred Button Styles - Exact Logo Colors */
 .btn-primary {
   background: linear-gradient(135deg, #006837 0%, #2E7D32 100%);
   color: white;
@@ -304,7 +304,7 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 0 3px rgba(var(--primary-500), 0.1);
 }
 
-/* bluechipfinmax Hover Effects - Exact Logo Colors */
+/* Quikkred Hover Effects - Exact Logo Colors */
 .hover-glow {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

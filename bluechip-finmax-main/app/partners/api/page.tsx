@@ -118,7 +118,7 @@ export default function APIIntegrationPage() {
   ];
 
   const sampleCode = `// Initialize API Client
-const client = new bluechipfinmaxAPI({
+const client = new QuikkredAPI({
   apiKey: 'your_api_key',
   environment: 'production'
 });

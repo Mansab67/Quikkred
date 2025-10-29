@@ -2,7 +2,7 @@
 
 ## ✅ **What Was Implemented**
 
-The bluechipfinmax platform now has a **comprehensive admin settings panel** with system configuration, role management, and audit logging capabilities.
+The Quikkred platform now has a **comprehensive admin settings panel** with system configuration, role management, and audit logging capabilities.
 
 ---
 
@@ -208,7 +208,7 @@ lockoutDuration: 30       // Lockout duration in minutes
 ## 📊 **Default Settings**
 
 ### **System Defaults**
-- Company: bluechipfinmax NBFC
+- Company: Quikkred NBFC
 - Timezone: Asia/Kolkata
 - Currency: INR
 - Language: English

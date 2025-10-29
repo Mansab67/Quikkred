@@ -118,7 +118,7 @@ const mockUsers: UserAccount[] = [
     notes: [
       {
         id: "N001",
-        author: "admin@bluechipfinmax.com",
+        author: "admin@Quikkred.com",
         message: "Excellent payment history. High-value customer.",
         timestamp: "2024-11-15T14:20:00Z",
         type: "GENERAL"

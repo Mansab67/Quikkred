@@ -59,7 +59,7 @@ export default function ComplianceReportsPage() {
       complianceScore: 94,
       issues: 2,
       resolvedIssues: 18,
-      submittedBy: 'compliance@bluechipfinmax.com',
+      submittedBy: 'compliance@Quikkred.com',
       submittedAt: '2024-01-25',
       regulatoryBody: 'Reserve Bank of India'
     },
@@ -97,7 +97,7 @@ export default function ComplianceReportsPage() {
       complianceScore: 89,
       issues: 0,
       resolvedIssues: 12,
-      submittedBy: 'audit@bluechipfinmax.com',
+      submittedBy: 'audit@Quikkred.com',
       submittedAt: '2024-01-10',
       regulatoryBody: 'Internal Audit Committee'
     },

@@ -1,4 +1,4 @@
-# bluechipfinmax User CRM - New Color Scheme Applied
+# Quikkred User CRM - New Color Scheme Applied
 
 ## ✅ **UserLayout.tsx - COMPLETED**
 

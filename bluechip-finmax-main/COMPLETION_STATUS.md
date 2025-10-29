@@ -1,4 +1,4 @@
-# 🚀 bluechipfinmax NBFC - Implementation Completion Status
+# 🚀 Quikkred NBFC - Implementation Completion Status
 
 ## 📊 Overall Progress: 40% Complete
 
@@ -41,7 +41,7 @@
 ## 📁 Project Structure
 
 ```
-bluechipfinmax/
+Quikkred/
 ├── app/
 │   ├── api/
 │   │   └── documents/        ✅ All APIs created

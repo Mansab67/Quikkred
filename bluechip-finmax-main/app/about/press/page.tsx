@@ -11,7 +11,7 @@ export default function PressPage() {
   const pressReleases = [
     {
       date: "October 15, 2024",
-      title: "bluechipfinmax Crosses ₹500 Crore Milestone in Loan Disbursements",
+      title: "Quikkred Crosses ₹500 Crore Milestone in Loan Disbursements",
       excerpt: "Leading NBFC achieves significant growth milestone, serving over 50,000 customers across 15+ cities",
       category: "Company News",
       color: "#006837"
@@ -25,7 +25,7 @@ export default function PressPage() {
     },
     {
       date: "September 10, 2024",
-      title: "bluechipfinmax Awarded 'Best NBFC of the Year 2024'",
+      title: "Quikkred Awarded 'Best NBFC of the Year 2024'",
       excerpt: "Recognized for outstanding performance and customer satisfaction at Financial Services Excellence Awards",
       category: "Awards",
       color: "#FFD600"
@@ -87,7 +87,7 @@ export default function PressPage() {
   const mediaContact = {
     name: "Priya Sharma",
     title: "Head of Communications",
-    email: "media@bluechipfinmax.com",
+    email: "media@Quikkred.com",
     phone: "+91-22-1234-5690"
   };
 
@@ -122,7 +122,7 @@ export default function PressPage() {
             </div>
 
             <p className="text-sm sm:text-base lg:text-xl mb-8 opacity-90 max-w-3xl">
-              Latest news, press releases, and media resources about bluechipfinmax's journey in transforming financial services.
+              Latest news, press releases, and media resources about Quikkred's journey in transforming financial services.
             </p>
 
             {/* Features */}

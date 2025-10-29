@@ -1,4 +1,4 @@
-# 🎨 bluechipfinmax Frontend Developer Guide
+# 🎨 Quikkred Frontend Developer Guide
 
 ## 📋 Table of Contents
 - [Overview](#overview)
@@ -18,7 +18,7 @@
 
 ## 🎯 Overview
 
-bluechipfinmax's frontend is a modern, responsive web application built with Next.js 15.5.3, featuring a multi-role dashboard system, real-time updates, and support for 13 Indian languages.
+Quikkred's frontend is a modern, responsive web application built with Next.js 15.5.3, featuring a multi-role dashboard system, real-time updates, and support for 13 Indian languages.
 
 ### Key Features
 - **Multi-Role Dashboards**: Separate interfaces for users, admins, underwriters, collection agents, finance managers, risk analysts, and support agents
@@ -133,7 +133,7 @@ App
 ## 📁 Project Structure
 
 ```
-bluechipfinmax/
+Quikkred/
 ├── app/                        # Next.js App Router
 │   ├── (public)/              # Public routes
 │   │   ├── page.tsx           # Home page
@@ -471,7 +471,7 @@ i18n
 ```json
 // locales/en/common.json
 {
-  "welcome": "Welcome to bluechipfinmax",
+  "welcome": "Welcome to Quikkred",
   "loan": {
     "apply": "Apply for Loan",
     "status": "Loan Status",
@@ -727,7 +727,7 @@ export default {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['cdn.bluechipfinmax.com'],
+    domains: ['cdn.Quikkred.com'],
     formats: ['image/avif', 'image/webp'],
   },
   experimental: {
@@ -746,8 +746,8 @@ export default {
 ### Environment Variables
 ```env
 # Frontend environment variables
-NEXT_PUBLIC_API_URL=https://api.bluechipfinmax.com
-NEXT_PUBLIC_WS_URL=wss://ws.bluechipfinmax.com
+NEXT_PUBLIC_API_URL=https://api.Quikkred.com
+NEXT_PUBLIC_WS_URL=wss://ws.Quikkred.com
 NEXT_PUBLIC_GA_ID=GA-XXXXXXXXX
 NEXT_PUBLIC_SENTRY_DSN=https://xxx@sentry.io/xxx
 ```
@@ -803,7 +803,7 @@ npm run build
 ### Internal Documentation
 - [Backend Guide](./BACKEND_DEVELOPER_GUIDE.md)
 - [API Documentation](./API_DOCUMENTATION.md)
-- [Component Storybook](https://storybook.bluechipfinmax.com)
+- [Component Storybook](https://storybook.Quikkred.com)
 
 ### External Resources
 - [Next.js Documentation](https://nextjs.org/docs)
@@ -823,7 +823,7 @@ npm run build
 
 ### Other Channels
 - **GitHub Issues**: For bug reports and feature requests
-- **Email**: frontend@bluechipfinmax.com (for formal communications)
+- **Email**: frontend@Quikkred.com (for formal communications)
 
 **Note**: Frontend developers have been provided with the project owner's contact details for direct communication and support via WhatsApp.
 

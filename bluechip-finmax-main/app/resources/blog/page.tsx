@@ -112,7 +112,7 @@ export default function BlogPage() {
       excerpt: "Read how Ramesh used smart loan management and budgeting to transform his financial situation.",
       content: "Full blog content here...",
       category: "success-stories",
-      author: "Team bluechipfinmax",
+      author: "Team Quikkred",
       date: "2025-09-20",
       readTime: "4 min",
       views: 1560,

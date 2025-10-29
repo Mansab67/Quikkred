@@ -81,10 +81,10 @@ export default function SettingsDashboard() {
       category: 'general',
       name: 'Company Name',
       description: 'Legal name of the NBFC',
-      value: 'bluechipfinmax Non-Banking Financial Company',
+      value: 'Quikkred Non-Banking Financial Company',
       type: 'text',
       lastModified: '2024-01-15T10:30:00Z',
-      modifiedBy: 'admin@bluechipfinmax.com'
+      modifiedBy: 'admin@Quikkred.com'
     },
     {
       id: '2',
@@ -94,7 +94,7 @@ export default function SettingsDashboard() {
       value: '09:00-18:00 IST',
       type: 'text',
       lastModified: '2024-01-15T10:30:00Z',
-      modifiedBy: 'admin@bluechipfinmax.com'
+      modifiedBy: 'admin@Quikkred.com'
     },
     {
       id: '3',
@@ -104,7 +104,7 @@ export default function SettingsDashboard() {
       value: 30,
       type: 'number',
       lastModified: '2024-01-15T10:30:00Z',
-      modifiedBy: 'security@bluechipfinmax.com'
+      modifiedBy: 'security@Quikkred.com'
     },
     {
       id: '4',
@@ -114,7 +114,7 @@ export default function SettingsDashboard() {
       value: true,
       type: 'boolean',
       lastModified: '2024-01-15T10:30:00Z',
-      modifiedBy: 'security@bluechipfinmax.com'
+      modifiedBy: 'security@Quikkred.com'
     },
     {
       id: '5',
@@ -125,7 +125,7 @@ export default function SettingsDashboard() {
       type: 'password',
       sensitive: true,
       lastModified: '2024-01-15T10:30:00Z',
-      modifiedBy: 'security@bluechipfinmax.com'
+      modifiedBy: 'security@Quikkred.com'
     },
     {
       id: '6',
@@ -136,7 +136,7 @@ export default function SettingsDashboard() {
       type: 'select',
       options: ['Razorpay', 'PayU', 'CCAvenue', 'Paytm'],
       lastModified: '2024-01-15T10:30:00Z',
-      modifiedBy: 'finance@bluechipfinmax.com'
+      modifiedBy: 'finance@Quikkred.com'
     }
   ];
 
@@ -147,7 +147,7 @@ export default function SettingsDashboard() {
       description: 'Notify when a new loan application is submitted',
       trigger: 'NEW_LOAN_APPLICATION',
       channels: ['EMAIL', 'SLACK'],
-      recipients: ['underwriter@bluechipfinmax.com', '#loan-applications'],
+      recipients: ['underwriter@Quikkred.com', '#loan-applications'],
       enabled: true,
       priority: 'MEDIUM'
     },
@@ -157,7 +157,7 @@ export default function SettingsDashboard() {
       description: 'Alert when payment is overdue by 3+ days',
       trigger: 'PAYMENT_OVERDUE_3_DAYS',
       channels: ['EMAIL', 'SMS'],
-      recipients: ['collections@bluechipfinmax.com'],
+      recipients: ['collections@Quikkred.com'],
       enabled: true,
       priority: 'HIGH'
     },
@@ -167,7 +167,7 @@ export default function SettingsDashboard() {
       description: 'Immediate alert for suspected fraudulent activity',
       trigger: 'FRAUD_DETECTED',
       channels: ['EMAIL', 'SMS', 'PUSH'],
-      recipients: ['security@bluechipfinmax.com', 'admin@bluechipfinmax.com'],
+      recipients: ['security@Quikkred.com', 'admin@Quikkred.com'],
       enabled: true,
       priority: 'CRITICAL'
     }
@@ -177,7 +177,7 @@ export default function SettingsDashboard() {
     {
       id: '1',
       timestamp: '2024-01-15T14:30:00Z',
-      user: 'admin@bluechipfinmax.com',
+      user: 'admin@Quikkred.com',
       action: 'SETTING_UPDATED',
       category: 'SECURITY',
       details: 'Updated session timeout from 60 to 30 minutes',
@@ -187,7 +187,7 @@ export default function SettingsDashboard() {
     {
       id: '2',
       timestamp: '2024-01-15T13:45:00Z',
-      user: 'security@bluechipfinmax.com',
+      user: 'security@Quikkred.com',
       action: 'API_KEY_REGENERATED',
       category: 'SECURITY',
       details: 'Regenerated API secret key',
@@ -197,7 +197,7 @@ export default function SettingsDashboard() {
     {
       id: '3',
       timestamp: '2024-01-15T12:15:00Z',
-      user: 'finance@bluechipfinmax.com',
+      user: 'finance@Quikkred.com',
       action: 'PAYMENT_GATEWAY_CHANGED',
       category: 'INTEGRATIONS',
       details: 'Changed payment gateway from PayU to Razorpay',

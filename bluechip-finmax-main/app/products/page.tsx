@@ -438,7 +438,7 @@ export default function ProductsPage() {
             viewport={{ once: true }}
             className="text-center mb-8 sm:mb-10 lg:mb-12"
           >
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-sora mb-3 sm:mb-4 text-gray-900 px-4">Why Choose bluechipfinmax?</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-sora mb-3 sm:mb-4 text-gray-900 px-4">Why Choose Quikkred?</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               We're not just another lending platform. We're your financial partner committed to your prosperity.
             </p>
@@ -478,7 +478,7 @@ export default function ProductsPage() {
               Ready to Get Your Loan?
             </h2>
             <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 opacity-90 px-4">
-              Join thousands of satisfied customers who've transformed their financial journey with bluechipfinmax
+              Join thousands of satisfied customers who've transformed their financial journey with Quikkred
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-lg mx-auto">
               <Link href="/apply" className="w-full sm:w-auto">

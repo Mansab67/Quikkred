@@ -1,4 +1,4 @@
-# 🏦 bluechipfinmax - AI-Powered NBFC Platform
+# 🏦 Quikkred - AI-Powered NBFC Platform
 
 > **Your Gateway to Prosperity** - Instant loans with AI-driven decisions and multilingual support
 
@@ -9,7 +9,7 @@
 
 ## 🌟 Overview
 
-**bluechipfinmax** is a revolutionary NBFC (Non-Banking Financial Company) platform that democratizes access to instant loans across India. Built with cutting-edge AI technology and supporting 13 Indian languages, bluechipfinmax transforms the traditional lending landscape with:
+**Quikkred** is a revolutionary NBFC (Non-Banking Financial Company) platform that democratizes access to instant loans across India. Built with cutting-edge AI technology and supporting 13 Indian languages, Quikkred transforms the traditional lending landscape with:
 
 - ⚡ **Instant Approval** - AI-powered decisions in under 30 seconds
 - 🌐 **Multilingual Support** - Available in 13 Indian languages
@@ -92,8 +92,8 @@
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/Ocpltech/bluechipfinmax.git
-cd bluechipfinmax
+git clone https://github.com/Ocpltech/Quikkred.git
+cd Quikkred
 ```
 
 2. **Install dependencies**
@@ -109,7 +109,7 @@ cp .env.example .env.local
 4. **Configure environment variables**
 ```env
 # Database
-DATABASE_URL="postgresql://username:password@localhost:5432/bluechipfinmax"
+DATABASE_URL="postgresql://username:password@localhost:5432/Quikkred"
 
 # NextAuth
 NEXTAUTH_SECRET="your-secret-key"
@@ -119,7 +119,7 @@ NEXTAUTH_URL="http://localhost:3001"
 AWS_ACCESS_KEY_ID="your-aws-access-key"
 AWS_SECRET_ACCESS_KEY="your-aws-secret-key"
 AWS_REGION="ap-south-1"
-AWS_S3_BUCKET="bluechipfinmax-documents"
+AWS_S3_BUCKET="Quikkred-documents"
 
 # Payment Gateway
 RAZORPAY_KEY_ID="your-razorpay-key"
@@ -150,7 +150,7 @@ Visit [http://localhost:3001](http://localhost:3001) to see the application.
 ## 📁 Project Structure
 
 ```
-bluechipfinmax/
+Quikkred/
 ├── app/                    # Next.js App Router
 │   ├── api/               # API routes
 │   ├── apply/             # Loan application pages
@@ -198,8 +198,8 @@ npm start
 
 ### Docker Deployment
 ```bash
-docker build -t bluechipfinmax .
-docker run -p 3001:3001 bluechipfinmax
+docker build -t Quikkred .
+docker run -p 3001:3001 Quikkred
 ```
 
 ### Vercel Deployment
@@ -296,14 +296,14 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ### Developer Support
 - **WhatsApp**: Developers have direct access to project owner's WhatsApp
-- **GitHub Issues**: [Report bugs or request features](https://github.com/bluechipfinmax/issues)
-- **Backend Team**: backend@bluechipfinmax.com
-- **Frontend Team**: frontend@bluechipfinmax.com
+- **GitHub Issues**: [Report bugs or request features](https://github.com/Quikkred/issues)
+- **Backend Team**: backend@Quikkred.com
+- **Frontend Team**: frontend@Quikkred.com
 
 ### Business Inquiries
-- **Partnerships**: partners@bluechipfinmax.com
-- **Enterprise**: enterprise@bluechipfinmax.com
-- **Press**: press@bluechipfinmax.com
+- **Partnerships**: partners@Quikkred.com
+- **Enterprise**: enterprise@Quikkred.com
+- **Press**: press@Quikkred.com
 
 ---
 
@@ -318,8 +318,8 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 <div align="center">
 
-**Built with ❤️ by the bluechipfinmax Team**
+**Built with ❤️ by the Quikkred Team**
 
-[Website](https://bluechipfinmax.com) • [API Docs](./docs/API_SPECIFICATION.md) • [Support](mailto:support@bluechipfinmax.com)
+[Website](https://Quikkred.com) • [API Docs](./docs/API_SPECIFICATION.md) • [Support](mailto:support@quikkred.com)
 
 </div>

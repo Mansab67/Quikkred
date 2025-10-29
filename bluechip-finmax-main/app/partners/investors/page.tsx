@@ -388,9 +388,9 @@ export default function InvestorRelationsPage() {
                 <Building className="w-12 h-12 mb-4" />
                 <h2 className="text-2xl font-bold mb-4">Investor Relations Contact</h2>
                 <div className="space-y-3">
-                  <a href="mailto:investors@bluechipfinmax.com" className="flex items-center gap-2 hover:underline">
+                  <a href="mailto:investors@Quikkred.com" className="flex items-center gap-2 hover:underline">
                     <Mail className="w-5 h-5" />
-                    <span>investors@bluechipfinmax.com</span>
+                    <span>investors@Quikkred.com</span>
                   </a>
                   <a href="tel:+91-22-1234-5678" className="flex items-center gap-2 hover:underline">
                     <Phone className="w-5 h-5" />

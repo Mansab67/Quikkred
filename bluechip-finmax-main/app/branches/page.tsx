@@ -16,7 +16,7 @@ export default function BranchesPage() {
       name: "Mumbai Head Office",
       address: "123 Business Hub, Andheri East, Mumbai - 400069",
       phone: "+91-22-1234-5678",
-      email: "mumbai@bluechipfinmax.com",
+      email: "mumbai@Quikkred.com",
       hours: "Mon-Sat: 9:00 AM - 6:00 PM",
       isHeadOffice: true
     },
@@ -25,7 +25,7 @@ export default function BranchesPage() {
       name: "Delhi Branch",
       address: "456 Connaught Place, New Delhi - 110001",
       phone: "+91-11-2345-6789",
-      email: "delhi@bluechipfinmax.com",
+      email: "delhi@Quikkred.com",
       hours: "Mon-Sat: 9:00 AM - 6:00 PM"
     },
     {
@@ -33,7 +33,7 @@ export default function BranchesPage() {
       name: "Bangalore Branch",
       address: "789 MG Road, Bangalore - 560001",
       phone: "+91-80-3456-7890",
-      email: "bangalore@bluechipfinmax.com",
+      email: "bangalore@Quikkred.com",
       hours: "Mon-Sat: 9:00 AM - 6:00 PM"
     },
     {
@@ -41,7 +41,7 @@ export default function BranchesPage() {
       name: "Hyderabad Branch",
       address: "321 HITEC City, Hyderabad - 500081",
       phone: "+91-40-4567-8901",
-      email: "hyderabad@bluechipfinmax.com",
+      email: "hyderabad@Quikkred.com",
       hours: "Mon-Sat: 9:00 AM - 6:00 PM"
     },
     {
@@ -49,7 +49,7 @@ export default function BranchesPage() {
       name: "Pune Branch",
       address: "654 Koregaon Park, Pune - 411001",
       phone: "+91-20-5678-9012",
-      email: "pune@bluechipfinmax.com",
+      email: "pune@Quikkred.com",
       hours: "Mon-Sat: 9:00 AM - 6:00 PM"
     },
     {
@@ -57,7 +57,7 @@ export default function BranchesPage() {
       name: "Chennai Branch",
       address: "987 Anna Salai, Chennai - 600002",
       phone: "+91-44-6789-0123",
-      email: "chennai@bluechipfinmax.com",
+      email: "chennai@Quikkred.com",
       hours: "Mon-Sat: 9:00 AM - 6:00 PM"
     }
   ];

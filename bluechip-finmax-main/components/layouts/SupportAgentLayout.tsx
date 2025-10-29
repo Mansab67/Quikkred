@@ -84,7 +84,7 @@ export default function SupportAgentLayout({ children }: SupportAgentLayoutProps
               <Headphones className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h2 className="text-xl font-bold gradient-text">bluechipfinmax</h2>
+              <h2 className="text-xl font-bold gradient-text">Quikkred</h2>
               <p className="text-xs text-slate-400">Support Portal</p>
             </div>
           </div>

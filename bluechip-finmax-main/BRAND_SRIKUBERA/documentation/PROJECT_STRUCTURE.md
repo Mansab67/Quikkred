@@ -1,9 +1,9 @@
-# bluechipfinmax Project Structure & Files
+# Quikkred Project Structure & Files
 
 ## 📁 Complete Directory Structure
 
 ```
-bluechipfinmax/
+Quikkred/
 ├── 📂 app/                           # Next.js 14 App Router
 │   ├── layout.tsx                    # Root layout with providers
 │   ├── page.tsx                      # Home page
@@ -217,7 +217,7 @@ bluechipfinmax/
 ### Gradient Classes
 ```css
 .gradient-prosperity
-.gradient-bluechipfinmax
+.gradient-Quikkred
 .gradient-primary
 .shadow-gold
 .shadow-lucky
@@ -346,7 +346,7 @@ REDIS_URL=
 ## 🔗 Important Links
 
 - Local Dev: http://localhost:3000
-- Production: https://bluechipfinmax.com (planned)
+- Production: https://Quikkred.com (planned)
 - Documentation: /BRAND_SriKuberONE/
 - GitHub: (repository URL)
 

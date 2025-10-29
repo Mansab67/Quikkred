@@ -136,7 +136,7 @@ function UserDashboardExportContent() {
 
     // Add header
     pdfExporter.addHeader(
-      'bluechipfinmax Customer Dashboard Report',
+      'Quikkred Customer Dashboard Report',
       `Generated for ${data.profile.name} on ${format(new Date(), 'dd MMM yyyy')}`
     );
 

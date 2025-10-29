@@ -160,7 +160,7 @@ export default function AdminUsersManagement() {
       notes: [
         {
           id: "N001",
-          author: "admin@bluechipfinmax.com",
+          author: "admin@Quikkred.com",
           message: "Excellent payment history. High-value customer.",
           timestamp: "2024-11-15T14:20:00Z",
           type: "GENERAL"
@@ -262,7 +262,7 @@ export default function AdminUsersManagement() {
       notes: [
         {
           id: "N002",
-          author: "admin2@bluechipfinmax.com",
+          author: "admin2@Quikkred.com",
           message: "Account suspended due to repeated late payments. Under review.",
           timestamp: "2024-11-15T10:20:00Z",
           type: "RISK"

@@ -44,14 +44,14 @@ const MOCK_USERS: Record<UserRole, User> = {
   ADMIN: {
     id: 'admin_001',
     name: 'Admin User',
-    email: 'admin@bluechipfinmax.com',
+    email: 'admin@Quikkred.com',
     role: 'ADMIN',
     permissions: ['*'] // Admin has all permissions
   },
   SUPER_ADMIN: {
     id: 'super_admin_001',
     name: 'Super Admin',
-    email: 'superadmin@bluechipfinmax.com',
+    email: 'superadmin@Quikkred.com',
     role: 'SUPER_ADMIN',
     permissions: ['*'] // Super Admin has all permissions
   },
@@ -72,7 +72,7 @@ const MOCK_USERS: Record<UserRole, User> = {
   UNDERWRITER: {
     id: 'underwriter_001',
     name: 'Priya Sharma',
-    email: 'priya.sharma@bluechipfinmax.com',
+    email: 'priya.sharma@Quikkred.com',
     role: 'UNDERWRITER',
     branch: 'Mumbai Central',
     team: 'Credit Team A',
@@ -81,7 +81,7 @@ const MOCK_USERS: Record<UserRole, User> = {
   FINANCE_MANAGER: {
     id: 'finance_manager_001',
     name: 'Arjun Mehta',
-    email: 'arjun.mehta@bluechipfinmax.com',
+    email: 'arjun.mehta@Quikkred.com',
     role: 'FINANCE_MANAGER',
     branch: 'Mumbai Central',
     team: 'Finance',
@@ -90,7 +90,7 @@ const MOCK_USERS: Record<UserRole, User> = {
   COLLECTION_AGENT: {
     id: 'collection_001',
     name: 'Vijay Kumar',
-    email: 'vijay.kumar@bluechipfinmax.com',
+    email: 'vijay.kumar@Quikkred.com',
     role: 'COLLECTION_AGENT',
     branch: 'Mumbai Central',
     team: 'Recovery Team A',
@@ -99,7 +99,7 @@ const MOCK_USERS: Record<UserRole, User> = {
   SUPPORT_AGENT: {
     id: 'support_001',
     name: 'Deepika Rao',
-    email: 'deepika.rao@bluechipfinmax.com',
+    email: 'deepika.rao@Quikkred.com',
     role: 'SUPPORT_AGENT',
     branch: 'Mumbai Central',
     team: 'Customer Support',
@@ -108,7 +108,7 @@ const MOCK_USERS: Record<UserRole, User> = {
   RISK_ANALYST: {
     id: 'risk_001',
     name: 'Ravi Kumar',
-    email: 'ravi.kumar@bluechipfinmax.com',
+    email: 'ravi.kumar@Quikkred.com',
     role: 'RISK_ANALYST',
     branch: 'Mumbai Central',
     team: 'Risk & Compliance',
@@ -166,7 +166,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const fetchUserProfile = async (token: string, currentUser: User) => {
     console.log('🔵 Fetching user profile from API...');
     try {
-      const response = await fetch('https://api.bluechipfinmax.com/api/customer/profile', {
+      const response = await fetch('https://api.Quikkred.com/api/customer/profile', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

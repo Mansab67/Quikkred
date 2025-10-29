@@ -263,7 +263,7 @@ export default function AwardsPage() {
           >
             <h2 className="text-2xl font-bold mb-4">Experience Award-Winning Service</h2>
             <p className="mb-6 opacity-90">
-              Join thousands of satisfied customers who trust bluechipfinmax for their financial needs
+              Join thousands of satisfied customers who trust Quikkred for their financial needs
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/apply">

@@ -2,7 +2,7 @@
 
 ## ✅ **What Was Implemented**
 
-The bluechipfinmax platform now has **real-time WebSocket capabilities** for live data updates across all dashboards.
+The Quikkred platform now has **real-time WebSocket capabilities** for live data updates across all dashboards.
 
 ---
 

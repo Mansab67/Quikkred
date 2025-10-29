@@ -55,7 +55,7 @@ export default function DisbursementManagementPage() {
       failureReason: null,
       retryCount: 0,
       priority: 'HIGH',
-      approvedBy: 'admin@bluechipfinmax.com',
+      approvedBy: 'admin@Quikkred.com',
       notes: 'Regular disbursement'
     },
     {
@@ -78,7 +78,7 @@ export default function DisbursementManagementPage() {
       failureReason: null,
       retryCount: 0,
       priority: 'HIGH',
-      approvedBy: 'admin@bluechipfinmax.com',
+      approvedBy: 'admin@Quikkred.com',
       notes: 'Urgent disbursement requested'
     },
     {
@@ -101,7 +101,7 @@ export default function DisbursementManagementPage() {
       failureReason: 'Invalid account number',
       retryCount: 1,
       priority: 'MEDIUM',
-      approvedBy: 'admin@bluechipfinmax.com',
+      approvedBy: 'admin@Quikkred.com',
       notes: 'Customer requested re-verification'
     },
     {
@@ -124,7 +124,7 @@ export default function DisbursementManagementPage() {
       failureReason: null,
       retryCount: 0,
       priority: 'HIGH',
-      approvedBy: 'admin@bluechipfinmax.com',
+      approvedBy: 'admin@Quikkred.com',
       notes: 'Awaiting final approval'
     }
   ]);

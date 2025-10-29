@@ -1,4 +1,4 @@
-# 🏦 bluechipfinmax NBFC Platform - Master Project Documentation
+# 🏦 Quikkred NBFC Platform - Master Project Documentation
 ## Last Updated: 2025-09-18 12:30:00 IST
 
 ---
@@ -100,7 +100,7 @@ Building India's most advanced AI-powered NBFC platform that delivers instant, e
 
 ## Database Status ✅
 - **PostgreSQL**: Running on port 5432
-- **Database Name**: bluechipfinmax_db
+- **Database Name**: Quikkred_db
 - **Total Tables**: 54
 - **Migrations**: Successfully applied
 - **Seed Data**: Created with test users
@@ -283,11 +283,11 @@ Support & Communication:
 ## Test Users
 ```
 Customer Account:
-Email: test@bluechipfinmax.com
+Email: test@Quikkred.com
 Password: Test@123
 
 Admin Account:
-Email: admin@bluechipfinmax.com
+Email: admin@Quikkred.com
 Password: Test@123
 
 New User (Created via API):
@@ -303,7 +303,7 @@ npm run build                  # Build for production
 npm run seed                   # Seed database with test data
 
 # Database
-psql -U tivra -d bluechipfinmax_db  # Access PostgreSQL
+psql -U tivra -d Quikkred_db  # Access PostgreSQL
 redis-cli                      # Access Redis
 npx prisma studio              # Visual database editor
 npx prisma migrate dev         # Run migrations
@@ -320,7 +320,7 @@ git commit -m "feat: message"  # Commit
 
 ## Environment Variables
 ```env
-DATABASE_URL="postgresql://tivra@localhost:5432/bluechipfinmax_db?schema=public"
+DATABASE_URL="postgresql://tivra@localhost:5432/Quikkred_db?schema=public"
 REDIS_URL="redis://localhost:6379"
 JWT_SECRET="your-jwt-secret-key-here"
 NEXTAUTH_URL="http://localhost:3000"
@@ -447,7 +447,7 @@ curl http://localhost:3000/api/health
 
 ---
 
-*This document is the single source of truth for bluechipfinmax development status*
+*This document is the single source of truth for Quikkred development status*
 *Auto-updates every 30 minutes during active development*
 *Last Manual Update: 2025-09-17 16:17:00 IST*
 

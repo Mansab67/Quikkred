@@ -1,4 +1,4 @@
-# bluechipfinmax Frontend Testing Guide
+# Quikkred Frontend Testing Guide
 
 ## 🚀 Quick Start
 
@@ -6,11 +6,11 @@ The application is running at: **http://localhost:3000**
 
 ### Test Credentials
 - **User Account**:
-  - Email: `test@bluechipfinmax.com`
+  - Email: `test@Quikkred.com`
   - Password: `Test@123`
 
 - **Admin Account**:
-  - Email: `admin@bluechipfinmax.com`
+  - Email: `admin@Quikkred.com`
   - Password: `Test@123`
 
 ---
@@ -25,7 +25,7 @@ The application is running at: **http://localhost:3000**
 - ✅ Test responsive design on mobile view
 
 ### 2. **Login Page** (http://localhost:3000/login)
-- ✅ Enter email: `test@bluechipfinmax.com`
+- ✅ Enter email: `test@Quikkred.com`
 - ✅ Enter password: `Test@123`
 - ✅ Click "Sign In"
 - ✅ Should redirect to dashboard after successful login
@@ -227,7 +227,7 @@ If you encounter any issues:
 
 1. **Open** http://localhost:3000
 2. **Click** "Login" in header
-3. **Enter** credentials (test@bluechipfinmax.com / Test@123)
+3. **Enter** credentials (test@Quikkred.com / Test@123)
 4. **Explore** Dashboard
 5. **Navigate** to different pages using sidebar
 6. **Test** loan application flow

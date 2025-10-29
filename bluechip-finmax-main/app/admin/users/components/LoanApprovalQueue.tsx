@@ -69,7 +69,7 @@ const mockApplications: LoanApplication[] = [
     priority: "HIGH",
     riskLevel: "MEDIUM",
     status: "UNDER_REVIEW",
-    assignedTo: "admin@bluechipfinmax.com",
+    assignedTo: "admin@Quikkred.com",
     documentsUploaded: 4,
     documentsRequired: 6
   },
@@ -90,7 +90,7 @@ const mockApplications: LoanApplication[] = [
     priority: "MEDIUM",
     riskLevel: "MEDIUM",
     status: "DOCS_REQUIRED",
-    assignedTo: "admin@bluechipfinmax.com",
+    assignedTo: "admin@Quikkred.com",
     documentsUploaded: 3,
     documentsRequired: 5
   }

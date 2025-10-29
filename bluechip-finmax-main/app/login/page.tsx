@@ -92,7 +92,7 @@ export default function LoginPage() {
         ? { email: formData.emailOrPhone }
         : { mobile: formData.emailOrPhone };
 
-      const response = await fetch("https://api.bluechipfinmax.com/api/auth/customer/create", {
+      const response = await fetch("https://api.Quikkred.com/api/auth/customer/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -151,7 +151,7 @@ export default function LoginPage() {
         ? { email: formData.emailOrPhone, otp: otp }
         : { mobile: formData.emailOrPhone, otp: otp };
 
-      const response = await fetch("https://api.bluechipfinmax.com/api/auth/customer/verify", {
+      const response = await fetch("https://api.Quikkred.com/api/auth/customer/verify", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -288,7 +288,7 @@ export default function LoginPage() {
                   <span className="bg-gradient-to-r from-[#0ea5e9] to-[#10b981] bg-clip-text text-transparent">Welcome Back</span>
                 </h1>
                 <p className="text-xl text-gray-700">
-                  Access your bluechipfinmax account and continue your financial journey
+                  Access your Quikkred account and continue your financial journey
                 </p>
               </div>
 
@@ -631,7 +631,7 @@ export default function LoginPage() {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#fbbf24] to-[#38bdf8] rounded-full mb-6 shadow-lg">
                     <User className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">New to bluechipfinmax?</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900">New to Quikkred?</h3>
                   <p className="text-gray-700 mb-6">
                     Join thousands who have already transformed their financial journey with instant AI-powered loans.
                   </p>

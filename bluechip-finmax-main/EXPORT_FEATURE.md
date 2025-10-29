@@ -2,7 +2,7 @@
 
 ## ✅ **What Was Implemented**
 
-The bluechipfinmax platform now has **comprehensive data export capabilities** for all dashboards, supporting PDF, Excel, and CSV formats.
+The Quikkred platform now has **comprehensive data export capabilities** for all dashboards, supporting PDF, Excel, and CSV formats.
 
 ---
 

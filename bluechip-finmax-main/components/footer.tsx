@@ -12,11 +12,11 @@ import {
 import { useLanguage } from "@/lib/contexts/LanguageContext";
 
 const socialLinks = [
-  { icon: Facebook, href: "https://facebook.com/bluechipfinmax", label: "Facebook" },
-  { icon: Twitter, href: "https://twitter.com/bluechipfinmax", label: "Twitter" },
-  { icon: Linkedin, href: "https://linkedin.com/company/bluechipfinmax", label: "LinkedIn" },
-  { icon: Instagram, href: "https://instagram.com/bluechipfinmax", label: "Instagram" },
-  { icon: Youtube, href: "https://youtube.com/bluechipfinmax", label: "YouTube" },
+  { icon: Facebook, href: "https://facebook.com/Quikkred", label: "Facebook" },
+  { icon: Twitter, href: "https://twitter.com/Quikkred", label: "Twitter" },
+  { icon: Linkedin, href: "https://linkedin.com/company/Quikkred", label: "LinkedIn" },
+  { icon: Instagram, href: "https://instagram.com/Quikkred", label: "Instagram" },
+  { icon: Youtube, href: "https://youtube.com/Quikkred", label: "YouTube" },
 ];
 
 const certifications = [

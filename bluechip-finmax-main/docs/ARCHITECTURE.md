@@ -1,4 +1,4 @@
-# bluechipfinmax Architecture Documentation
+# Quikkred Architecture Documentation
 
 ## System Architecture
 

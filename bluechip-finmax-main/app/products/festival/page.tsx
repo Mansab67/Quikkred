@@ -211,7 +211,7 @@ export default function FestivalAdvancePage() {
           >
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-sora mb-4">Festival Success Stories</h2>
             <p className="text-xl text-gray-600">
-              How our customers celebrated with bluechipfinmax
+              How our customers celebrated with Quikkred
             </p>
           </motion.div>
 

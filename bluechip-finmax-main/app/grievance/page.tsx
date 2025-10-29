@@ -261,7 +261,7 @@ export default function GrievancePage() {
                 <Mail className="w-6 h-6 flex-shrink-0" />
                 <div>
                   <h3 className="font-bold mb-1">Email</h3>
-                  <p className="opacity-90">grievance@bluechipfinmax.com</p>
+                  <p className="opacity-90">grievance@Quikkred.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">

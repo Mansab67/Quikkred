@@ -1,7 +1,7 @@
-# 🔑 Required API Keys for bluechipfinmax NBFC Platform
+# 🔑 Required API Keys for Quikkred NBFC Platform
 
 ## Overview
-This document lists all the external API keys and credentials required to run the bluechipfinmax platform with full functionality.
+This document lists all the external API keys and credentials required to run the Quikkred platform with full functionality.
 
 ---
 
@@ -92,7 +92,7 @@ TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886
 ### **SendGrid** (Email Service)
 ```env
 SENDGRID_API_KEY=SG.XXXXXXXXXXXXXXXXXX
-SENDGRID_FROM_EMAIL=noreply@bluechipfinmax.com
+SENDGRID_FROM_EMAIL=noreply@Quikkred.com
 SENDGRID_TEMPLATE_ID_WELCOME=d-XXXXXXXXXXXXXXXXXX
 SENDGRID_TEMPLATE_ID_OTP=d-XXXXXXXXXXXXXXXXXX
 ```
@@ -139,7 +139,7 @@ AWS_REGION=ap-south-1
 
 ### **S3 Storage** (Document Storage)
 ```env
-AWS_S3_BUCKET=bluechipfinmax-documents
+AWS_S3_BUCKET=Quikkred-documents
 AWS_S3_REGION=ap-south-1
 AWS_S3_ENDPOINT=https://s3.ap-south-1.amazonaws.com
 ```
@@ -247,7 +247,7 @@ GOOGLE_MAPS_API_KEY=AIza_XXXXXXXXXXXXXXXXXX
 ### **Sentry** (Error Tracking)
 ```env
 SENTRY_DSN=https://XXXXX@sentry.io/XXXXX
-SENTRY_ORG=bluechipfinmax
+SENTRY_ORG=Quikkred
 SENTRY_PROJECT=web
 ```
 

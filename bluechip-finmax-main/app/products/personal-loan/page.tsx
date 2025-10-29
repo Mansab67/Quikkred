@@ -94,7 +94,7 @@ export default function PersonalLoanPage() {
     // {
     //   name: "Amit Kumar",
     //   location: "Bangalore",
-    //   comment: "Needed urgent funds for medical emergency. bluechipfinmax came through when I needed them most."
+    //   comment: "Needed urgent funds for medical emergency. Quikkred came through when I needed them most."
     // }
   ];
 

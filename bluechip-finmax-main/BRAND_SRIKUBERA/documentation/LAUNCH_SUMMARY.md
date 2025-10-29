@@ -1,4 +1,4 @@
-# 🚀 bluechipfinmax - Revolutionary AI-Powered NBFC Platform
+# 🚀 Quikkred - Revolutionary AI-Powered NBFC Platform
 
 ## 🎯 What We've Built
 
@@ -34,7 +34,7 @@ India's most advanced AI-first lending platform with instant approvals, comprehe
 ### 5. **Lucky Color Theme**
 - ✅ **Royal Blue/Indigo** - Venus + Rahu harmony (Trust & Future)
 - ✅ **Emerald Green** - Wealth & Prosperity
-- ✅ **Gold Accents** - Goddess bluechipfinmax's blessings
+- ✅ **Gold Accents** - Goddess Quikkred's blessings
 - ✅ **Rose Gold** - Venus charm & luxury
 
 ## 📊 APIs Created
@@ -57,7 +57,7 @@ PUT  /api/portfolio/bad-debt   - Collection optimization
 
 - **Stunning Animations** - Framer Motion throughout
 - **Interactive Calculator** - Real-time EMI computation
-- **Gradient Effects** - Venus-Rahu, Prosperity, bluechipfinmax gradients
+- **Gradient Effects** - Venus-Rahu, Prosperity, Quikkred gradients
 - **Lucky Shadows** - Gold and prosperity shadow effects
 - **Mobile-First** - Fully responsive design
 
@@ -143,7 +143,7 @@ curl http://localhost:3000/api/bureau/score
 
 ## 🌟 Conclusion
 
-bluechipfinmax is not just another lending platform - it's a **revolutionary leap** in Indian fintech, combining:
+Quikkred is not just another lending platform - it's a **revolutionary leap** in Indian fintech, combining:
 - **Ancient Wisdom** (Lucky colors, Venus-Rahu harmony)
 - **Modern Technology** (AI, ML, Real-time processing)
 - **Ethical Lending** (Privacy-first, transparent)
@@ -154,4 +154,4 @@ bluechipfinmax is not just another lending platform - it's a **revolutionary lea
 ---
 
 *"Where Ancient Wisdom Meets Modern Technology"*
-*bluechipfinmax - Prosperity Through Innovation*
+*Quikkred - Prosperity Through Innovation*

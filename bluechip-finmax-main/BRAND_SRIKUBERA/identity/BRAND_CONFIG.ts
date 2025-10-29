@@ -1,14 +1,14 @@
 /**
- * bluechipfinmax Brand Configuration
+ * Quikkred Brand Configuration
  * Central configuration for all brand-related settings
  */
 
 export const BRAND_CONFIG = {
   // Company Information
   company: {
-    name: "bluechipfinmax",
+    name: "Quikkred",
     tagline: "Prosperity Through Technology",
-    legalName: "bluechipfinmax Financial Services Pvt. Ltd.",
+    legalName: "Quikkred Financial Services Pvt. Ltd.",
     registration: "NBFC-MFI Registration",
     gst: "GSTIN: 27AABCL1234A1Z5",
     cin: "CIN: U65999MH2024PTC123456",
@@ -22,15 +22,15 @@ export const BRAND_CONFIG = {
       whatsapp: "+91 88888 81111",
     },
     email: {
-      support: "support@bluechipfinmax.com",
-      care: "care@bluechipfinmax.com",
-      business: "business@bluechipfinmax.com",
-      careers: "careers@bluechipfinmax.com",
+      support: "support@quikkred.com",
+      care: "care@Quikkred.com",
+      business: "business@Quikkred.com",
+      careers: "careers@Quikkred.com",
     },
     offices: [
       {
         city: "Mumbai (Head Office)",
-        address: "bluechipfinmax Tower, BKC, Bandra East, Mumbai - 400051",
+        address: "Quikkred Tower, BKC, Bandra East, Mumbai - 400051",
         phone: "+91 22 6789 0000",
       },
       {
@@ -114,7 +114,7 @@ export const BRAND_CONFIG = {
     },
     gradients: {
       prosperity: "from-violet-600 to-purple-600",
-      bluechipfinmax: "from-[#2563EB] via-[#10B981] to-[#F59E0B]",
+      Quikkred: "from-[#2563EB] via-[#10B981] to-[#F59E0B]",
       primary: "from-[#2563EB] to-[#10B981]",
     },
   },
@@ -154,16 +154,16 @@ export const BRAND_CONFIG = {
 
   // Social Media
   social: {
-    linkedin: "https://linkedin.com/company/bluechipfinmax",
-    twitter: "https://twitter.com/bluechipfinmax",
-    instagram: "https://instagram.com/bluechipfinmax",
-    facebook: "https://facebook.com/bluechipfinmax",
-    youtube: "https://youtube.com/@bluechipfinmax",
+    linkedin: "https://linkedin.com/company/Quikkred",
+    twitter: "https://twitter.com/Quikkred",
+    instagram: "https://instagram.com/Quikkred",
+    facebook: "https://facebook.com/Quikkred",
+    youtube: "https://youtube.com/@Quikkred",
   },
 
   // SEO & Meta
   seo: {
-    title: "bluechipfinmax - Instant Salary Advance & Payday Loans",
+    title: "Quikkred - Instant Salary Advance & Payday Loans",
     description: "Get instant salary advance up to ₹2 lakhs in 30 seconds. No paperwork, 100% digital. RBI licensed NBFC for salaried employees.",
     keywords: [
       "salary advance",
@@ -182,7 +182,7 @@ export const BRAND_CONFIG = {
 
   // API Endpoints
   api: {
-    base: process.env.NEXT_PUBLIC_API_URL || "https://api.bluechipfinmax.com",
+    base: process.env.NEXT_PUBLIC_API_URL || "https://api.Quikkred.com",
     endpoints: {
       apply: "/loan/apply",
       eligibility: "/loan/eligibility",

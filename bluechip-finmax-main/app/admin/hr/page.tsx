@@ -28,7 +28,7 @@ export default function HRManagementPage() {
       name: 'Rajesh Kumar',
       designation: 'Senior Loan Officer',
       department: 'Operations',
-      email: 'rajesh@bluechipfinmax.com',
+      email: 'rajesh@Quikkred.com',
       phone: '+91 98765 43210',
       joinDate: '2022-01-15',
       status: 'ACTIVE',

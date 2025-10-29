@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: "Bluechip - Blue Chip Finance",
   description: "India's most trusted NBFC. Get instant loans with AI-powered approval in 30 seconds. Payday loans, personal loans, business loans - 100% digital, transparent pricing.",
   keywords: "Bluechip, blue chip finance, instant loan, AI lending, NBFC, payday loan, personal loan, business loan, quick loan india",
-  metadataBase: new URL('https://bluechipfinmax.co.in'),
+  metadataBase: new URL('https://Quikkred.co.in'),
   icons: {
     icon: "./favicons.ico",          // default favicon
     shortcut: "./favicons.ico",      // shortcut icon
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     title: "Bluechip",
     description: "Get instant loans with AI-powered approval in 30 seconds. Trusted by + customers.",
     images: ["/og-image.png"],
-    url: 'https://bluechipfinmax.com',
-    siteName: 'bluechipfinmax',
+    url: 'https://Quikkred.com',
+    siteName: 'Quikkred',
     type: 'website',
   },
   twitter: {

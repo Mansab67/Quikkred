@@ -1,4 +1,4 @@
-# 🚀 bluechipfinmax NBFC Platform - Setup Guide
+# 🚀 Quikkred NBFC Platform - Setup Guide
 
 ## 📋 Prerequisites
 
@@ -13,8 +13,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/bluechipfinmax.git
-cd bluechipfinmax
+git clone https://github.com/yourusername/Quikkred.git
+cd Quikkred
 
 # Install dependencies
 npm install
@@ -30,7 +30,7 @@ Edit `.env` file and add minimum required services:
 ```env
 # Database (Choose one)
 # Option 1: Local PostgreSQL
-DATABASE_URL="postgresql://postgres:password@localhost:5432/bluechipfinmax"
+DATABASE_URL="postgresql://postgres:password@localhost:5432/Quikkred"
 
 # Option 2: Supabase (Free tier)
 # Sign up at https://supabase.com
@@ -134,7 +134,7 @@ curl -X POST http://localhost:3000/api/auth/register \
 ### 3. Test Admin Dashboard
 
 Access admin features at http://localhost:3000/admin
-- Default admin: admin@bluechipfinmax.com / Admin@123
+- Default admin: admin@Quikkred.com / Admin@123
 
 ## 🚨 Common Issues & Solutions
 
@@ -228,10 +228,10 @@ vercel
 
 ```bash
 # Build Docker image
-docker build -t bluechipfinmax .
+docker build -t Quikkred .
 
 # Run container
-docker run -p 3000:3000 --env-file .env bluechipfinmax
+docker run -p 3000:3000 --env-file .env Quikkred
 ```
 
 ## 🧪 Testing
@@ -290,9 +290,9 @@ NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 
 ## 🆘 Need Help?
 
-- Check [Issues](https://github.com/yourusername/bluechipfinmax/issues)
-- Join our [Discord](https://discord.gg/bluechipfinmax)
-- Email: support@bluechipfinmax.com
+- Check [Issues](https://github.com/yourusername/Quikkred/issues)
+- Join our [Discord](https://discord.gg/Quikkred)
+- Email: support@quikkred.com
 
 ## 📝 License
 

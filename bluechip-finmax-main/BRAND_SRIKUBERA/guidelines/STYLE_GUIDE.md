@@ -1,4 +1,4 @@
-# bluechipfinmax Style Guide
+# Quikkred Style Guide
 
 ## 🎨 Visual Design System
 

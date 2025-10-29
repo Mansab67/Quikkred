@@ -8,7 +8,7 @@ const JWT_SECRET = 'your-secret-key-change-in-production';
 const token = jwt.sign(
   {
     userId: 'test-user-123',
-    email: 'test@bluechipfinmax.com',
+    email: 'test@Quikkred.com',
     userType: 'USER'
   },
   JWT_SECRET,
@@ -34,7 +34,7 @@ const endpoints = [
     confirmPassword: 'Test@123'
   }},
   { name: 'Login', method: 'POST', path: '/auth/login', auth: false, body: {
-    emailOrMobile: 'test@bluechipfinmax.com',
+    emailOrMobile: 'test@Quikkred.com',
     password: 'Test@123'
   }},
 

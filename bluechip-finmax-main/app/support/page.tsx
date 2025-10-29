@@ -342,7 +342,7 @@ export default function SupportPage() {
               <Mail className="w-8 h-8 text-green-600" />
               <div className="text-left">
                 <p className="font-semibold text-gray-900">Email</p>
-                <p className="text-sm text-gray-600">support@bluechipfinmax.com</p>
+                <p className="text-sm text-gray-600">support@quikkred.com</p>
               </div>
             </button>
 

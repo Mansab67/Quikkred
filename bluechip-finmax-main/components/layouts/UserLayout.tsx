@@ -114,7 +114,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
         const token = localStorage.getItem('authToken') || localStorage.getItem('token');
         if (!token) return;
 
-        const response = await fetch('https://api.bluechipfinmax.com/api/creditScore/get', {
+        const response = await fetch('https://api.Quikkred.com/api/creditScore/get', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -150,7 +150,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
           return;
         }
 
-        const response = await fetch('https://api.bluechipfinmax.com/api/customer/profile', {
+        const response = await fetch('https://api.Quikkred.com/api/customer/profile', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -194,7 +194,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
         }
 
         console.log('Fetching notifications...');
-        const response = await fetch('https://api.bluechipfinmax.com/api/notification/getAll', {
+        const response = await fetch('https://api.Quikkred.com/api/notification/getAll', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -312,7 +312,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
                 >
                   <Image
                     src="/logo 2.png"
-                    alt="Bluechip Finmax Logo"
+                    alt="Quikkred Logo"
                     width={260}
                     height={80}
                     priority

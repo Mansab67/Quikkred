@@ -89,7 +89,7 @@ export default function ProfilePage() {
       }
 
       console.log('🔵 Fetching profile from API...');
-      const response = await fetch('https://api.bluechipfinmax.com/api/customer/profile', {
+      const response = await fetch('https://api.Quikkred.com/api/customer/profile', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -173,7 +173,7 @@ export default function ProfilePage() {
       };
 
       console.log('🔵 Updating profile...', payload);
-      const response = await fetch('https://api.bluechipfinmax.com/api/customer/profile', {
+      const response = await fetch('https://api.Quikkred.com/api/customer/profile', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -354,7 +354,7 @@ export default function ProfilePage() {
       formData.append('profileImage', selectedImage);
 
       console.log('🔵 Uploading profile image...');
-      const response = await fetch(`https://api.bluechipfinmax.com/api/customer/update/${profileData._id}`, {
+      const response = await fetch(`https://api.Quikkred.com/api/customer/update/${profileData._id}`, {
         method: 'PATCH',
         headers: {
           'Authorization': `Bearer ${token}`

@@ -401,7 +401,7 @@ export default function ChannelPartnersPage() {
                   Call Us
                 </button>
               </a>
-              <a href="mailto:partners@bluechipfinmax.com">
+              <a href="mailto:partners@Quikkred.com">
                 <button className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#006837] transition-all">
                   <Mail className="w-5 h-5 inline mr-2" />
                   Email Us

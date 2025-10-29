@@ -151,7 +151,7 @@ export default function ReferralsPage() {
   ];
 
   useEffect(() => {
-    setReferralLink(`https://bluechipfinmax.com/refer/${referralCode}`);
+    setReferralLink(`https://Quikkred.com/refer/${referralCode}`);
     fetchReferrals();
   }, [referralCode]);
 
@@ -177,7 +177,7 @@ export default function ReferralsPage() {
   };
 
   const handleShare = (platform: string) => {
-    const message = `Join bluechipfinmax and get instant personal loans! Use my referral code: ${referralCode}`;
+    const message = `Join Quikkred and get instant personal loans! Use my referral code: ${referralCode}`;
     const encodedMessage = encodeURIComponent(message);
     const encodedUrl = encodeURIComponent(referralLink);
 

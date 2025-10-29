@@ -59,7 +59,7 @@ export default function SupportPage() {
         return;
       }
 
-      const response = await fetch('https://api.bluechipfinmax.com/api/supportTicket/getAll', {
+      const response = await fetch('https://api.Quikkred.com/api/supportTicket/getAll', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ export default function SupportPage() {
         return;
       }
 
-      const response = await fetch('https://api.bluechipfinmax.com/api/supportTicket/create', {
+      const response = await fetch('https://api.Quikkred.com/api/supportTicket/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -1,6 +1,6 @@
-# 🏦 bluechipfinmax Brand Central
+# 🏦 Quikkred Brand Central
 
-> **Your complete guide to the bluechipfinmax brand, project, and development**
+> **Your complete guide to the Quikkred brand, project, and development**
 
 ---
 
@@ -37,7 +37,7 @@ npm start
 
 ## 🚀 Project Overview
 
-**bluechipfinmax** is a revolutionary AI-powered NBFC platform specializing in instant payday loans for salaried employees.
+**Quikkred** is a revolutionary AI-powered NBFC platform specializing in instant payday loans for salaried employees.
 
 ### Key Features
 - ✅ **30-second approval** with AI decisioning
@@ -90,7 +90,7 @@ BRAND_SriKuberONE/
 ├── assets/           # Logos, images, icons
 └── guidelines/       # Style & content guides
 
-bluechipfinmax/
+Quikkred/
 ├── app/              # Next.js app directory
 ├── components/       # React components
 ├── lib/              # Utilities
@@ -143,8 +143,8 @@ bluechipfinmax/
 
 ### Development
 - **Local:** http://localhost:3000
-- **Staging:** https://staging.bluechipfinmax.com (coming soon)
-- **Production:** https://bluechipfinmax.com (coming soon)
+- **Staging:** https://staging.Quikkred.com (coming soon)
+- **Production:** https://Quikkred.com (coming soon)
 
 ### Resources
 - **Figma:** [Design System](#)
@@ -152,8 +152,8 @@ bluechipfinmax/
 - **Jira:** [Project Board](#)
 
 ### Contact
-- **Email:** dev@bluechipfinmax.com
-- **Slack:** #bluechipfinmax-dev
+- **Email:** dev@Quikkred.com
+- **Slack:** #Quikkred-dev
 - **GitHub:** [Repository](#)
 
 ---
@@ -224,14 +224,14 @@ npm run test
 vercel --prod
 
 # Deploy to production
-vercel --prod --scope=bluechipfinmax
+vercel --prod --scope=Quikkred
 ```
 
 ---
 
 ## 📄 License & Legal
 
-© 2025 bluechipfinmax Financial Services Pvt. Ltd. All rights reserved.
+© 2025 Quikkred Financial Services Pvt. Ltd. All rights reserved.
 
 - **RBI License:** NBFC-MFI/2024/123456
 - **GSTIN:** 27AABCL1234A1Z5
@@ -244,10 +244,10 @@ vercel --prod --scope=bluechipfinmax
 ### For Developers
 - Check [documentation](./documentation/)
 - Review [style guide](./guidelines/STYLE_GUIDE.md)
-- Contact: dev@bluechipfinmax.com
+- Contact: dev@Quikkred.com
 
 ### For Business
-- Email: business@bluechipfinmax.com
+- Email: business@Quikkred.com
 - Phone: +91 88888 81111
 
 ---

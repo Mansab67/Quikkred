@@ -6,7 +6,7 @@ import HttpBackend from 'i18next-http-backend';
 const resources = {
   en: {
     translation: {
-      welcome: "Welcome to bluechipfinmax",
+      welcome: "Welcome to Quikkred",
       loading: "Loading...",
       applyNow: "Apply Now",
       learnMore: "Learn More",

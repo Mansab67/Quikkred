@@ -1207,11 +1207,11 @@ export default function LoanApplicationFlow() {
                   </label>
                   <label className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 rounded border-gray-300" required />
-                    <span>I agree to the Terms & Conditions and Privacy Policy of bluechipfinmax NBFC.</span>
+                    <span>I agree to the Terms & Conditions and Privacy Policy of Quikkred NBFC.</span>
                   </label>
                   <label className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 rounded border-gray-300" required />
-                    <span>I authorize bluechipfinmax to verify my information and access my credit report.</span>
+                    <span>I authorize Quikkred to verify my information and access my credit report.</span>
                   </label>
                   <label className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 rounded border-gray-300" />

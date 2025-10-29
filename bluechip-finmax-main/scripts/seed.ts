@@ -248,7 +248,7 @@ async function main() {
     data: [
       {
         userId: regularUser.id,
-        title: 'Welcome to bluechipfinmax',
+        title: 'Welcome to Quikkred',
         message: 'Your account has been created successfully',
         type: 'SYSTEM',
         channel: 'IN_APP',

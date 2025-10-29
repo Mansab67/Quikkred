@@ -253,7 +253,7 @@ export default function TravelNowPayLaterPage() {
           >
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-sora mb-4">Travel Success Stories</h2>
             <p className="text-xl text-gray-600">
-              Amazing travel experiences made possible by bluechipfinmax
+              Amazing travel experiences made possible by Quikkred
             </p>
           </motion.div>
 
@@ -379,7 +379,7 @@ const travelSteps = [
   },
   {
     title: "Book Instantly",
-    description: "Once approved, book your travel immediately. All payments handled by bluechipfinmax."
+    description: "Once approved, book your travel immediately. All payments handled by Quikkred."
   },
   {
     title: "Travel & Repay",

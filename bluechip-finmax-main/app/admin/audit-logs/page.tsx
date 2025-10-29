@@ -48,7 +48,7 @@ export default function AuditManagementPage() {
     {
       id: 'AL001',
       timestamp: '2024-01-28T14:30:00Z',
-      user: 'admin@bluechipfinmax.com',
+      user: 'admin@Quikkred.com',
       action: 'LOAN_APPROVED',
       resource: 'Loan Application',
       resourceId: 'LN12345',
@@ -65,7 +65,7 @@ export default function AuditManagementPage() {
     {
       id: 'AL002',
       timestamp: '2024-01-28T14:25:00Z',
-      user: 'underwriter@bluechipfinmax.com',
+      user: 'underwriter@Quikkred.com',
       action: 'KYC_VERIFIED',
       resource: 'Customer KYC',
       resourceId: 'CU001',
@@ -81,7 +81,7 @@ export default function AuditManagementPage() {
     {
       id: 'AL003',
       timestamp: '2024-01-28T14:20:00Z',
-      user: 'system@bluechipfinmax.com',
+      user: 'system@Quikkred.com',
       action: 'DISBURSEMENT_FAILED',
       resource: 'Disbursement',
       resourceId: 'DSB001',
@@ -94,7 +94,7 @@ export default function AuditManagementPage() {
     {
       id: 'AL004',
       timestamp: '2024-01-28T14:15:00Z',
-      user: 'collector@bluechipfinmax.com',
+      user: 'collector@Quikkred.com',
       action: 'PAYMENT_RECEIVED',
       resource: 'EMI Payment',
       resourceId: 'EMI12345',

@@ -234,7 +234,7 @@ export default function RiskDashboardPage() {
         metadata: {
           applicationsCount: 4,
           timeframe: '15 days',
-          institutions: ['bluechipfinmax', 'XYZ Finance', 'ABC Credit', 'Quick Loans']
+          institutions: ['Quikkred', 'XYZ Finance', 'ABC Credit', 'Quick Loans']
         }
       },
       {

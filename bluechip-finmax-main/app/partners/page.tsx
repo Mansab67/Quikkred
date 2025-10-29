@@ -36,7 +36,7 @@ export default function PartnersPage() {
                 <Handshake className="w-8 h-8 text-white" />
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl lg:text-6xl font-bold font-sora">
-                Partner With bluechipfinmax
+                Partner With Quikkred
               </h1>
             </div>
 
@@ -191,7 +191,7 @@ export default function PartnersPage() {
         >
           <h2 className="text-3xl font-bold mb-4 font-sora">Why Partner With Us?</h2>
           <p className="text-lg text-gray-600">
-            Benefits that make bluechipfinmax the preferred partner
+            Benefits that make Quikkred the preferred partner
           </p>
         </motion.div>
 
@@ -277,7 +277,7 @@ export default function PartnersPage() {
               <div className="flex flex-col items-center">
                 <Mail className="w-8 h-8 text-[#1976D2] mb-2" />
                 <h4 className="font-semibold mb-1">Email</h4>
-                <p className="text-gray-600">partners@bluechipfinmax.com</p>
+                <p className="text-gray-600">partners@Quikkred.com</p>
               </div>
               <div className="flex flex-col items-center">
                 <MapPin className="w-8 h-8 text-[#FFC107] mb-2" />

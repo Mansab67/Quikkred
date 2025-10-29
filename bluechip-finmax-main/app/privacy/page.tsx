@@ -41,7 +41,7 @@ export default function PrivacyPage() {
                 Introduction
               </h2>
               <p className="text-gray-600 mb-4">
-                bluechipfinmax Financial Services Private Limited ("we", "our", or "us") is committed
+                Quikkred Financial Services Private Limited ("we", "our", or "us") is committed
                 to protecting your privacy and ensuring the security of your personal information.
                 This Privacy Policy explains how we collect, use, disclose, and safeguard your
                 information when you use our services.
@@ -284,8 +284,8 @@ export default function PrivacyPage() {
               <div className="bg-gradient-to-br from-[var(--emerald-green)]/10 to-[var(--royal-blue)]/10 rounded-lg p-6">
                 <p className="font-semibold mb-2">Data Protection Officer</p>
                 <p className="text-gray-600">
-                  bluechipfinmax Financial Services Pvt. Ltd.<br />
-                  Email: privacy@bluechipfinmax.com<br />
+                  Quikkred Financial Services Pvt. Ltd.<br />
+                  Email: privacy@Quikkred.com<br />
                   Phone: 1800-123-5555<br />
                   Address: Mumbai, Maharashtra 400001
                 </p>

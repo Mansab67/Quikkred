@@ -1,9 +1,9 @@
-# bluechipfinmax API Specification v1.0
+# Quikkred API Specification v1.0
 
 ## Base URL
 ```
-Production: https://api.bluechipfinmax.com/v1
-Staging: https://api-staging.bluechipfinmax.com/v1
+Production: https://api.Quikkred.com/v1
+Staging: https://api-staging.Quikkred.com/v1
 ```
 
 ## Authentication
@@ -226,7 +226,7 @@ POST /ai/chat/message
 
 ### Real-time Updates
 ```javascript
-ws://api.bluechipfinmax.com/ws
+ws://api.Quikkred.com/ws
 
 // Subscribe to loan updates
 {
