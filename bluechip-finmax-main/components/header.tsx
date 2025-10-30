@@ -309,13 +309,13 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex p-[20px] items-center group">
             <Image
-              src="/blueLogo.png"
+              src="/logo3.png"
               alt={t.common.appName}
-              width={320}
-              height={80}
+              width={220}
+              height={50}
               priority
               quality={100}
-              className="w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80 h-auto object-contain"
+              className="h-auto object-contain"
               style={{
                 imageRendering: "-webkit-optimize-contrast",
               }}

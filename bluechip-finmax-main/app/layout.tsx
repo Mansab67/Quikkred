@@ -22,9 +22,9 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Bluechip - Blue Chip Finance",
+  title: "Quikkred - Instant Loans with AI-powered Approval",
   description: "India's most trusted NBFC. Get instant loans with AI-powered approval in 30 seconds. Payday loans, personal loans, business loans - 100% digital, transparent pricing.",
-  keywords: "Bluechip, blue chip finance, instant loan, AI lending, NBFC, payday loan, personal loan, business loan, quick loan india",
+  keywords: "Quikkred, blue chip finance, instant loan, AI lending, NBFC, payday loan, personal loan, business loan, quick loan india",
   metadataBase: new URL('https://Quikkred.co.in'),
   icons: {
     icon: "./favicons.ico",          // default favicon
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     apple: "./apple-touch-icon.png" // optional for Apple devices
   },
   openGraph: {
-    title: "Bluechip",
+    title: "Quikkred",
     description: "Get instant loans with AI-powered approval in 30 seconds. Trusted by + customers.",
     images: ["/og-image.png"],
     url: 'https://Quikkred.com',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Bluechip",
+    title: "Quikkred",
     description: "Get instant loans with AI-powered approval in 30 seconds",
     images: ["/og-image.png"],
   },

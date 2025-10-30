@@ -2,7 +2,7 @@
 
 ## Base URL
 ```
-Production: https://api.Quikkred.com/v1
+Production: https://api.bluechipfinmax.com/v1
 Staging: https://api-staging.Quikkred.com/v1
 ```
 

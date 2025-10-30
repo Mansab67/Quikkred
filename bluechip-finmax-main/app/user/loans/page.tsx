@@ -88,7 +88,7 @@ export default function MyLoansPage() {
         return;
       }
 
-      const response = await fetch('https://api.Quikkred.com/api/loans/my-loans', {
+      const response = await fetch('https://api.bluechipfinmax.com/api/loans/my-loans', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

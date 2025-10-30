@@ -92,7 +92,7 @@ export default function LoginPage() {
         ? { email: formData.emailOrPhone }
         : { mobile: formData.emailOrPhone };
 
-      const response = await fetch("https://api.Quikkred.com/api/auth/customer/create", {
+      const response = await fetch("https://api.bluechipfinmax.com/api/auth/customer/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -151,7 +151,7 @@ export default function LoginPage() {
         ? { email: formData.emailOrPhone, otp: otp }
         : { mobile: formData.emailOrPhone, otp: otp };
 
-      const response = await fetch("https://api.Quikkred.com/api/auth/customer/verify", {
+      const response = await fetch("https://api.bluechipfinmax.com/api/auth/customer/verify", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

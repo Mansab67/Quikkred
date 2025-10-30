@@ -189,7 +189,7 @@ export function Footer() {
   className="flex items-start mb-4 sm:mb-6"
 >
   <Image
-    src="/logo2.svg"
+    src="/logoW.png"
     alt={t.common.appName}
     width={150}
     height={150}

@@ -166,7 +166,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const fetchUserProfile = async (token: string, currentUser: User) => {
     console.log('🔵 Fetching user profile from API...');
     try {
-      const response = await fetch('https://api.Quikkred.com/api/customer/profile', {
+      const response = await fetch('https://api.bluechipfinmax.com/api/customer/profile', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
