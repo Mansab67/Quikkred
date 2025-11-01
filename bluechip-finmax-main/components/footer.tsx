@@ -139,13 +139,16 @@ export function Footer() {
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 text-white shadow-xl-dark"
-          style={{ background: 'linear-gradient(135deg, #006837 0%, #FFC107 100%)' }}
+          className="rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 shadow-xl-dark bg-gradient-to-br from-[#25B181] to-[#1F8F68] relative overflow-hidden"
         >
-          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
+          {/* Decorative Elements */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-24 -mb-24"></div>
+
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center relative z-10">
             <div>
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">{t.newsletter.title}</h3>
-              <p className="text-sm sm:text-base text-white/90">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 text-white">{t.newsletter.title}</h3>
+              <p className="text-sm sm:text-base text-white/80">
                 {t.newsletter.subtitle}
               </p>
             </div>
@@ -159,20 +162,20 @@ export function Footer() {
                     setEmail(e.target.value);
                     setError("");
                   }}
-                  className="flex-1 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full bg-slate-800 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-4 focus:ring-white/30 border border-slate-700 text-sm sm:text-base"
+                  className="flex-1 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full bg-white text-gray-800 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white/50 focus:bg-white text-sm sm:text-base shadow-lg"
                 />
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={handleSubscribe}
                   disabled={isSubscribing}
-                  className="px-6 sm:px-8 py-2.5 sm:py-3 bg-slate-800 text-white rounded-full font-semibold hover:shadow-glow transition-all border border-slate-700 text-sm sm:text-base whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="px-6 sm:px-8 py-2.5 sm:py-3 bg-[#4A66FF] text-white rounded-full font-semibold hover:bg-[#3B52CC] transition-all text-sm sm:text-base whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
                 >
                   {isSubscribing ? t.newsletter.subscribing : t.newsletter.button}
                 </motion.button>
               </div>
               {error && (
-                <p className="text-red-400 text-xs sm:text-sm mt-2 ml-2">{error}</p>
+                <p className="text-[#FFE2E5] text-xs sm:text-sm mt-2 ml-2 bg-[#E02431]/10 backdrop-blur-sm px-3 py-1 rounded-full inline-block border border-[#E02431]/20">{error}</p>
               )}
             </div>
           </div>
@@ -210,7 +213,7 @@ export function Footer() {
                   className="w-9 h-9 sm:w-10 sm:h-10 bg-slate-800 rounded-full flex items-center justify-center shadow-soft hover:shadow-glow hover:-translate-y-1 transition-all border border-slate-700"
                   aria-label={social.label}
                 >
-                  <social.icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#0ea5e9]" />
+                  <social.icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#4A66FF]" />
                 </a>
               ))}
             </div>
@@ -219,7 +222,7 @@ export function Footer() {
           {/* Products */}
           <div className="col-span-1">
             <h4 className="font-semibold text-slate-100 mb-3 sm:mb-4 flex items-center gap-2 text-sm sm:text-base">
-              <CreditCard className="w-4 h-4 text-[#34d399]" />
+              <CreditCard className="w-4 h-4 text-[#25B181]" />
               {t.footer.products.title}
             </h4>
             <ul className="space-y-2 sm:space-y-3">
@@ -227,7 +230,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-slate-400 hover:text-emerald-500 transition-colors flex items-center gap-1 text-xs sm:text-sm"
+                    className="text-slate-400 hover:text-[#25B181] transition-colors flex items-center gap-1 text-xs sm:text-sm"
                   >
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
                     <span className="truncate">{link.name}</span>
@@ -245,7 +248,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-slate-400 hover:text-emerald-500 transition-colors flex items-center gap-1 text-xs sm:text-sm"
+                    className="text-slate-400 hover:text-[#25B181] transition-colors flex items-center gap-1 text-xs sm:text-sm"
                   >
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
                     <span className="truncate">{link.name}</span>
@@ -263,7 +266,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-slate-400 hover:text-emerald-500 transition-colors flex items-center gap-1 text-xs sm:text-sm"
+                    className="text-slate-400 hover:text-[#25B181] transition-colors flex items-center gap-1 text-xs sm:text-sm"
                   >
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
                     <span className="truncate">{link.name}</span>
@@ -281,7 +284,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-slate-400 hover:text-emerald-500 transition-colors flex items-center gap-1 text-xs sm:text-sm"
+                    className="text-slate-400 hover:text-[#25B181] transition-colors flex items-center gap-1 text-xs sm:text-sm"
                   >
                     <ChevronRight className="w-3 h-3 flex-shrink-0" />
                     <span className="truncate">{link.name}</span>
@@ -298,7 +301,7 @@ export function Footer() {
               <li>
                 <a
                   href={`tel:${t.footer.contact.phone}`}
-                  className="text-slate-400 hover:text-emerald-500 flex items-center gap-2 text-xs sm:text-sm"
+                  className="text-slate-400 hover:text-[#25B181] flex items-center gap-2 text-xs sm:text-sm"
                 >
                   <Phone className="w-4 h-4 flex-shrink-0" />
                   <span className="break-all">{t.footer.contact.phone}</span>
@@ -307,7 +310,7 @@ export function Footer() {
               <li>
                 <a
                   href={`mailto:${t.footer.contact.email}`}
-                  className="text-slate-400 hover:text-emerald-500 flex items-center gap-2 text-xs sm:text-sm"
+                  className="text-slate-400 hover:text-[#25B181] flex items-center gap-2 text-xs sm:text-sm"
                 >
                   <Mail className="w-4 h-4 flex-shrink-0" />
                   <span className="break-all">{t.footer.contact.email}</span>
@@ -339,7 +342,7 @@ export function Footer() {
                 transition={{ delay: index * 0.1 }}
                 className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 bg-slate-800 rounded-full shadow-soft border border-slate-700"
               >
-                <cert.icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#34d399] flex-shrink-0" />
+                <cert.icon className="w-4 h-4 sm:w-5 sm:h-5 text-[#25B181] flex-shrink-0" />
                 <span className="text-slate-400 font-medium text-xs sm:text-sm whitespace-nowrap">{cert.text}</span>
               </motion.div>
             ))}
@@ -414,8 +417,8 @@ export function Footer() {
             className="fixed bottom-8 right-8 z-50 bg-white rounded-lg shadow-2xl p-6 max-w-sm"
           >
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                <CheckCircle className="w-6 h-6 text-green-600" />
+              <div className="w-12 h-12 bg-[#E7F4EB] rounded-full flex items-center justify-center flex-shrink-0">
+                <CheckCircle className="w-6 h-6 text-[#3AC6A0]" />
               </div>
               <div className="flex-1">
                 <h4 className="font-bold text-gray-900 mb-1">{t.newsletter.successTitle}</h4>

@@ -162,12 +162,12 @@ export default function Home() {
         >
           {/* Simplified Background - Static for better performance */}
           <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#38bdf8]/3 via-[#34d399]/3 to-[#fbbf24]/3" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#25B181]/3 via-[#4A66FF]/3 to-[#FF9C70]/3" />
           </div>
 
           {/* Static decorative elements for better performance */}
-          <div className="hidden md:block absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-[#38bdf8] to-[#34d399] rounded-full opacity-20 blur-3xl" />
-          <div className="hidden md:block absolute bottom-20 right-10 w-32 h-32 bg-gradient-to-br from-[#34d399] to-[#fbbf24] rounded-full opacity-20 blur-3xl" />
+          <div className="hidden md:block absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-[#25B181] to-[#51C9AF] rounded-full opacity-20 blur-3xl" />
+          <div className="hidden md:block absolute bottom-20 right-10 w-32 h-32 bg-gradient-to-br from-[#4A66FF] to-[#FF9C70] rounded-full opacity-20 blur-3xl" />
 
           <div className="w-full">
             <HeroSection />
@@ -175,7 +175,8 @@ export default function Home() {
         </motion.div>
 
         {/* Trust Badges Section - Clean White Background */}
-        <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+        <section className="py-12 sm:py-16 lg:py-20 bg-white relative">
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200/50 to-transparent"></div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
               {trustBadges.map((badge, index) => (
@@ -187,8 +188,8 @@ export default function Home() {
                   transition={{ delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-emerald-50 to-green-100 rounded-full mb-2 sm:mb-3">
-                    <badge.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-emerald-600" />
+                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#D3F1EB] to-[#A8E3D7] rounded-full mb-2 sm:mb-3">
+                    <badge.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#25B181]" />
                   </div>
                   <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-1">{badge.value}</h3>
                   <p className="text-xs sm:text-sm text-gray-600 px-2">{badge.title}</p>
@@ -199,7 +200,7 @@ export default function Home() {
         </section>
 
         {/* Main Features Grid - Clean Light Background */}
-        <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-emerald-50">
+        <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-[#D3F1EB]/20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -207,7 +208,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center mb-10 sm:mb-12 lg:mb-16"
             >
-              <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
+              <span className="inline-block px-4 py-2 bg-[#D3F1EB] text-[#25B181] rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
                 {t.homepage.sections.whyChoose.badge}
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-sora mb-3 sm:mb-4 text-gray-900 px-4">
@@ -230,12 +231,12 @@ export default function Home() {
                   className="group relative bg-white rounded-2xl shadow-card overflow-hidden hover:shadow-glow transition-all duration-300"
                 >
                   {/* Gradient Border Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#25B181] to-[#FF9C70] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="relative bg-white rounded-2xl p-5 sm:p-6 m-[1px]">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-r from-emerald-500 to-yellow-500 rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                       <feature.icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                     </div>
-                    <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900 group-hover:text-emerald-600 transition-colors">
+                    <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900 group-hover:text-[#25B181] transition-colors">
                       {feature.title}
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
@@ -257,11 +258,11 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center mb-10 sm:mb-12 lg:mb-16"
             >
-              <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-600 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
+              <span className="inline-block px-4 py-2 bg-[#D3F1EB] text-[#25B181] rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
                 {t.homepage.sections.products.badge}
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-sora mb-3 sm:mb-4 px-4">
-                {t.homepage.sections.products.title} <span className="gradient-prosperity bg-clip-text">{t.homepage.sections.products.titleHighlight}</span>
+                {t.homepage.sections.products.title} <span className="text-[#25B181]">{t.homepage.sections.products.titleHighlight}</span>
               </h2>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto px-4">
                 {t.homepage.sections.products.subtitle}
@@ -280,18 +281,18 @@ export default function Home() {
                 >
                   <Link href={product.link}>
                     <div className="relative bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-5 sm:p-6 hover:shadow-xl transition-all duration-300 overflow-hidden">
-                      <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-violet-500/10 to-purple-500/10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#4A66FF]/10 to-[#6D90FF]/10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
                       <div className="relative">
                         <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
-                          <product.icon className="w-5 h-5 sm:w-6 sm:h-6 text-violet-600" />
+                          <product.icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#4A66FF]" />
                         </div>
                         <h3 className="text-base sm:text-lg font-semibold mb-2">{product.name}</h3>
                         <p className="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">{product.description}</p>
                         <div className="flex items-center justify-between">
-                          <span className="text-xs sm:text-sm text-violet-600 font-medium">
+                          <span className="text-xs sm:text-sm text-[#4A66FF] font-medium">
                             {product.rate}
                           </span>
-                          <ArrowRight className="w-4 h-4 text-gray-600 group-hover:text-blue-400 group-hover:translate-x-1 transition-all" />
+                          <ArrowRight className="w-4 h-4 text-gray-600 group-hover:text-[#4A66FF] group-hover:translate-x-1 transition-all" />
                         </div>
                       </div>
                     </div>
@@ -303,7 +304,7 @@ export default function Home() {
         </section>
 
         {/* Interactive Loan Calculator Section */}
-        <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-violet-50 via-purple-50 to-pink-50">
+        <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#DAE6FF]/20 via-[#D3F1EB]/20 to-[#FFF4E4]/20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <motion.div
@@ -318,7 +319,7 @@ export default function Home() {
                 </span>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-sora mb-4 sm:mb-6">
                   {t.homepage.sections.calculator.title}
-                  <span className="block gradient-primary bg-clip-text text-transparent">
+                  <span className="block text-[#25B181]">
                     {t.homepage.sections.calculator.titleHighlight}
                   </span>
                 </h2>
@@ -327,15 +328,15 @@ export default function Home() {
                 </p>
                 <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#25B181] flex-shrink-0" />
                     <span className="text-sm sm:text-base text-gray-600">{t.homepage.sections.calculator.features.noHiddenCharges}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#25B181] flex-shrink-0" />
                     <span className="text-sm sm:text-base text-gray-600">{t.homepage.sections.calculator.features.flexibleTenure}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#25B181] flex-shrink-0" />
                     <span className="text-sm sm:text-base text-gray-600">{t.homepage.sections.calculator.features.lowestRates}</span>
                   </div>
                 </div>
@@ -361,11 +362,11 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center mb-10 sm:mb-12 lg:mb-16"
             >
-              <span className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
+              <span className="inline-block px-4 py-2 bg-[#DAE6FF] text-[#4A66FF] rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
                 {t.homepage.sections.howItWorks.badge}
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-sora mb-3 sm:mb-4 px-4">
-                {t.homepage.sections.howItWorks.title} <span className="gradient-prosperity bg-clip-text">{t.homepage.sections.howItWorks.titleHighlight}</span>
+                {t.homepage.sections.howItWorks.title} <span className="text-[#4A66FF]">{t.homepage.sections.howItWorks.titleHighlight}</span>
               </h2>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto px-4">
                 {t.homepage.sections.howItWorks.subtitle}
@@ -373,7 +374,7 @@ export default function Home() {
             </motion.div>
 
             <div className="relative">
-              <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-violet-600 to-purple-600 -translate-y-1/2 hidden lg:block" />
+              <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-[#4A66FF] to-[#6D90FF] -translate-y-1/2 hidden lg:block" />
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
                 {steps.map((step, index) => (
                   <motion.div
@@ -386,17 +387,17 @@ export default function Home() {
                   >
                     <div className="card-dark p-6 sm:p-8 relative z-10">
                       <div className="absolute -top-6 left-1/2 -translate-x-1/2">
-                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-violet-600 to-purple-600 rounded-full flex items-center justify-center text-white text-lg sm:text-xl font-bold shadow-lg">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-[#4A66FF] to-[#6D90FF] rounded-full flex items-center justify-center text-white text-lg sm:text-xl font-bold shadow-lg">
                           {index + 1}
                         </div>
                       </div>
                       <div className="text-center pt-4">
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-violet-100 to-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                          <step.icon className="w-8 h-8 sm:w-10 sm:h-10 text-violet-600" />
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#DAE6FF] to-[#B6CEFF] rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                          <step.icon className="w-8 h-8 sm:w-10 sm:h-10 text-[#4A66FF]" />
                         </div>
                         <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3">{step.title}</h3>
                         <p className="text-sm sm:text-base text-gray-600 mb-2">{step.description}</p>
-                        <span className="text-xs sm:text-sm text-violet-600 font-medium">{step.time}</span>
+                        <span className="text-xs sm:text-sm text-[#4A66FF] font-medium">{step.time}</span>
                       </div>
                     </div>
                   </motion.div>
@@ -415,11 +416,11 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center mb-10 sm:mb-12 lg:mb-16"
             >
-              <span className="inline-block px-4 py-2 bg-yellow-100 text-yellow-600 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
+              <span className="inline-block px-4 py-2 bg-[#FFF4E4] text-[#E36229] rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
                 {t.homepage.sections.testimonials.badge}
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-sora mb-3 sm:mb-4 px-4">
-                {t.homepage.sections.testimonials.title} <span className="gradient-primary bg-clip-text text-transparent">{t.homepage.sections.testimonials.titleHighlight}</span>
+                {t.homepage.sections.testimonials.title} <span className="text-[#FF9C70]">{t.homepage.sections.testimonials.titleHighlight}</span>
               </h2>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto px-4">
                 {t.homepage.sections.testimonials.subtitle}
@@ -445,7 +446,7 @@ export default function Home() {
                     "{testimonial.content}"
                   </p>
                   <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-violet-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#4A66FF] to-[#6D90FF] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
                       {testimonial.name[0]}
                     </div>
                     <div className="min-w-0">
@@ -453,8 +454,10 @@ export default function Home() {
                       <p className="text-xs sm:text-sm text-gray-600 truncate">{testimonial.designation}</p>
                     </div>
                   </div>
-                  <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-gray-200">
-                    <span className="text-xs text-gray-600">{t.homepage.sections.testimonials.loanAmount}: {testimonial.loanAmount}</span>
+                  <div className="mt-3 sm:mt-4 pt-3 sm:pt-4">
+                    <span className="text-xs px-2 py-1 bg-[#DAE6FF] text-[#4A66FF] rounded-full inline-block">
+                      {t.homepage.sections.testimonials.loanAmount}: {testimonial.loanAmount}
+                    </span>
                   </div>
                 </motion.div>
               ))}
@@ -471,7 +474,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center mb-10 sm:mb-12 lg:mb-16"
             >
-              <span className="inline-block px-4 py-2 bg-purple-100 text-purple-600 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
+              <span className="inline-block px-4 py-2 bg-[#DAE6FF] text-[#4A66FF] rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
                 FAQs
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold font-sora mb-3 sm:mb-4 px-4">
@@ -525,8 +528,8 @@ export default function Home() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-emerald-600 via-green-600 to-teal-600 text-white relative overflow-hidden shadow-2xl">
-          <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 via-green-500/20 to-teal-500/20" />
+        <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#7CDAC3] text-white relative overflow-hidden shadow-2xl">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#25B181]/20 via-[#51C9AF]/20 to-[#7CDAC3]/20" />
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px)`,
@@ -550,7 +553,7 @@ export default function Home() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-emerald-600 rounded-full font-semibold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:bg-yellow-50 transition-all duration-300 flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#25B181] rounded-full font-semibold text-base sm:text-lg shadow-xl hover:shadow-2xl hover:bg-[#D3F1EB] transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   {t.homepage.sections.cta.applyButton}
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />

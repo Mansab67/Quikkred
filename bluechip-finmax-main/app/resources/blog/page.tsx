@@ -423,20 +423,24 @@ export default function BlogPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="mt-16 bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl p-8  text-center"
+          className="mt-16 bg-gradient-to-br from-[#25B181] to-[#1F8F68] rounded-2xl p-8  text-center relative overflow-hidden"
         >
-          <MessageCircle className="w-12 h-12 mx-auto mb-4" />
-          <h2 className="text-2xl font-bold mb-4">Stay Updated with Financial Insights</h2>
-          <p className="text-xl mb-6 opacity-90">
+          {/* Decorative Elements */}
+          <div className="absolute top-0 right-0 w-48 h-48 bg-white/5 rounded-full -mr-24 -mt-24"></div>
+          <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full -ml-16 -mb-16"></div>
+
+          <MessageCircle className="w-12 h-12 mx-auto mb-4 text-white relative z-10" />
+          <h2 className="text-2xl font-bold mb-4 text-white relative z-10">Stay Updated with Financial Insights</h2>
+          <p className="text-xl mb-6 text-white/80 relative z-10">
             Subscribe to our newsletter for expert tips, guides, and exclusive offers
           </p>
-          <div className="max-w-md mx-auto flex gap-2">
+          <div className="max-w-md mx-auto flex gap-2 relative z-10">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
+              className="flex-1 px-6 py-3 rounded-full bg-white text-gray-800 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white/50 shadow-lg"
             />
-            <button className="px-6 py-3 bg-white text-[#1976D2] rounded-lg font-semibold hover:shadow-lg transition-all">
+            <button className="px-8 py-3 bg-[#4A66FF] text-white rounded-full font-semibold hover:bg-[#3B52CC] transition-all shadow-lg hover:shadow-xl">
               Subscribe
             </button>
           </div>

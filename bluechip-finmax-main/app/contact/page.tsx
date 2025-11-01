@@ -227,8 +227,8 @@ const handleSubmit = async (e: React.FormEvent) => {
           animate={{ opacity: 1, scale: 1 }}
           className="bg-white rounded-2xl p-8 md:p-12 text-center shadow-lucky max-w-md w-full"
         >
-          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <CheckCircle className="w-8 h-8 text-green-600" />
+          <div className="w-16 h-16 bg-[#E7F4EB] rounded-full flex items-center justify-center mx-auto mb-6">
+            <CheckCircle className="w-8 h-8 text-[#3AC6A0]" />
           </div>
           <h2 className="text-2xl font-bold mb-4">Message Sent Successfully!</h2>
           <p className="text-gray-600 mb-8">
@@ -240,12 +240,12 @@ const handleSubmit = async (e: React.FormEvent) => {
                 setSubmitted(false);
                 handleReset();
               }}
-              className="w-full bg-gradient-to-r from-[#006837] to-[#FFC107] text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all"
+              className="w-full bg-gradient-to-r from-[#25B181] to-[#51C9AF] text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all"
             >
               Send Another Message
             </button>
             <Link href="/">
-              <button className="w-full bg-white border-2 border-[#1976D2] text-[#1976D2] py-3 px-6 rounded-lg font-semibold hover:bg-gray-50 transition-all">
+              <button className="w-full bg-white border-2 border-[#4A66FF] text-[#4A66FF] py-3 px-6 rounded-lg font-semibold hover:bg-gray-50 transition-all">
                 Back to Home
               </button>
             </Link>
@@ -264,11 +264,11 @@ const handleSubmit = async (e: React.FormEvent) => {
           animate={{ opacity: 1, y: 0 }}
           className="flex items-center space-x-2 text-sm text-gray-600 mb-8"
         >
-          <Link href="/" className="hover:text-[#1976D2] transition-colors">
+          <Link href="/" className="hover:text-[#4A66FF] transition-colors">
             <Home className="w-4 h-4" />
           </Link>
           <ArrowRight className="w-3 h-3" />
-          <span className="text-[#1976D2] font-medium">Contact Us</span>
+          <span className="text-[#4A66FF] font-medium">Contact Us</span>
         </motion.nav>
       </div>
 
@@ -282,11 +282,11 @@ const handleSubmit = async (e: React.FormEvent) => {
           <Link href="/" className="inline-flex items-center justify-center mb-6">
             <Image src="/logo 2.png" alt="Quikkred" width={200} height={200} className="w-40 sm:w-48 md:w-56 lg:w-64 h-auto object-contain" />
           </Link>
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-full mb-6">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-full mb-6">
             <HeadphonesIcon className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-sora mb-4">
-            <span className="gradient-primary bg-clip-text text-transparent">{t.contact.title}</span>
+            <span className="text-[#25B181]">{t.contact.title}</span>
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
             {t.contact.subtitle}
@@ -309,7 +309,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               className="bg-white rounded-2xl p-6 shadow-lucky hover:shadow-xl transition-all"
             >
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-lg flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-lg flex items-center justify-center mr-4">
                   <info.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold">{info.title}</h3>
@@ -317,7 +317,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               <div className="space-y-2">
                 {info.title === "Call Us" ? (
                   <>
-                    <a href={`tel:${info.primary.replace(/\D/g, '')}`} className="text-lg font-semibold text-[#1976D2] hover:underline block">
+                    <a href={`tel:${info.primary.replace(/\D/g, '')}`} className="text-lg font-semibold text-[#4A66FF] hover:underline block">
                       {info.primary}
                     </a>
                     <a href={`tel:${info.secondary.replace(/\D/g, '')}`} className="text-sm text-gray-600 hover:underline block">
@@ -326,7 +326,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   </>
                 ) : info.title === "Email Us" ? (
                   <>
-                    <a href={`mailto:${info.primary}`} className="text-lg font-semibold text-[#1976D2] hover:underline block">
+                    <a href={`mailto:${info.primary}`} className="text-lg font-semibold text-[#4A66FF] hover:underline block">
                       {info.primary}
                     </a>
                     <a href={`mailto:${info.secondary}`} className="text-sm text-gray-600 hover:underline block">
@@ -335,12 +335,12 @@ const handleSubmit = async (e: React.FormEvent) => {
                   </>
                 ) : (
                   <>
-                    <p className="text-lg font-semibold text-[#1976D2]">{info.primary}</p>
+                    <p className="text-lg font-semibold text-[#4A66FF]">{info.primary}</p>
                     <p className="text-sm text-gray-600">{info.secondary}</p>
                   </>
                 )}
                 <p className="text-sm text-gray-500">{info.description}</p>
-                <div className="inline-flex items-center text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">
+                <div className="inline-flex items-center text-xs bg-[#E7F4EB] text-[#26907F] px-2 py-1 rounded-full">
                   <Clock className="w-3 h-3 mr-1" />
                   {info.available}
                 </div>
@@ -359,7 +359,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             className="bg-white rounded-2xl p-6 sm:p-8 shadow-lucky"
           >
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 flex items-center">
-              <MessageSquare className="w-5 h-5 mr-2 text-[#1976D2]" />
+              <MessageSquare className="w-5 h-5 mr-2 text-[#4A66FF]" />
               Send Us a Message
             </h2>
 
@@ -382,7 +382,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                       className={`w-full pl-9 pr-3 py-2 text-sm border rounded-lg focus:ring-2 focus:border-transparent transition-colors ${
                         formErrors.name
                           ? 'border-red-500 focus:ring-red-500'
-                          : 'border-gray-300 focus:ring-[#1976D2]'
+                          : 'border-gray-300 focus:ring-[#4A66FF]'
                       }`}
                       placeholder="Enter your full name"
                     />
@@ -411,7 +411,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                       className={`w-full pl-9 pr-3 py-2 text-sm border rounded-lg focus:ring-2 focus:border-transparent transition-colors ${
                         formErrors.email
                           ? 'border-red-500 focus:ring-red-500'
-                          : 'border-gray-300 focus:ring-[#1976D2]'
+                          : 'border-gray-300 focus:ring-[#4A66FF]'
                       }`}
                       placeholder="you@example.com"
                     />
@@ -442,7 +442,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                       className={`w-full pl-9 pr-3 py-2 text-sm border rounded-lg focus:ring-2 focus:border-transparent transition-colors ${
                         formErrors.phone
                           ? 'border-red-500 focus:ring-red-500'
-                          : 'border-gray-300 focus:ring-[#1976D2]'
+                          : 'border-gray-300 focus:ring-[#4A66FF]'
                       }`}
                       placeholder="+91 98765 43210"
                     />
@@ -462,7 +462,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     aria-label="Select inquiry subject"
-                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1976D2] focus:border-transparent transition-colors"
+                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A66FF] focus:border-transparent transition-colors"
                   >
                     <option value="">Select a subject</option>
                     <option value="loan-inquiry">Loan Inquiry</option>
@@ -495,7 +495,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   className={`w-full px-3 py-2 text-sm border rounded-lg focus:ring-2 focus:border-transparent transition-colors resize-none ${
                     formErrors.message
                       ? 'border-red-500 focus:ring-red-500'
-                      : 'border-gray-300 focus:ring-[#1976D2]'
+                      : 'border-gray-300 focus:ring-[#4A66FF]'
                   }`}
                   placeholder="Tell us how we can help you... (minimum 10 characters)"
                 />
@@ -510,7 +510,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex-1 bg-gradient-to-r from-[#006837] to-[#FFC107] text-white py-2.5 px-4 rounded-lg font-semibold text-sm flex items-center justify-center hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex-1 bg-gradient-to-r from-[#25B181] to-[#51C9AF] text-white py-2.5 px-4 rounded-lg font-semibold text-sm flex items-center justify-center hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <>
@@ -546,7 +546,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           >
             <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lucky">
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6 flex items-center">
-                <MapPin className="w-6 h-6 mr-2 text-[#006837]" />
+                <MapPin className="w-6 h-6 mr-2 text-[#25B181]" />
                 Our Offices
               </h2>
 
@@ -557,11 +557,11 @@ const handleSubmit = async (e: React.FormEvent) => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 * index }}
-                    className="border-l-4 border-[#1976D2] pl-4 pb-6"
+                    className="border-l-4 border-[#4A66FF] pl-4 pb-6"
                   >
                     <div className="flex items-center mb-2">
                       <h3 className="text-lg font-bold">{office.city}</h3>
-                      <span className="ml-2 text-xs bg-[#FFC107] text-white px-2 py-1 rounded-full">
+                      <span className="ml-2 text-xs bg-[#FF9C70] text-white px-2 py-1 rounded-full">
                         {office.type}
                       </span>
                     </div>
@@ -569,20 +569,20 @@ const handleSubmit = async (e: React.FormEvent) => {
                     <div className="space-y-1 text-sm">
                       <a
                         href={`tel:${office.phone.replace(/\D/g, '')}`}
-                        className="flex items-center hover:text-[#1976D2] transition-colors group"
+                        className="flex items-center hover:text-[#4A66FF] transition-colors group"
                       >
-                        <Phone className="w-4 h-4 mr-2 text-[#1976D2]" />
+                        <Phone className="w-4 h-4 mr-2 text-[#4A66FF]" />
                         <span className="group-hover:underline">{office.phone}</span>
                       </a>
                       <a
                         href={`mailto:${office.email}`}
-                        className="flex items-center hover:text-[#006837] transition-colors group"
+                        className="flex items-center hover:text-[#25B181] transition-colors group"
                       >
-                        <Mail className="w-4 h-4 mr-2 text-[#006837]" />
+                        <Mail className="w-4 h-4 mr-2 text-[#25B181]" />
                         <span className="group-hover:underline">{office.email}</span>
                       </a>
                       <p className="flex items-center">
-                        <Clock className="w-4 h-4 mr-2 text-[#FFC107]" />
+                        <Clock className="w-4 h-4 mr-2 text-[#FF9C70]" />
                         {office.hours}
                       </p>
                     </div>
@@ -598,7 +598,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <div className="text-center">
                   <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-2" />
                   <p className="text-gray-500">Interactive Map Coming Soon</p>
-                  <button className="mt-2 text-[#1976D2] hover:underline flex items-center justify-center">
+                  <button className="mt-2 text-[#4A66FF] hover:underline flex items-center justify-center">
                     <ExternalLink className="w-4 h-4 mr-1" />
                     View on Google Maps
                   </button>
@@ -615,7 +615,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           transition={{ delay: 0.5 }}
           className="mt-16 grid md:grid-cols-2 gap-6"
         >
-          <div className="bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl p-6 sm:p-8 ">
+          <div className="bg-gradient-to-br from-[#25B181] to-[#1F8F68] rounded-2xl p-6 sm:p-8 text-white">
             <div className="flex items-center mb-4">
               <Clock className="w-8 h-8 mr-3" />
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold">Support Hours</h3>
@@ -632,7 +632,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-[var(--gold)] to-[var(--rose-gold)] rounded-2xl p-6 sm:p-8">
+          <div className="bg-gradient-to-br from-[#4A66FF] to-[#3B52CC] rounded-2xl p-6 sm:p-8 text-white">
             <div className="flex items-center mb-4">
               <Award className="w-8 h-8 mr-3" />
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold">Quick Help</h3>
@@ -641,7 +641,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               Need instant answers? Check our comprehensive FAQ section for common questions and solutions.
             </p>
             <Link href="/resources/faqs">
-              <button className="w-full bg-white text-[#1976D2] py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all">
+              <button className="w-full bg-white text-[#4A66FF] py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all">
                 Browse FAQs
               </button>
             </Link>

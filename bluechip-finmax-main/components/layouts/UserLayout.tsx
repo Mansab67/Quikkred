@@ -313,7 +313,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
                   <Image
                     src="/logo 2.png"
                     alt="Quikkred Logo"
-                    width={260}
+                    width={160}
                     height={80}
                     priority
                     quality={100}
@@ -360,8 +360,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
 
         {/* User Info */}
       
-
-        {/* Navigation */}
+{/* Navigation */}
         <nav className={`flex-1 p-4 space-y-2 overflow-y-auto ${!sidebarOpen ? 'px-2' : ''}`}>
           {navigationItems.map((item) => (
             <motion.button
@@ -370,16 +369,16 @@ const UserLayout = ({ children }: UserLayoutProps) => {
               onClick={() => router.push(item.href)}
               className={`w-full flex items-center ${sidebarOpen ? 'gap-3 justify-start' : 'justify-center'} p-3 rounded-lg transition-all cursor-pointer ${
                 pathname === item.href
-                  ? 'bg-gradient-to-r from-[#2E7D32] to-[#1B5E20] text-white shadow-md'
-                  : 'hover:bg-[#FAFAFA] text-gray-700'
+                  ? 'bg-gradient-to-r from-[#10B4A3] to-[#0E9D8F] text-white shadow-md'
+                  : 'hover:bg-[#FAFAFA] text-[#0A0A0A]'
               }`}
             >
               <item.icon className={`w-5 h-5 ${
-                pathname === item.href ? 'text-[#FFD700]' : 'text-[#1976D2]'
+                pathname === item.href ? 'text-white' : 'text-[#4084FF]'
               }`} />
               {sidebarOpen && (
                 <span className={`font-medium ${
-                  pathname === item.href ? 'text-white' : 'text-gray-700'
+                  pathname === item.href ? 'text-white' : 'text-[#0A0A0A]'
                 }`}>
                   {item.title}
                 </span>
@@ -390,12 +389,12 @@ const UserLayout = ({ children }: UserLayoutProps) => {
 
         {/* Quick Actions */}
         {sidebarOpen && (
-          <div className="p-4 border-t border-[#E0E0E0]">
+          <div className="p-4 border-t border-[#E5E5E5]">
             <div className="space-y-2">
               {/* <motion.button
                 whileHover={{ scale: 1.02 }}
                 onClick={() => router.push('/apply')}
-                className="w-full flex items-center gap-3 p-3 bg-gradient-to-r from-[#2E7D32] to-[#1B5E20] text-white rounded-lg font-semibold shadow-md hover:shadow-lg transition-all"
+                className="w-full flex items-center gap-3 p-3 bg-gradient-to-r from-[#10B4A3] to-[#0E9D8F] text-white rounded-lg font-semibold shadow-md hover:shadow-lg transition-all"
               >
                 <Plus className="w-5 h-5" />
                 Apply Now
@@ -403,7 +402,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
               {/* <motion.button
                 whileHover={{ scale: 1.02 }}
                 onClick={() => router.push('/dashboard/payments')}
-                className="w-full flex items-center gap-3 p-3 bg-[#1976D2] text-white rounded-lg font-semibold shadow-md hover:shadow-lg transition-all"
+                className="w-full flex items-center gap-3 p-3 bg-gradient-to-r from-[#4084FF] to-[#6BA4FF] text-white rounded-lg font-semibold shadow-md hover:shadow-lg transition-all"
               >
                 <Send className="w-5 h-5" />
                 Pay EMI
@@ -413,11 +412,11 @@ const UserLayout = ({ children }: UserLayoutProps) => {
         )}
 
         {/* Sidebar Footer */}
-        <div className={`p-4 border-t border-[#E0E0E0] ${!sidebarOpen ? 'px-2' : ''}`}>
+        <div className={`p-4 border-t border-[#E5E5E5] ${!sidebarOpen ? 'px-2' : ''}`}>
           <motion.button
             whileHover={{ scale: 1.02 }}
             onClick={handleLogout}
-            className={`w-full flex items-center ${sidebarOpen ? 'gap-3 justify-start' : 'justify-center'} p-3 text-red-600 hover:bg-red-50 rounded-lg transition-all cursor-pointer`}
+            className={`w-full flex items-center ${sidebarOpen ? 'gap-3 justify-start' : 'justify-center'} p-3 text-[#F44336] hover:bg-[#FFEBEE] rounded-lg transition-all cursor-pointer`}
           >
             <LogOut className="w-5 h-5" />
             {sidebarOpen && <span className="font-medium">Logout</span>}
@@ -431,7 +430,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
         <header className="bg-white border-b border-[#E0E0E0] p-4 shadow-sm">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <h2 className="text-xl font-semibold text-[#1B5E20]">
+              <h2 className="text-xl font-semibold text-[#25B181]">
                 {navigationItems.find(item => item.href === pathname)?.title || "Dashboard"}
               </h2>
             </div>
@@ -440,11 +439,11 @@ const UserLayout = ({ children }: UserLayoutProps) => {
               {/* Quick Stats */}
               <div className="hidden md:flex items-center gap-4 text-sm">
                 <div className="flex items-center gap-2 bg-[#FAFAFA] px-3 py-1.5 rounded-lg">
-                  <Award className="w-4 h-4 text-[#2E7D32]" />
+                  <Award className="w-4 h-4 text-[#25B181]" />
                   <span className="text-gray-700 font-medium">Score: {userData.creditScore}</span>
                 </div>
                 <div className="flex items-center gap-2 bg-[#FAFAFA] px-3 py-1.5 rounded-lg">
-                  <Wallet className="w-4 h-4 text-[#1976D2]" />
+                  <Wallet className="w-4 h-4 text-[#4A66FF]" />
                   <span className="text-gray-700 font-medium">₹{(userData.availableCredit / 1000).toFixed(0)}K</span>
                 </div>
                 {/* <div className="flex items-center gap-2 bg-[#FAFAFA] px-3 py-1.5 rounded-lg">
@@ -461,7 +460,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
                   onClick={() => setNotificationDropdownOpen(!notificationDropdownOpen)}
                   className="relative p-2 bg-[#FAFAFA] hover:bg-[#E0E0E0] rounded-lg transition-colors cursor-pointer"
                 >
-                  <Bell className="w-5 h-5 text-[#1976D2]" />
+                  <Bell className="w-5 h-5 text-[#4A66FF]" />
                   {userData.notifications > 0 && (
                     <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">
                       {userData.notifications}
@@ -511,13 +510,13 @@ const UserLayout = ({ children }: UserLayoutProps) => {
                                   {/* Icon based on type */}
                                   <div className={`p-2 rounded-lg ${
                                     notification.type === 'INFO' ? 'bg-blue-500/10' :
-                                    notification.type === 'SUCCESS' ? 'bg-green-500/10' :
+                                    notification.type === 'SUCCESS' ? 'bg-[#3AC6A0]/10' :
                                     notification.type === 'WARNING' ? 'bg-yellow-500/10' :
                                     'bg-red-500/10'
                                   }`}>
                                     <Bell className={`w-4 h-4 ${
                                       notification.type === 'INFO' ? 'text-blue-600' :
-                                      notification.type === 'SUCCESS' ? 'text-green-600' :
+                                      notification.type === 'SUCCESS' ? 'text-[#3AC6A0]' :
                                       notification.type === 'WARNING' ? 'text-yellow-600' :
                                       'text-red-600'
                                     }`} />
@@ -547,7 +546,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
                                         })}
                                       </span>
                                       <span className={`text-xs px-2 py-0.5 rounded-full ${
-                                        notification.status === 'SENT' ? 'bg-green-500/10 text-green-600' :
+                                        notification.status === 'SENT' ? 'bg-[#3AC6A0]/10 text-[#3AC6A0]' :
                                         notification.status === 'PENDING' ? 'bg-yellow-500/10 text-yellow-600' :
                                         'bg-gray-100 text-gray-600'
                                       }`}>
@@ -570,7 +569,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
                               setNotificationDropdownOpen(false);
                               router.push('/user/notifications');
                             }}
-                            className="w-full text-center text-sm text-[#1976D2] hover:text-[#1565C0] font-medium transition-colors cursor-pointer"
+                            className="w-full text-center text-sm text-[#4A66FF] hover:text-[#3B52CC] font-medium transition-colors cursor-pointer"
                           >
                             {notifications.length > 2
                               ? `View All ${notifications.length} Notifications`
@@ -613,7 +612,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
                       />
                     </div>
                   ) : (
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#1B5E20] to-[#2E7D32] flex items-center justify-center text-white font-bold text-sm shadow-md">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#25B181] to-[#51C9AF] flex items-center justify-center text-white font-bold text-sm shadow-md">
                       {userData.name.split(' ').map(n => n[0]).join('')}
                     </div>
                   )}
@@ -640,7 +639,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
                           <div className="px-2 py-1 bg-gradient-to-r from-[#FFD700] to-[#FBC02D] text-white text-xs rounded-full font-medium">
                             {userData.tier} Member
                           </div>
-                          <div className="px-2 py-1 bg-[#2E7D32]/10 text-[#2E7D32] text-xs rounded-full">
+                          <div className="px-2 py-1 bg-[#25B181]/10 text-[#25B181] text-xs rounded-full">
                             <UserCheck className="w-3 h-3 inline mr-1" />
                             Verified
                           </div>
@@ -654,7 +653,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
                           }}
                           className="w-full flex items-center gap-3 p-3 hover:bg-[#FAFAFA] rounded-lg transition-colors text-gray-700 cursor-pointer"
                         >
-                          <User className="w-4 h-4 text-[#1976D2]" />
+                          <User className="w-4 h-4 text-[#4A66FF]" />
                           View Profile
                         </button>
                         {/* <button
@@ -664,7 +663,7 @@ const UserLayout = ({ children }: UserLayoutProps) => {
                           }}
                           className="w-full flex items-center gap-3 p-3 hover:bg-[#FAFAFA] rounded-lg transition-colors text-gray-700 cursor-pointer"
                         >
-                          <Settings className="w-4 h-4 text-[#1976D2]" />
+                          <Settings className="w-4 h-4 text-[#4A66FF]" />
                           Settings
                         </button> */}
                         <button
@@ -674,11 +673,11 @@ const UserLayout = ({ children }: UserLayoutProps) => {
                           }}
                           className="w-full flex items-center gap-3 p-3 hover:bg-[#FAFAFA] rounded-lg transition-colors text-gray-700 cursor-pointer"
                         >
-                          <HelpCircle className="w-4 h-4 text-[#1976D2]" />
+                          <HelpCircle className="w-4 h-4 text-[#4A66FF]" />
                           Help & Support
                         </button>
                         {/* <button className="w-full flex items-center gap-3 p-3 hover:bg-[#FAFAFA] rounded-lg transition-colors text-gray-700">
-                          <Download className="w-4 h-4 text-[#1976D2]" />
+                          <Download className="w-4 h-4 text-[#4A66FF]" />
                           Download App
                         </button> */}
                       </div>

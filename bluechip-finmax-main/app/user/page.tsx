@@ -17,7 +17,6 @@ import {
 } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 import { useToast, Toaster } from '@/components/ui/toast';
-// UserLayout is already applied by ConditionalLayout based on user role
 
 interface UserDashboardData {
   profile: {
@@ -102,7 +101,6 @@ export default function UserDashboard() {
   const [activeTab, setActiveTab] = useState<'overview' | 'loans' | 'payments' | 'profile'>('overview');
   const [creditScoreData, setCreditScoreData] = useState<any>(null);
 
-  // Check authentication and authorization
   useEffect(() => {
     if (!isLoading) {
       if (!user) {
@@ -129,7 +127,6 @@ export default function UserDashboard() {
     try {
       setLoading(true);
 
-      // Get auth token
       const token = localStorage.getItem('authToken') || localStorage.getItem('token');
 
       if (!token) {
@@ -138,7 +135,6 @@ export default function UserDashboard() {
         return;
       }
 
-      // Fetch loans, documents, and credit score (profile already loaded by AuthContext)
       const [loansResponse, documentsResponse, creditScoreResponse] = await Promise.all([
         fetch('https://api.bluechipfinmax.com/api/loans/my-loans', {
           method: 'GET',
@@ -167,12 +163,10 @@ export default function UserDashboard() {
       const documentsResult = await documentsResponse.json();
       const creditScoreResult = await creditScoreResponse.json();
 
-      // Store credit score data
       if (creditScoreResult.success && creditScoreResult.data) {
         setCreditScoreData(creditScoreResult.data);
       }
 
-      // Map loans data from API
       const allLoansList = loansResult.success && loansResult.data
         ? loansResult.data.map((loan: any) => ({
             id: loan.loanNumber,
@@ -188,18 +182,15 @@ export default function UserDashboard() {
           }))
         : [];
 
-      // Filter only approved/active/disbursed loans for financial calculations
       const approvedLoansList = allLoansList.filter((loan: any) => {
         const statusLower = loan.status.toLowerCase();
         return statusLower === 'active' || statusLower === 'approved' || statusLower === 'disbursed';
       });
 
-      // Calculate financials from approved loans only
       const totalBorrowed = approvedLoansList.reduce((sum: number, loan: any) => sum + loan.amount, 0);
       const currentOutstanding = approvedLoansList.reduce((sum: number, loan: any) => sum + loan.remainingAmount, 0);
       const nextEmiAmount = approvedLoansList.reduce((sum: number, loan: any) => sum + loan.emi, 0);
 
-      // Map API data to dashboard structure (use user from AuthContext for profile)
       const mappedData: UserDashboardData = {
         profile: {
           name: user?.name || 'User',
@@ -290,10 +281,10 @@ export default function UserDashboard() {
 
   const getKycStatusColor = (status: string) => {
     switch (status) {
-      case 'VERIFIED': return 'text-green-400 bg-green-900/20';
-      case 'PENDING': return 'text-yellow-400 bg-yellow-900/20';
-      case 'REJECTED': return 'text-red-400 bg-red-900/20';
-      default: return 'text-gray-400 bg-gray-900/20';
+      case 'VERIFIED': return 'text-[#2E7D32] bg-[#E7F5E7]';
+      case 'PENDING': return 'text-[#FF9800] bg-[#FFF3E0]';
+      case 'REJECTED': return 'text-[#F44336] bg-[#FFEBEE]';
+      default: return 'text-[#737373] bg-[#F5F5F5]';
     }
   };
 
@@ -307,7 +298,6 @@ export default function UserDashboard() {
     }
   };
 
-  // Show loading while checking authentication
   if (isLoading) {
     return (
       <div className="min-h-screen bg-[#FAFAFA] flex items-center justify-center">
@@ -315,20 +305,19 @@ export default function UserDashboard() {
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-            className="w-16 h-16 border-4 border-[#2E7D32] border-t-transparent rounded-full mx-auto"
+            className="w-16 h-16 border-4 border-[#10B4A3] border-t-transparent rounded-full mx-auto"
           />
-          <p className="mt-4 text-gray-600">Checking authorization...</p>
+          <p className="mt-4 text-[#737373]">Checking authorization...</p>
         </div>
       </div>
     );
   }
 
-  // If not authenticated or not authorized, don't render anything (redirect will happen)
   if (!user || (user.role !== 'USER' && user.role !== 'CUSTOMER')) {
     return (
       <div className="min-h-screen bg-[#FAFAFA] flex items-center justify-center">
         <div className="text-center">
-          <p className="text-gray-600">Access denied. Redirecting...</p>
+          <p className="text-[#737373]">Access denied. Redirecting...</p>
         </div>
       </div>
     );
@@ -342,9 +331,9 @@ export default function UserDashboard() {
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-              className="w-16 h-16 border-4 border-[#2E7D32] border-t-transparent rounded-full mx-auto"
+              className="w-16 h-16 border-4 border-[#10B4A3] border-t-transparent rounded-full mx-auto"
             />
-            <p className="mt-4 text-gray-600">Loading your dashboard...</p>
+            <p className="mt-4 text-[#737373]">Loading your dashboard...</p>
           </div>
         </div>
       </>
@@ -353,7 +342,7 @@ export default function UserDashboard() {
 
   return (
     <>
-      <div className="p-4 sm:p-6">
+      <div className="p-4 sm:p-6 bg-[#FAFAFA]">
         {/* Header with Welcome */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -362,115 +351,21 @@ export default function UserDashboard() {
         >
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
             <div>
-              <h1 className="text-2xl sm:text-3xl font-bold text-[#1B5E20] flex items-center gap-2 sm:gap-3">
-                <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-[#FFD700]" />
+              <h1 className="text-2xl sm:text-3xl font-bold text-[#0A0A0A] flex items-center gap-2 sm:gap-3">
+                <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-[#FF9800]" />
                 <span className="break-words">Welcome back, {data?.profile.name?.split(' ')[0]}!</span>
               </h1>
-              <p className="text-gray-600 mt-1 text-sm sm:text-base">Here's your financial overview</p>
+              <p className="text-[#737373] mt-1 text-sm sm:text-base">Here's your financial overview</p>
             </div>
 
             <div className="flex items-center gap-2 sm:gap-4 flex-wrap">
-              <div className="px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm bg-[#2E7D32]/10 text-[#2E7D32] border border-[#2E7D32]/20">
+              <div className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm ${getKycStatusColor(data?.profile.kycStatus || 'PENDING')} border border-current/20`}>
                 <UserCheck className="w-3 h-3 sm:w-4 sm:h-4 inline mr-1" />
                 {data?.profile.kycStatus}
               </div>
-              {/* <div className="px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm bg-gradient-to-r from-[#FFD700] to-[#FBC02D] text-white">
-                <Award className="w-3 h-3 sm:w-4 sm:h-4 inline mr-1" />
-                {data?.profile.tier}
-              </div> */}
             </div>
           </div>
         </motion.div>
-
-        {/* Profile Info Card */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="bg-white rounded-2xl p-6 border border-[#E0E0E0] mb-8"
-        >
-          <div className="flex items-center gap-3 mb-4">
-            <User className="w-6 h-6 text-[#1976D2]" />
-            <h2 className="text-xl font-semibold text-[#1B5E20]">Profile Information</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="flex items-center gap-3 p-3 bg-[#FAFAFA] rounded-lg">
-              <User className="w-5 h-5 text-[#1976D2]" />
-              <div>
-                <p className="text-xs text-gray-500">Full Name</p>
-                <p className="font-medium text-gray-800">{user?.name || 'N/A'}</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 p-3 bg-[#FAFAFA] rounded-lg">
-              <Mail className="w-5 h-5 text-[#1976D2]" />
-              <div className="flex-1">
-                <p className="text-xs text-gray-500">Email</p>
-                <div className="flex items-center gap-2">
-                  <p className="font-medium text-gray-800">{user?.email || 'N/A'}</p>
-                  {user?.isEmailVerified && (
-                    <CheckCircle className="w-4 h-4 text-[#2E7D32]" />
-                  )}
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 p-3 bg-[#FAFAFA] rounded-lg">
-              <Phone className="w-5 h-5 text-[#1976D2]" />
-              <div className="flex-1">
-                <p className="text-xs text-gray-500">Mobile</p>
-                <div className="flex items-center gap-2">
-                  <p className="font-medium text-gray-800">{user?.mobile || 'N/A'}</p>
-                  {user?.isMobileVerified && (
-                    <CheckCircle className="w-4 h-4 text-[#2E7D32]" />
-                  )}
-                </div>
-              </div>
-            </div>
-            {user?.city && (
-              <div className="flex items-center gap-3 p-3 bg-[#FAFAFA] rounded-lg">
-                <MapPin className="w-5 h-5 text-[#1976D2]" />
-                <div>
-                  <p className="text-xs text-gray-500">City</p>
-                  <p className="font-medium text-gray-800">{user.city}, {user.state}</p>
-                </div>
-              </div>
-            )}
-            {user?.pincode && (
-              <div className="flex items-center gap-3 p-3 bg-[#FAFAFA] rounded-lg">
-                <Building className="w-5 h-5 text-[#1976D2]" />
-                <div>
-                  <p className="text-xs text-gray-500">Pincode</p>
-                  <p className="font-medium text-gray-800">{user.pincode}</p>
-                </div>
-              </div>
-            )}
-            {user?.dateOfBirth && (
-              <div className="flex items-center gap-3 p-3 bg-[#FAFAFA] rounded-lg">
-                <Calendar className="w-5 h-5 text-[#1976D2]" />
-                <div>
-                  <p className="text-xs text-gray-500">Date of Birth</p>
-                  <p className="font-medium text-gray-800">
-                    {new Date(user.dateOfBirth).toLocaleDateString('en-IN', {
-                      day: '2-digit',
-                      month: 'short',
-                      year: 'numeric'
-                    })}
-                  </p>
-                </div>
-              </div>
-            )}
-            {user?.status && (
-              <div className="flex items-center gap-3 p-3 bg-[#FAFAFA] rounded-lg">
-                <Shield className="w-5 h-5 text-[#1976D2]" />
-                <div>
-                  <p className="text-xs text-gray-500">Account Status</p>
-                  <p className={`font-medium ${user.status === 'ACTIVE' ? 'text-[#2E7D32]' : 'text-gray-800'}`}>
-                    {user.status}
-                  </p>
-                </div>
-              </div>
-            )}
-          </div>
-        </motion.div> */}
 
         {/* Quick Stats Cards */}
         <motion.div
@@ -480,19 +375,19 @@ export default function UserDashboard() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8"
         >
           {/* Current Outstanding */}
-          <div className="bg-white rounded-2xl p-6 border border-[#E0E0E0] hover:shadow-lg transition-all">
+          <div className="bg-white rounded-2xl p-6 border border-[#E5E5E5] hover:shadow-lg transition-all">
             <div className="flex items-center justify-between mb-4">
-              <div className="p-3 bg-[#0D47A1]/10 rounded-xl">
-                <IndianRupee className="w-6 h-6 text-[#0D47A1]" />
+              <div className="p-3 bg-[#E8F0FF] rounded-xl">
+                <IndianRupee className="w-6 h-6 text-[#4084FF]" />
               </div>
-              <span className="text-xs text-gray-500">Outstanding</span>
+              <span className="text-xs text-[#737373]">Outstanding</span>
             </div>
-            <p className="text-3xl font-bold text-gray-800 mb-2">
+            <p className="text-3xl font-bold text-[#0A0A0A] mb-2">
               {showBalance ? formatCurrency(data?.financials.currentOutstanding || 0) : '••••••'}
             </p>
             <button
               onClick={() => setShowBalance(!showBalance)}
-              className="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-800 transition-colors"
+              className="flex items-center gap-1 text-sm text-[#737373] hover:text-[#0A0A0A] transition-colors"
             >
               {showBalance ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
               {showBalance ? 'Hide' : 'Show'}
@@ -501,19 +396,19 @@ export default function UserDashboard() {
 
           {/* Next EMI */}
           {data?.financials && data.financials.nextEmiAmount > 0 && (
-            <div className="bg-white rounded-2xl p-6 border border-[#E0E0E0] hover:shadow-lg transition-all">
+            <div className="bg-white rounded-2xl p-6 border border-[#E5E5E5] hover:shadow-lg transition-all">
               <div className="flex items-center justify-between mb-4">
-                <div className="p-3 bg-[#FBC02D]/10 rounded-xl">
-                  <Calendar className="w-6 h-6 text-[#FBC02D]" />
+                <div className="p-3 bg-[#FFF3E0] rounded-xl">
+                  <Calendar className="w-6 h-6 text-[#FF9800]" />
                 </div>
-                <span className="text-xs text-gray-500">Next EMI</span>
+                <span className="text-xs text-[#737373]">Next EMI</span>
               </div>
-              <p className="text-3xl font-bold text-gray-800 mb-2">
+              <p className="text-3xl font-bold text-[#0A0A0A] mb-2">
                 {formatCurrency(data?.financials.nextEmiAmount || 0)}
               </p>
               <div className="flex items-center gap-1 text-sm">
-                <Clock className="w-4 h-4 text-[#FBC02D]" />
-                <span className="text-gray-600">
+                <Clock className="w-4 h-4 text-[#FF9800]" />
+                <span className="text-[#737373]">
                   Due {new Date(data?.financials.nextEmiDate || '').toLocaleDateString()}
                 </span>
               </div>
@@ -529,24 +424,10 @@ export default function UserDashboard() {
           className="mb-6 sm:mb-8"
         >
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-4 sm:mb-6">
-            <h2 className="text-lg sm:text-xl font-semibold text-[#1B5E20] flex items-center gap-2">
-              <CreditCard className="w-5 h-5 text-[#1976D2]" />
+            <h2 className="text-lg sm:text-xl font-semibold text-[#0A0A0A] flex items-center gap-2">
+              <CreditCard className="w-5 h-5 text-[#10B4A3]" />
               Active Loans ({data?.loans.active.length || 0})
             </h2>
-            {/* <button
-              onClick={() => {
-                toast({
-                  variant: "success",
-                  title: "Starting Application",
-                  description: "Let's get you a new loan!"
-                });
-                router.push('/apply');
-              }}
-              className="px-4 py-2 bg-gradient-to-r from-[#2E7D32] to-[#1B5E20] text-white rounded-lg hover:shadow-lg transition-all flex items-center gap-2 justify-center sm:justify-start w-full sm:w-auto text-sm sm:text-base"
-            >
-              <Plus className="w-4 h-4" />
-              <span>Apply New</span>
-            </button> */}
           </div>
 
           {data?.loans.active && data.loans.active.length > 0 ? (
@@ -555,13 +436,13 @@ export default function UserDashboard() {
               <motion.div
                 key={loan.id}
                 whileHover={{ scale: 1.01 }}
-                className="bg-white rounded-xl p-4 sm:p-6 border border-[#E0E0E0] hover:shadow-lg transition-all"
+                className="bg-white rounded-xl p-4 sm:p-6 border border-[#E5E5E5] hover:shadow-lg transition-all"
               >
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4">
                   <div className="flex-1">
-                    <h3 className="text-base sm:text-lg font-semibold text-gray-800">{loan.type}</h3>
+                    <h3 className="text-base sm:text-lg font-semibold text-[#0A0A0A]">{loan.type}</h3>
                     <div className="flex items-center gap-2">
-                      <p className="text-gray-500 text-xs sm:text-sm">Loan ID: {loan.id}</p>
+                      <p className="text-[#737373] text-xs sm:text-sm">Loan ID: {loan.id}</p>
                       <button
                         onClick={() => {
                           navigator.clipboard.writeText(loan.id);
@@ -571,64 +452,64 @@ export default function UserDashboard() {
                             description: "Loan ID copied to clipboard"
                           });
                         }}
-                        className="text-gray-400 hover:text-gray-600 transition-colors"
+                        className="text-[#A3A3A3] hover:text-[#737373] transition-colors"
                       >
                         <CopyIcon className="w-3 h-3" />
                       </button>
                     </div>
                   </div>
                   <div className="text-left sm:text-right">
-                    <p className="text-xl sm:text-2xl font-bold text-[#1B5E20]">{formatCurrency(loan.amount)}</p>
-                    <p className="text-gray-500 text-xs sm:text-sm">Principal Amount</p>
+                    <p className="text-xl sm:text-2xl font-bold text-[#10B4A3]">{formatCurrency(loan.amount)}</p>
+                    <p className="text-[#737373] text-xs sm:text-sm">Principal Amount</p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-4">
                   <div>
-                    <p className="text-gray-500 text-xs sm:text-sm">Monthly EMI</p>
-                    <p className="text-gray-800 font-semibold text-sm sm:text-base">{formatCurrency(loan.emi)}</p>
+                    <p className="text-[#737373] text-xs sm:text-sm">Monthly EMI</p>
+                    <p className="text-[#0A0A0A] font-semibold text-sm sm:text-base">{formatCurrency(loan.emi)}</p>
                   </div>
                   <div>
-                    <p className="text-gray-500 text-xs sm:text-sm">Interest Rate</p>
-                    <p className="text-gray-800 font-semibold text-sm sm:text-base">{loan.interestRate}%</p>
+                    <p className="text-[#737373] text-xs sm:text-sm">Interest Rate</p>
+                    <p className="text-[#0A0A0A] font-semibold text-sm sm:text-base">{loan.interestRate}%</p>
                   </div>
                   <div>
-                    <p className="text-gray-500 text-xs sm:text-sm">Remaining</p>
-                    <p className="text-gray-800 font-semibold text-sm sm:text-base">{formatCurrency(loan.remainingAmount)}</p>
+                    <p className="text-[#737373] text-xs sm:text-sm">Remaining</p>
+                    <p className="text-[#0A0A0A] font-semibold text-sm sm:text-base">{formatCurrency(loan.remainingAmount)}</p>
                   </div>
                   <div>
-                    <p className="text-gray-500 text-xs sm:text-sm">Progress</p>
-                    <p className="text-gray-800 font-semibold text-sm sm:text-base">{loan.completedMonths}/{loan.tenure} months</p>
+                    <p className="text-[#737373] text-xs sm:text-sm">Progress</p>
+                    <p className="text-[#0A0A0A] font-semibold text-sm sm:text-base">{loan.completedMonths}/{loan.tenure} months</p>
                   </div>
                 </div>
 
                 {/* Progress Bar */}
                 <div className="mb-4">
-                  <div className="flex justify-between text-xs sm:text-sm text-gray-600 mb-2">
+                  <div className="flex justify-between text-xs sm:text-sm text-[#737373] mb-2">
                     <span>Repayment Progress</span>
                     <span className="text-[#2E7D32] font-medium">{Math.round((loan.completedMonths / loan.tenure) * 100)}%</span>
                   </div>
-                  <div className="w-full bg-[#E0E0E0] rounded-full h-2">
+                  <div className="w-full bg-[#E5E5E5] rounded-full h-2">
                     <motion.div
                       initial={{ width: 0 }}
                       animate={{ width: `${(loan.completedMonths / loan.tenure) * 100}%` }}
                       transition={{ duration: 1, delay: 0.5 }}
-                      className="h-2 rounded-full bg-gradient-to-r from-[#2E7D32] to-[#1B5E20]"
+                      className="h-2 rounded-full bg-gradient-to-r from-[#4CAF50] to-[#2E7D32]"
                     />
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 pt-4 border-t border-[#E0E0E0]">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 pt-4 border-t border-[#E5E5E5]">
                   <div className="flex items-center gap-2 text-xs sm:text-sm">
-                    <Calendar className="w-4 h-4 text-[#FBC02D]" />
-                    <span className="text-gray-600">
+                    <Calendar className="w-4 h-4 text-[#FF9800]" />
+                    <span className="text-[#737373]">
                       Next Due: {new Date(loan.nextDueDate).toLocaleDateString()}
                     </span>
                   </div>
                   <div className="flex gap-2 w-full sm:w-auto">
                     <button
                       onClick={() => router.push('/user/loans')}
-                      className="flex-1 sm:flex-none px-3 py-2 bg-[#FAFAFA] border border-[#E0E0E0] text-gray-700 rounded text-xs sm:text-sm hover:bg-[#E0E0E0] transition-colors">
+                      className="flex-1 sm:flex-none px-3 py-2 bg-[#F5F5F5] border border-[#E5E5E5] text-[#0A0A0A] rounded text-xs sm:text-sm hover:bg-[#E5E5E5] transition-colors">
                       View Details
                     </button>
                     {(loan.status.toLowerCase() === 'approved' ||
@@ -641,9 +522,8 @@ export default function UserDashboard() {
                             title: "Payment Gateway",
                             description: "Redirecting to payment gateway..."
                           });
-                          // Payment logic would go here
                         }}
-                        className="flex-1 sm:flex-none px-3 py-2 bg-[#1976D2] text-white rounded text-xs sm:text-sm hover:bg-[#0D47A1] transition-colors">
+                        className="flex-1 sm:flex-none px-3 py-2 bg-gradient-to-r from-[#10B4A3] to-[#0E9D8F] text-white rounded text-xs sm:text-sm hover:shadow-lg transition-all">
                         Pay EMI
                       </button>
                     )}
@@ -653,13 +533,13 @@ export default function UserDashboard() {
               ))}
             </div>
           ) : (
-            <div className="bg-white rounded-xl p-8 sm:p-12 border border-[#E0E0E0] text-center">
+            <div className="bg-white rounded-xl p-8 sm:p-12 border border-[#E5E5E5] text-center">
               <div className="max-w-md mx-auto">
-                <div className="w-16 h-16 bg-[#FAFAFA] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CreditCard className="w-8 h-8 text-gray-400" />
+                <div className="w-16 h-16 bg-[#F5F5F5] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CreditCard className="w-8 h-8 text-[#A3A3A3]" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">No Active Loans</h3>
-                <p className="text-gray-600 mb-6">Start your financial journey with us today</p>
+                <h3 className="text-lg font-semibold text-[#0A0A0A] mb-2">No Active Loans</h3>
+                <p className="text-[#737373] mb-6">Start your financial journey with us today</p>
                 <button
                   onClick={() => {
                     toast({
@@ -669,7 +549,7 @@ export default function UserDashboard() {
                     });
                     router.push('/apply');
                   }}
-                  className="px-6 py-3 bg-gradient-to-r from-[#2E7D32] to-[#1B5E20] text-white rounded-lg hover:shadow-lg transition-all"
+                  className="px-6 py-3 bg-gradient-to-r from-[#10B4A3] to-[#0E9D8F] text-white rounded-lg hover:shadow-lg transition-all"
                 >
                   Apply for Your First Loan
                 </button>
@@ -677,9 +557,6 @@ export default function UserDashboard() {
             </div>
           )}
         </motion.div>
-
-        {/* Quick Actions */}
-
       </div>
       <Toaster />
     </>

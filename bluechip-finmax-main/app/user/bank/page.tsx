@@ -210,22 +210,22 @@ export default function BankAccountsPage() {
     return (
       <div className="flex items-center justify-center min-h-[60vh]">
         <div className="text-center">
-          <Loader2 className="w-12 h-12 animate-spin text-[#2E7D32] mx-auto mb-4" />
-          <p className="text-gray-600">Loading bank accounts...</p>
+          <Loader2 className="w-12 h-12 animate-spin text-[#10B4A3] mx-auto mb-4" />
+          <p className="text-[#737373]">Loading bank accounts...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="space-y-6 p-4 sm:p-6 lg:p-8">
+    <div className="space-y-6 p-4 sm:p-6 lg:p-8 bg-[#FAFAFA] min-h-screen">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-[#1B5E20]">
+          <h1 className="text-2xl sm:text-3xl font-bold text-[#0A0A0A]">
             My Bank Accounts
           </h1>
-          <p className="text-sm text-gray-600 mt-1">
+          <p className="text-sm text-[#737373] mt-1">
             Manage your linked bank accounts
           </p>
         </div>
@@ -233,19 +233,19 @@ export default function BankAccountsPage() {
         <button
           onClick={fetchBankAccounts}
           disabled={loading}
-          className="flex items-center gap-2 px-4 py-2 bg-white border border-[#E0E0E0] rounded-lg hover:shadow-md transition-all disabled:opacity-50 cursor-pointer"
+          className="flex items-center gap-2 px-4 py-2 bg-white border border-[#E5E5E5] rounded-lg hover:shadow-md transition-all disabled:opacity-50 cursor-pointer"
         >
           <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
-          <span>Refresh</span>
+          <span className="text-[#0A0A0A]">Refresh</span>
         </button>
       </div>
 
       {/* Error State */}
       {error && (
-        <div className="p-4 bg-red-50 border border-red-200 rounded-lg flex items-center gap-3">
-          <AlertCircle className="w-5 h-5 text-red-600" />
+        <div className="p-4 bg-[#FFEBEE] border border-[#F44336] rounded-lg flex items-center gap-3">
+          <AlertCircle className="w-5 h-5 text-[#F44336]" />
           <div className="flex-1">
-            <p className="text-red-800 font-medium">{error}</p>
+            <p className="text-[#F44336] font-medium">{error}</p>
           </div>
         </div>
       )}
@@ -253,19 +253,19 @@ export default function BankAccountsPage() {
 
       {/* Bank Accounts List */}
       {bankAccounts.length === 0 ? (
-        <div className="bg-white rounded-xl border border-[#E0E0E0] shadow-sm">
+        <div className="bg-white rounded-xl border border-[#E5E5E5] shadow-sm">
           {!showAddForm ? (
             <div className="flex flex-col items-center justify-center py-16 px-4">
-              <Wallet className="w-16 h-16 text-gray-300 mb-4" />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              <Wallet className="w-16 h-16 text-[#D4D4D4] mb-4" />
+              <h3 className="text-lg font-semibold text-[#0A0A0A] mb-2">
                 No Bank Accounts Found
               </h3>
-              <p className="text-sm text-gray-500 text-center max-w-md mb-6">
+              <p className="text-sm text-[#737373] text-center max-w-md mb-6">
                 You haven't linked any bank accounts yet. Add a bank account to get started.
               </p>
               <button
                 onClick={() => setShowAddForm(true)}
-                className="px-6 py-3 bg-[#2E7D32] text-white rounded-lg hover:bg-[#1B5E20] transition-all flex items-center gap-2 font-medium cursor-pointer"
+                className="px-6 py-3 bg-gradient-to-r from-[#10B4A3] to-[#0E9D8F] text-white rounded-lg hover:shadow-lg transition-all flex items-center gap-2 font-medium cursor-pointer"
               >
                 <Building2 className="w-5 h-5" />
                 Add Bank Account
@@ -273,13 +273,13 @@ export default function BankAccountsPage() {
             </div>
           ) : (
             <div className="p-6 sm:p-8">
-              <h3 className="text-xl font-bold text-[#1B5E20] mb-6">
+              <h3 className="text-xl font-bold text-[#0A0A0A] mb-6">
                 {editingAccount ? 'Edit Bank Account' : 'Add New Bank Account'}
               </h3>
               <form onSubmit={handleSubmitBankAccount} className="space-y-5">
                 {/* Account Holder Name */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
                     Account Holder Name *
                   </label>
                   <input
@@ -295,7 +295,7 @@ export default function BankAccountsPage() {
 
                 {/* Account Number */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
                     Account Number *
                   </label>
                   <input
@@ -312,7 +312,7 @@ export default function BankAccountsPage() {
                 {/* Bank Name & Branch */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
                       Bank Name *
                     </label>
                     <input
@@ -327,7 +327,7 @@ export default function BankAccountsPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
                       Branch Name *
                     </label>
                     <input
@@ -344,7 +344,7 @@ export default function BankAccountsPage() {
 
                 {/* IFSC Code */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
                     IFSC Code *
                   </label>
                   <input
@@ -352,8 +352,7 @@ export default function BankAccountsPage() {
                     name="ifscCode"
                     value={formData.ifscCode}
                     onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2E7D32] focus:border-transparent transition-all font-mono uppercase"
+                    className="w-full px-4 py-2.5 border border-[#E5E5E5] rounded-lg focus:ring-2 focus:ring-[#10B4A3] focus:border-transparent transition-all font-mono uppercase"
                     placeholder="e.g., HDFC0001235"
                     maxLength={11}
                   />
@@ -362,15 +361,14 @@ export default function BankAccountsPage() {
                 {/* Account Type - Only show when creating */}
                 {!editingAccount && (
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
                       Account Type *
                     </label>
                     <select
                       name="accountType"
                       value={formData.accountType}
                       onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2E7D32] focus:border-transparent transition-all"
+                      className="w-full px-4 py-2.5 border border-[#E5E5E5] rounded-lg focus:ring-2 focus:ring-[#10B4A3] focus:border-transparent transition-all"
                     >
                       <option value="SAVINGS">Savings Account</option>
                       <option value="CURRENT">Current Account</option>
@@ -388,9 +386,9 @@ export default function BankAccountsPage() {
                       id="isPrimary"
                       checked={formData.isPrimary}
                       onChange={handleInputChange}
-                      className="w-4 h-4 text-[#2E7D32] border-gray-300 rounded focus:ring-[#2E7D32]"
+                      className="w-4 h-4 text-[#10B4A3] border-[#E5E5E5] rounded focus:ring-[#10B4A3]"
                     />
-                    <label htmlFor="isPrimary" className="text-sm text-gray-700">
+                    <label htmlFor="isPrimary" className="text-sm text-[#0A0A0A]">
                       Set as primary account
                     </label>
                   </div>
@@ -419,7 +417,7 @@ export default function BankAccountsPage() {
                     type="button"
                     onClick={handleCancelEdit}
                     disabled={isSubmitting}
-                    className="px-6 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all font-medium disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                    className="px-6 py-3 bg-[#F5F5F5] text-[#0A0A0A] rounded-lg hover:bg-[#E5E5E5] transition-all font-medium disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                   >
                     Cancel
                   </button>
@@ -435,13 +433,12 @@ export default function BankAccountsPage() {
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="bg-white rounded-xl border border-[#E0E0E0] shadow-sm p-6 sm:p-8"
+              className="bg-white rounded-xl border border-[#E5E5E5] shadow-sm p-6 sm:p-8"
             >
-              <h3 className="text-xl font-bold text-[#1B5E20] mb-6">Edit Bank Account</h3>
-              <form onSubmit={handleSubmitBankAccount} className="space-y-5">
-                {/* Account Holder Name */}
+              <h3 className="text-xl font-bold text-[#0A0A0A] mb-6">Edit Bank Account</h3>
+              <div className="space-y-5">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
                     Account Holder Name *
                   </label>
                   <input
@@ -457,7 +454,7 @@ export default function BankAccountsPage() {
 
                 {/* Account Number */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
                     Account Number *
                   </label>
                   <input
@@ -474,7 +471,7 @@ export default function BankAccountsPage() {
                 {/* Bank Name & Branch */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
                       Bank Name *
                     </label>
                     <input
@@ -489,7 +486,7 @@ export default function BankAccountsPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
                       Branch Name *
                     </label>
                     <input
@@ -497,8 +494,7 @@ export default function BankAccountsPage() {
                       name="branchName"
                       value={formData.branchName}
                       onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2E7D32] focus:border-transparent transition-all"
+                      className="w-full px-4 py-2.5 border border-[#E5E5E5] rounded-lg focus:ring-2 focus:ring-[#10B4A3] focus:border-transparent transition-all"
                       placeholder="e.g., Andheri West, Mumbai"
                     />
                   </div>
@@ -506,7 +502,7 @@ export default function BankAccountsPage() {
 
                 {/* IFSC Code */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
                     IFSC Code *
                   </label>
                   <input
@@ -514,8 +510,7 @@ export default function BankAccountsPage() {
                     name="ifscCode"
                     value={formData.ifscCode}
                     onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2E7D32] focus:border-transparent transition-all font-mono uppercase"
+                    className="w-full px-4 py-2.5 border border-[#E5E5E5] rounded-lg focus:ring-2 focus:ring-[#10B4A3] focus:border-transparent transition-all font-mono uppercase"
                     placeholder="e.g., HDFC0001235"
                     maxLength={11}
                   />
@@ -563,7 +558,7 @@ export default function BankAccountsPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="flex-1 px-6 py-3 bg-[#2E7D32] text-white rounded-lg hover:bg-[#1B5E20] transition-all font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 cursor-pointer"
+                    className="flex-1 px-6 py-3 bg-gradient-to-r from-[#10B4A3] to-[#0E9D8F] text-white rounded-lg hover:shadow-lg transition-all font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 cursor-pointer"
                   >
                     {isSubmitting ? (
                       <>
@@ -581,161 +576,154 @@ export default function BankAccountsPage() {
                     type="button"
                     onClick={handleCancelEdit}
                     disabled={isSubmitting}
-                    className="px-6 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all font-medium disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                    className="px-6 py-3 bg-[#F5F5F5] text-[#0A0A0A] rounded-lg hover:bg-[#E5E5E5] transition-all font-medium disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                   >
                     Cancel
                   </button>
                 </div>
-              </form>
+              </div>
             </motion.div>
           )}
 
           {/* Existing Bank Accounts Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {bankAccounts.map((account, index) => (
-            <motion.div
-              key={account._id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className={`bg-white rounded-xl border-2 ${
-                account.isPrimary ? 'border-[#2E7D32]' : 'border-[#E0E0E0]'
-              } shadow-sm hover:shadow-md transition-all overflow-hidden`}
-            >
-              {/* Card Header */}
-              <div className={`p-4 ${
-                account.isPrimary
-                  ? 'bg-gradient-to-r from-[#2E7D32] to-[#1B5E20]'
-                  : 'bg-gradient-to-r from-[#1976D2] to-[#1565C0]'
-              }`}>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 bg-white/20 rounded-lg">
-                      <Building2 className="w-6 h-6 text-white" />
+              <motion.div
+                key={account._id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                className={`bg-white rounded-xl border-2 ${
+                  account.isPrimary ? 'border-[#10B4A3]' : 'border-[#E5E5E5]'
+                } shadow-sm hover:shadow-md transition-all overflow-hidden`}
+              >
+                <div className={`p-4 ${
+                  account.isPrimary
+                    ? 'bg-gradient-to-r from-[#10B4A3] to-[#0E9D8F]'
+                    : 'bg-gradient-to-r from-[#4084FF] to-[#6BA4FF]'
+                }`}>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 bg-white/20 rounded-lg">
+                        <Building2 className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-white font-semibold text-lg">
+                          {account.bankName}
+                        </h3>
+                        <p className="text-white/80 text-sm">{account.branch}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-white font-semibold text-lg">
-                        {account.bankName}
-                      </h3>
-                      <p className="text-white/80 text-sm">{account.branch}</p>
-                    </div>
-                  </div>
 
-                  <div className="flex items-center gap-2">
-                    {account.isPrimary && (
-                      <span className="px-3 py-1 bg-white/20 text-white text-xs font-semibold rounded-full">
-                        PRIMARY
-                      </span>
-                    )}
-                    <button
-                      onClick={() => handleEditAccount(account)}
-                      className="p-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors cursor-pointer"
-                      title="Edit Account"
-                    >
-                      <Edit className="w-4 h-4 text-white" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card Body */}
-              <div className="p-5 space-y-4">
-                {/* Account Holder Name */}
-                <div>
-                  <label className="text-xs text-gray-500 font-medium block mb-1">
-                    Account Holder Name
-                  </label>
-                  <p className="text-gray-900 font-semibold">
-                    {account.accountHolderName}
-                  </p>
-                </div>
-
-                {/* Account Number */}
-                <div>
-                  <label className="text-xs text-gray-500 font-medium block mb-1">
-                    Account Number
-                  </label>
-                  <div className="flex items-center gap-2">
-                    <p className="text-gray-900 font-mono font-semibold">
-                      {visibleAccounts.has(account._id)
-                        ? account.accountNumber
-                        : maskAccountNumber(account.accountNumber)}
-                    </p>
-                    <button
-                      onClick={() => toggleAccountVisibility(account._id)}
-                      className="p-1 hover:bg-gray-100 rounded transition-colors cursor-pointer"
-                      title={visibleAccounts.has(account._id) ? 'Hide' : 'Show'}
-                    >
-                      {visibleAccounts.has(account._id) ? (
-                        <EyeOff className="w-4 h-4 text-gray-600" />
-                      ) : (
-                        <Eye className="w-4 h-4 text-gray-600" />
-                      )}
-                    </button>
-                    {visibleAccounts.has(account._id) && (
-                      <button
-                        onClick={() => copyToClipboard(account.accountNumber)}
-                        className="p-1 hover:bg-gray-100 rounded transition-colors cursor-pointer"
-                        title="Copy"
-                      >
-                        <Copy className="w-4 h-4 text-gray-600" />
-                      </button>
-                    )}
-                  </div>
-                </div>
-
-                {/* IFSC Code */}
-                <div>
-                  <label className="text-xs text-gray-500 font-medium block mb-1">
-                    IFSC Code
-                  </label>
-                  <div className="flex items-center gap-2">
-                    <p className="text-gray-900 font-mono font-semibold">
-                      {account.ifscCode}
-                    </p>
-                    <button
-                      onClick={() => copyToClipboard(account.ifscCode)}
-                      className="p-1 hover:bg-gray-100 rounded transition-colors cursor-pointer"
-                      title="Copy IFSC"
-                    >
-                      <Copy className="w-4 h-4 text-gray-600" />
-                    </button>
-                  </div>
-                </div>
-
-                {/* Verification Status */}
-                <div className="flex items-center gap-4 pt-3 border-t border-gray-200">
-                  <div className="flex items-center gap-2">
-                    {account.isVerified ? (
-                      <>
-                        <CheckCircle className="w-4 h-4 text-green-600" />
-                        <span className="text-sm text-green-600 font-medium">Verified</span>
-                      </>
-                    ) : (
-                      <>
-                        <XCircle className="w-4 h-4 text-yellow-600" />
-                        <span className="text-sm text-yellow-600 font-medium">Not Verified</span>
-                      </>
-                    )}
-                  </div>
-
-                  {account.averageMonthlyBalance && (
                     <div className="flex items-center gap-2">
-                      <TrendingUp className="w-4 h-4 text-[#1976D2]" />
-                      <span className="text-sm text-gray-600">
-                        Avg: ₹{account.averageMonthlyBalance.toLocaleString('en-IN')}
-                      </span>
+                      {account.isPrimary && (
+                        <span className="px-3 py-1 bg-white/20 text-white text-xs font-semibold rounded-full">
+                          PRIMARY
+                        </span>
+                      )}
+                      <button
+                        onClick={() => handleEditAccount(account)}
+                        className="p-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors cursor-pointer"
+                        title="Edit Account"
+                      >
+                        <Edit className="w-4 h-4 text-white" />
+                      </button>
                     </div>
-                  )}
+                  </div>
                 </div>
 
-                {/* Added Date */}
-                <div className="flex items-center gap-2 text-xs text-gray-500">
-                  <Calendar className="w-3 h-3" />
-                  <span>Added on {formatDate(account.createdAt)}</span>
+                <div className="p-5 space-y-4">
+                  <div>
+                    <label className="text-xs text-[#737373] font-medium block mb-1">
+                      Account Holder Name
+                    </label>
+                    <p className="text-[#0A0A0A] font-semibold">
+                      {account.accountHolderName}
+                    </p>
+                  </div>
+
+                  <div>
+                    <label className="text-xs text-[#737373] font-medium block mb-1">
+                      Account Number
+                    </label>
+                    <div className="flex items-center gap-2">
+                      <p className="text-[#0A0A0A] font-mono font-semibold">
+                        {visibleAccounts.has(account._id)
+                          ? account.accountNumber
+                          : maskAccountNumber(account.accountNumber)}
+                      </p>
+                      <button
+                        onClick={() => toggleAccountVisibility(account._id)}
+                        className="p-1 hover:bg-[#F5F5F5] rounded transition-colors cursor-pointer"
+                        title={visibleAccounts.has(account._id) ? 'Hide' : 'Show'}
+                      >
+                        {visibleAccounts.has(account._id) ? (
+                          <EyeOff className="w-4 h-4 text-[#737373]" />
+                        ) : (
+                          <Eye className="w-4 h-4 text-[#737373]" />
+                        )}
+                      </button>
+                      {visibleAccounts.has(account._id) && (
+                        <button
+                          onClick={() => copyToClipboard(account.accountNumber)}
+                          className="p-1 hover:bg-[#F5F5F5] rounded transition-colors cursor-pointer"
+                          title="Copy"
+                        >
+                          <Copy className="w-4 h-4 text-[#737373]" />
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="text-xs text-[#737373] font-medium block mb-1">
+                      IFSC Code
+                    </label>
+                    <div className="flex items-center gap-2">
+                      <p className="text-[#0A0A0A] font-mono font-semibold">
+                        {account.ifscCode}
+                      </p>
+                      <button
+                        onClick={() => copyToClipboard(account.ifscCode)}
+                        className="p-1 hover:bg-[#F5F5F5] rounded transition-colors cursor-pointer"
+                        title="Copy IFSC"
+                      >
+                        <Copy className="w-4 h-4 text-[#737373]" />
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4 pt-3 border-t border-[#E5E5E5]">
+                    <div className="flex items-center gap-2">
+                      {account.isVerified ? (
+                        <>
+                          <CheckCircle className="w-4 h-4 text-[#4CAF50]" />
+                          <span className="text-sm text-[#4CAF50] font-medium">Verified</span>
+                        </>
+                      ) : (
+                        <>
+                          <XCircle className="w-4 h-4 text-[#FF9800]" />
+                          <span className="text-sm text-[#FF9800] font-medium">Not Verified</span>
+                        </>
+                      )}
+                    </div>
+
+                    {account.averageMonthlyBalance && (
+                      <div className="flex items-center gap-2">
+                        <TrendingUp className="w-4 h-4 text-[#4084FF]" />
+                        <span className="text-sm text-[#737373]">
+                          Avg: ₹{account.averageMonthlyBalance.toLocaleString('en-IN')}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="flex items-center gap-2 text-xs text-[#737373]">
+                    <Calendar className="w-3 h-3" />
+                    <span>Added on {formatDate(account.createdAt)}</span>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
             ))}
           </div>
         </>
