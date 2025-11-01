@@ -97,7 +97,7 @@ export default function EMICalculatorPage() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
 
       {/* Header Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -163,7 +163,7 @@ export default function EMICalculatorPage() {
             className="bg-white rounded-2xl p-8 shadow-lucky"
           >
             <h2 className="text-2xl font-bold mb-6 flex items-center">
-              <Calculator className="w-6 h-6 mr-2 text-[#1976D2]" />
+              <Calculator className="w-6 h-6 mr-2 text-[#4A66FF]" />
               Loan Details
             </h2>
 
@@ -189,7 +189,7 @@ export default function EMICalculatorPage() {
                   </div>
                 </div>
                 <div className="mt-3 p-3 bg-gray-50 rounded-lg">
-                  <span className="text-2xl font-bold text-[#1976D2]">
+                  <span className="text-2xl font-bold text-[#4A66FF]">
                     ₹{loanAmount.toLocaleString('en-IN')}
                   </span>
                 </div>
@@ -216,7 +216,7 @@ export default function EMICalculatorPage() {
                   </div>
                 </div>
                 <div className="mt-3 p-3 bg-gray-50 rounded-lg">
-                  <span className="text-2xl font-bold text-[#006837]">
+                  <span className="text-2xl font-bold text-[#25B181]">
                     {interestRate}%
                   </span>
                 </div>
@@ -243,7 +243,7 @@ export default function EMICalculatorPage() {
                   </div>
                 </div>
                 <div className="mt-3 p-3 bg-gray-50 rounded-lg">
-                  <span className="text-2xl font-bold text-[#FFC107]">
+                  <span className="text-2xl font-bold text-[#FF9C70]">
                     {tenure} Months
                   </span>
                   <span className="text-sm text-gray-500 ml-2">
@@ -273,7 +273,7 @@ export default function EMICalculatorPage() {
             {/* EMI Result Card */}
             <div className="bg-white rounded-2xl p-8 shadow-lucky">
               <h2 className="text-2xl font-bold mb-6 flex items-center">
-                <TrendingUp className="w-6 h-6 mr-2 text-[#006837]" />
+                <TrendingUp className="w-6 h-6 mr-2 text-[#25B181]" />
                 EMI Breakdown
               </h2>
 
@@ -295,7 +295,7 @@ export default function EMICalculatorPage() {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-sm font-medium">Interest Percentage</span>
-                  <span className="text-lg font-semibold text-[#FFC107]">{result.interestPercentage}%</span>
+                  <span className="text-lg font-semibold text-[#FF9C70]">{result.interestPercentage}%</span>
                 </div>
               </div>
             </div>
@@ -303,14 +303,14 @@ export default function EMICalculatorPage() {
             {/* Pie Chart Visualization */}
             <div className="bg-white rounded-2xl p-8 shadow-lucky">
               <h3 className="text-xl font-bold mb-4 flex items-center">
-                <PieChart className="w-5 h-5 mr-2 text-[#FFC107]" />
+                <PieChart className="w-5 h-5 mr-2 text-[#FF9C70]" />
                 Payment Breakdown
               </h3>
 
               <div className="space-y-4">
                 <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
                   <div className="flex items-center">
-                    <div className="w-4 h-4 bg-[#1976D2] rounded mr-3"></div>
+                    <div className="w-4 h-4 bg-[#4A66FF] rounded mr-3"></div>
                     <span className="font-medium">Principal Amount</span>
                   </div>
                   <span className="font-bold">₹{loanAmount.toLocaleString('en-IN')}</span>
@@ -318,7 +318,7 @@ export default function EMICalculatorPage() {
 
                 <div className="flex items-center justify-between p-3 bg-green-50 rounded-lg">
                   <div className="flex items-center">
-                    <div className="w-4 h-4 bg-[#006837] rounded mr-3"></div>
+                    <div className="w-4 h-4 bg-[#25B181] rounded mr-3"></div>
                     <span className="font-medium">Total Interest</span>
                   </div>
                   <span className="font-bold">₹{result.totalInterest.toLocaleString('en-IN')}</span>
@@ -327,7 +327,7 @@ export default function EMICalculatorPage() {
             </div>
 
             {/* Quick Apply CTA */}
-            <div className="bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl p-8 ">
+            <div className="bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-2xl p-8 ">
               <h3 className="text-xl font-bold mb-2">Ready to Apply?</h3>
               <p className="mb-4 opacity-90">Get instant approval with our AI-powered system</p>
               <Link href="/apply">
@@ -348,7 +348,7 @@ export default function EMICalculatorPage() {
         >
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold flex items-center">
-              <Download className="w-6 h-6 mr-2 text-[#1976D2]" />
+              <Download className="w-6 h-6 mr-2 text-[#4A66FF]" />
               Amortization Schedule
             </h2>
             <button
@@ -391,8 +391,8 @@ export default function EMICalculatorPage() {
                     <tr key={entry.month} className="border-b border-gray-100 hover:bg-gray-50:bg-gray-700/50">
                       <td className="py-2 px-2 font-medium">{entry.month}</td>
                       <td className="py-2 px-2 text-right">₹{entry.emi.toLocaleString('en-IN')}</td>
-                      <td className="py-2 px-2 text-right text-[#1976D2]">₹{entry.principal.toLocaleString('en-IN')}</td>
-                      <td className="py-2 px-2 text-right text-[#006837]">₹{entry.interest.toLocaleString('en-IN')}</td>
+                      <td className="py-2 px-2 text-right text-[#4A66FF]">₹{entry.principal.toLocaleString('en-IN')}</td>
+                      <td className="py-2 px-2 text-right text-[#25B181]">₹{entry.interest.toLocaleString('en-IN')}</td>
                       <td className="py-2 px-2 text-right font-medium">₹{entry.balance.toLocaleString('en-IN')}</td>
                     </tr>
                   ))}
@@ -416,12 +416,12 @@ export default function EMICalculatorPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <button className="px-8 py-3 bg-white text-[#1976D2] rounded-lg font-semibold hover:shadow-lg transition-all">
+                <button className="px-8 py-3 bg-white text-[#4A66FF] rounded-lg font-semibold hover:shadow-lg transition-all">
                   Talk to Expert
                 </button>
               </Link>
               <Link href="/resources/faqs">
-                <button className="px-8 py-3 bg-transparent border-2 border-white font-semibold hover:bg-white hover:text-[#1976D2] transition-all">
+                <button className="px-8 py-3 bg-transparent border-2 border-white font-semibold hover:bg-white hover:text-[#4A66FF] transition-all">
                   View FAQs
                 </button>
               </Link>

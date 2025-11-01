@@ -233,7 +233,7 @@ export default function EligibilityCheckPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/20" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -301,7 +301,7 @@ export default function EligibilityCheckPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {/* Personal Information */}
                 <div className="space-y-6">
-                  <h3 className="text-lg font-semibold text-[#1976D2] flex items-center gap-2">
+                  <h3 className="text-lg font-semibold text-[#4A66FF] flex items-center gap-2">
                     <Users className="w-5 h-5" />
                     Personal Information
                   </h3>
@@ -367,7 +367,7 @@ export default function EligibilityCheckPage() {
 
                 {/* Financial Information */}
                 <div className="space-y-6">
-                  <h3 className="text-lg font-semibold text-[#006837] flex items-center gap-2">
+                  <h3 className="text-lg font-semibold text-[#25B181] flex items-center gap-2">
                     <CreditCard className="w-5 h-5" />
                     Financial Information
                   </h3>
@@ -386,7 +386,7 @@ export default function EligibilityCheckPage() {
                       placeholder="e.g., 750"
                     />
                     <p className="text-sm text-gray-500 mt-1">
-                      Don't know? <Link href="#" className="text-[#1976D2] hover:underline">Check now</Link>
+                      Don't know? <Link href="#" className="text-[#4A66FF] hover:underline">Check now</Link>
                     </p>
                   </div>
 
@@ -400,7 +400,7 @@ export default function EligibilityCheckPage() {
                         onClick={() => updateFormData("existingLoans", "no")}
                         className={`flex-1 py-3 px-4 rounded-lg font-medium transition-all ${
                           formData.existingLoans === "no"
-                            ? 'bg-[#1976D2] text-blue shadow-lg scale-105'
+                            ? 'bg-[#4A66FF] text-blue shadow-lg scale-105'
                             : 'bg-gray-100 text-gray-700 hover:bg-gray-200:bg-gray-600'
                         }`}
                       >
@@ -411,7 +411,7 @@ export default function EligibilityCheckPage() {
                         onClick={() => updateFormData("existingLoans", "yes")}
                         className={`flex-1 py-3 px-4 rounded-lg font-medium transition-all ${
                           formData.existingLoans === "yes"
-                            ? 'bg-[#1976D2] text-white shadow-lg scale-105'
+                            ? 'bg-[#4A66FF] text-white shadow-lg scale-105'
                             : 'bg-gray-100 text-gray-700 hover:bg-gray-200:bg-gray-600'
                         }`}
                       >
@@ -493,7 +493,7 @@ export default function EligibilityCheckPage() {
                 disabled={!isFormValid()}
                 whileHover={isFormValid() ? { scale: 1.02 } : {}}
                 whileTap={isFormValid() ? { scale: 0.98 } : {}}
-                className="w-full mt-8 px-8 py-4 bg-gradient-to-r from-[#006837] to-[#FFC107] text-white rounded-xl font-bold text-lg hover:shadow-2xl transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full mt-8 px-8 py-4 bg-gradient-to-r from-[#25B181] to-[#51C9AF] text-white rounded-xl font-bold text-lg hover:shadow-2xl transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                 <Sparkles className="w-6 h-6" />
                 Check My Eligibility Now
@@ -639,12 +639,12 @@ export default function EligibilityCheckPage() {
               {result?.isEligible ? (
                 <>
                   <Link href="/apply/loan" className="flex-1">
-                    <button className="w-full px-8 py-4 bg-[#1976D2] text-white rounded-lg font-semibold hover:bg-[var(--royal-blue-dark)] transition-colors">
+                    <button className="w-full px-8 py-4 bg-[#4A66FF] text-white rounded-lg font-semibold hover:bg-[var(--royal-blue-dark)] transition-colors">
                       Apply for Loan Now
                     </button>
                   </Link>
                   <Link href="/resources/emi-calculator" className="flex-1">
-                    <button className="w-full px-8 py-4 bg-[#006837] text-white rounded-lg font-semibold hover:opacity-90 transition-opacity">
+                    <button className="w-full px-8 py-4 bg-[#25B181] text-white rounded-lg font-semibold hover:opacity-90 transition-opacity">
                       Calculate EMI
                     </button>
                   </Link>
@@ -652,7 +652,7 @@ export default function EligibilityCheckPage() {
               ) : (
                 <>
                   <Link href="/resources/faqs" className="flex-1">
-                    <button className="w-full px-8 py-4 bg-[#1976D2] text-white rounded-lg font-semibold hover:bg-[var(--royal-blue-dark)] transition-colors">
+                    <button className="w-full px-8 py-4 bg-[#4A66FF] text-white rounded-lg font-semibold hover:bg-[var(--royal-blue-dark)] transition-colors">
                       Learn More
                     </button>
                   </Link>

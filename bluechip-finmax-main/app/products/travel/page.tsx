@@ -18,7 +18,7 @@ export default function TravelNowPayLaterPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#4A66FF] via-[#6B7FFF] to-[#4A66FF] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/20" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -61,7 +61,7 @@ export default function TravelNowPayLaterPage() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-white text-blue-600 rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2"
+                  className="px-8 py-4 bg-white text-[#4A66FF] rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2"
                 >
                   Apply Now
                   <ArrowRight className="w-5 h-5" />
@@ -103,7 +103,7 @@ export default function TravelNowPayLaterPage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#4A66FF] to-[#6B7FFF] rounded-lg flex items-center justify-center mb-4">
                   <feature.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
@@ -139,13 +139,13 @@ export default function TravelNowPayLaterPage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="h-32 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
+                <div className="h-32 bg-gradient-to-br from-[#6B7FFF] to-[#4A66FF] flex items-center justify-center">
                   <span className="text-4xl">{destination.flag}</span>
                 </div>
                 <div className="p-4">
                   <h3 className="text-lg font-semibold mb-1">{destination.name}</h3>
                   <p className="text-sm text-gray-600 mb-2">{destination.type}</p>
-                  <p className="text-xs text-blue-600 font-medium">From ₹{destination.startingPrice}</p>
+                  <p className="text-xs text-[#4A66FF] font-medium">From ₹{destination.startingPrice}</p>
                 </div>
               </motion.div>
             ))}
@@ -178,12 +178,12 @@ export default function TravelNowPayLaterPage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg flex items-center justify-center mb-4">
-                  <partner.icon className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-gradient-to-r from-[#E5E9FF] to-[#EEF1FF] rounded-lg flex items-center justify-center mb-4">
+                  <partner.icon className="w-6 h-6 text-[#4A66FF]" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{partner.name}</h3>
                 <p className="text-sm text-gray-600 mb-2">{partner.description}</p>
-                <p className="text-xs text-blue-600 font-medium">{partner.benefit}</p>
+                <p className="text-xs text-[#4A66FF] font-medium">{partner.benefit}</p>
               </motion.div>
             ))}
           </div>
@@ -228,7 +228,7 @@ export default function TravelNowPayLaterPage() {
                   transition={{ delay: index * 0.1 }}
                   className="flex gap-6 items-start"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#4A66FF] to-[#6B7FFF] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
                     {index + 1}
                   </div>
                   <div className="flex-1">
@@ -274,7 +274,7 @@ export default function TravelNowPayLaterPage() {
                 </div>
                 <p className="text-gray-600 mb-4">"{testimonial.comment}"</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                  <div className="w-10 h-10 bg-gradient-to-r from-[#4A66FF] to-[#6B7FFF] rounded-full flex items-center justify-center text-white font-bold">
                     {testimonial.name[0]}
                   </div>
                   <div>
@@ -289,7 +289,7 @@ export default function TravelNowPayLaterPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-[#4A66FF] to-[#6B7FFF] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -302,7 +302,7 @@ export default function TravelNowPayLaterPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/apply">
-                <button className="px-8 py-4 bg-white text-blue-600 rounded-full font-semibold text-lg hover:shadow-xl transition-all">
+                <button className="px-8 py-4 bg-white text-[#4A66FF] rounded-full font-semibold text-lg hover:shadow-xl transition-all">
                   Book Your Travel Now
                 </button>
               </Link>

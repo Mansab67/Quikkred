@@ -18,7 +18,7 @@ export default function EmergencyFundPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Gradient */}
-      <section className="relative bg-gradient-to-br from-red-600 via-red-500 to-orange-500 text-white">
+      <section className="relative bg-gradient-to-br from-[#FF9C70] via-[#FFB596] to-[#FF9C70] text-white">
         <div className="absolute inset-0 bg-black/20" />
 
         <div className="relative">
@@ -82,7 +82,7 @@ export default function EmergencyFundPage() {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="px-8 py-4 bg-white text-red-600 rounded-full font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all flex items-center gap-2 justify-center"
+                    className="px-8 py-4 bg-white text-[#FF9C70] rounded-full font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all flex items-center gap-2 justify-center"
                   >
                     Apply for Emergency Fund
                     <ArrowRight className="w-5 h-5" />
@@ -125,12 +125,12 @@ export default function EmergencyFundPage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-gray-50 rounded-2xl p-6 hover:shadow-xl transition-all"
               >
-                <div className="w-14 h-14 bg-gradient-to-r from-red-600 to-orange-500 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-14 h-14 bg-gradient-to-r from-[#FF9C70] to-[#FFB596] rounded-xl flex items-center justify-center mb-4">
                   <type.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{type.title}</h3>
                 <p className="text-gray-600 mb-4">{type.description}</p>
-                <p className="text-sm font-semibold text-[#006837]">
+                <p className="text-sm font-semibold text-[#25B181]">
                   Up to {type.amount}
                 </p>
               </motion.div>
@@ -177,14 +177,14 @@ export default function EmergencyFundPage() {
                   transition={{ delay: index * 0.1 }}
                   className="flex gap-6 items-start bg-gray-50 rounded-2xl p-6"
                 >
-                  <div className="w-14 h-14 bg-gradient-to-r from-red-600 to-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
+                  <div className="w-14 h-14 bg-gradient-to-r from-[#FF9C70] to-[#FFB596] rounded-full flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
                     {index + 1}
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
                     <p className="text-gray-600">{step.description}</p>
                     {step.time && (
-                      <p className="text-sm text-red-600 font-semibold mt-2">
+                      <p className="text-sm text-[#FF9C70] font-semibold mt-2">
                         ⏱️ {step.time}
                       </p>
                     )}
@@ -230,7 +230,7 @@ export default function EmergencyFundPage() {
                   "{testimonial.comment}"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-gradient-to-r from-red-600 to-orange-500 rounded-full flex items-center justify-center text-white font-bold">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#FF9C70] to-[#FFB596] rounded-full flex items-center justify-center text-white font-bold">
                     {testimonial.name[0]}
                   </div>
                   <div>
@@ -247,7 +247,7 @@ export default function EmergencyFundPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-red-600 to-orange-500 text-white">
+      <section className="py-20 bg-gradient-to-r from-[#FF9C70] to-[#FFB596] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -264,7 +264,7 @@ export default function EmergencyFundPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/apply">
-                <button className="px-8 py-4 bg-white text-red-600 rounded-full font-semibold text-lg hover:shadow-xl transition-all">
+                <button className="px-8 py-4 bg-white text-[#FF9C70] rounded-full font-semibold text-lg hover:shadow-xl transition-all">
                   Apply for Emergency Fund
                 </button>
               </Link>

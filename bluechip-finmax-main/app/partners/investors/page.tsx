@@ -136,7 +136,7 @@ export default function InvestorRelationsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -211,7 +211,7 @@ export default function InvestorRelationsPage() {
                   className="bg-white rounded-2xl p-6 shadow-lucky"
                 >
                   <div className="flex items-center justify-between mb-4">
-                    <Icon className="w-10 h-10 text-[#1976D2]" />
+                    <Icon className="w-10 h-10 text-[#4A66FF]" />
                     <span className="text-sm font-semibold text-green-600 bg-green-100 px-2 py-1 rounded">
                       {metric.change}
                     </span>
@@ -248,7 +248,7 @@ export default function InvestorRelationsPage() {
                   className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#006837] to-[#FFC107] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#25B181] to-[#51C9AF] rounded-lg flex items-center justify-center flex-shrink-0">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -317,7 +317,7 @@ export default function InvestorRelationsPage() {
                   </p>
                   <a
                     href={doc.link}
-                    className="inline-flex items-center text-[#1976D2] font-semibold text-sm hover:underline"
+                    className="inline-flex items-center text-[#4A66FF] font-semibold text-sm hover:underline"
                   >
                     <Download className="w-4 h-4 mr-2" />
                     Download PDF
@@ -339,7 +339,7 @@ export default function InvestorRelationsPage() {
             <h2 className="text-2xl font-bold mb-6">Corporate Information</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h3 className="font-bold mb-3 text-[#1976D2]">Company Details</h3>
+                <h3 className="font-bold mb-3 text-[#4A66FF]">Company Details</h3>
                 <ul className="space-y-2 text-sm">
                   <li className="flex justify-between">
                     <span className="text-gray-600">CIN:</span>
@@ -361,7 +361,7 @@ export default function InvestorRelationsPage() {
               </div>
 
               <div>
-                <h3 className="font-bold mb-3 text-[#1976D2]">Credit Rating</h3>
+                <h3 className="font-bold mb-3 text-[#4A66FF]">Credit Rating</h3>
                 <div className="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-lg p-4 mb-4">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-sm">CRISIL Rating</span>
@@ -382,7 +382,7 @@ export default function InvestorRelationsPage() {
           transition={{ delay: 0.7 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-2xl p-8 text-white">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <Building className="w-12 h-12 mb-4" />
@@ -414,7 +414,7 @@ export default function InvestorRelationsPage() {
                     placeholder="Enter your email"
                     className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none"
                   />
-                  <button className="px-6 py-3 bg-white text-[#1976D2] rounded-lg font-semibold hover:shadow-lg transition-all">
+                  <button className="px-6 py-3 bg-white text-[#4A66FF] rounded-lg font-semibold hover:shadow-lg transition-all">
                     Subscribe
                   </button>
                 </div>

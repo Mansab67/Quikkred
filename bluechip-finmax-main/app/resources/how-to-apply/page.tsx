@@ -170,7 +170,7 @@ export default function HowToApplyPage() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
 
       {/* Header Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -279,7 +279,7 @@ export default function HowToApplyPage() {
                   >
                     <div className="flex items-start gap-6">
                       <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-xl flex items-center justify-center text-white text-2xl font-bold">
+                        <div className="w-16 h-16 bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-xl flex items-center justify-center text-white text-2xl font-bold">
                           {step.number}
                         </div>
                       </div>
@@ -288,7 +288,7 @@ export default function HowToApplyPage() {
                         <div className="flex items-start justify-between mb-2">
                           <div>
                             <h3 className="text-xl font-bold mb-1 flex items-center gap-2">
-                              <Icon className="w-5 h-5 text-[#1976D2]" />
+                              <Icon className="w-5 h-5 text-[#4A66FF]" />
                               {step.title}
                             </h3>
                             <p className="text-gray-600">
@@ -364,7 +364,7 @@ export default function HowToApplyPage() {
 
           <div className="mt-8 text-center">
             <Link href="/resources/documents">
-              <button className="inline-flex items-center px-6 py-3 bg-[#1976D2] text-white rounded-lg font-semibold hover:bg-[var(--royal-blue-dark)] transition-colors">
+              <button className="inline-flex items-center px-6 py-3 bg-[#4A66FF] text-white rounded-lg font-semibold hover:bg-[var(--royal-blue-dark)] transition-colors">
                 <Download className="w-5 h-5 mr-2" />
                 Download Document Checklist
               </button>
@@ -429,7 +429,7 @@ export default function HowToApplyPage() {
                 Apply through our website with instant approval
               </p>
               <Link href="/apply/loan">
-                <button className="w-full px-4 py-2 bg-[#1976D2] text-white rounded-lg font-semibold hover:bg-[var(--royal-blue-dark)] transition-colors">
+                <button className="w-full px-4 py-2 bg-[#4A66FF] text-white rounded-lg font-semibold hover:bg-[var(--royal-blue-dark)] transition-colors">
                   Apply Now
                 </button>
               </Link>
@@ -474,7 +474,7 @@ export default function HowToApplyPage() {
           transition={{ delay: 0.7 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl p-8 text-white text-center">
+          <div className="bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-2xl p-8 text-white text-center">
             <TrendingUp className="w-12 h-12 mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-4">Ready to Get Started?</h2>
             <p className="text-sm sm:text-base lg:text-xl mb-6 opacity-90">
@@ -482,12 +482,12 @@ export default function HowToApplyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/resources/eligibility-check">
-                <button className="px-8 py-3 bg-white text-[#1976D2] rounded-lg font-semibold hover:shadow-lg transition-all">
+                <button className="px-8 py-3 bg-white text-[#4A66FF] rounded-lg font-semibold hover:shadow-lg transition-all">
                   Check Eligibility First
                 </button>
               </Link>
               <Link href="/apply/loan">
-                <button className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#1976D2] transition-all">
+                <button className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#4A66FF] transition-all">
                   Start Application
                 </button>
               </Link>
@@ -503,13 +503,13 @@ export default function HowToApplyPage() {
           className="mt-16 max-w-5xl mx-auto"
         >
           <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
-            <AlertCircle className="w-12 h-12 text-[#1976D2] mx-auto mb-4" />
+            <AlertCircle className="w-12 h-12 text-[#4A66FF] mx-auto mb-4" />
             <h3 className="text-xl font-bold mb-2">Have Questions?</h3>
             <p className="text-gray-600 mb-4">
               Check our comprehensive FAQ section for answers to common questions
             </p>
             <Link href="/resources/faqs">
-              <button className="px-6 py-3 bg-[#1976D2] text-white rounded-lg font-semibold hover:bg-[var(--royal-blue-dark)] transition-colors">
+              <button className="px-6 py-3 bg-[#4A66FF] text-white rounded-lg font-semibold hover:bg-[var(--royal-blue-dark)] transition-colors">
                 View FAQs
               </button>
             </Link>

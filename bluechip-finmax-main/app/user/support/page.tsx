@@ -140,11 +140,11 @@ export default function SupportPage() {
   const getCategoryColor = (category: string) => {
     switch (category) {
       case 'TECHNICAL_ISSUE':
-        return 'text-[#1976D2] bg-[#1976D2]/10';
+        return 'text-[#4A66FF] bg-[#4A66FF]/10';
       case 'BILLING':
-        return 'text-[#FBC02D] bg-[#FBC02D]/10';
+        return 'text-[#FF9C70] bg-[#FF9C70]/10';
       case 'GENERAL_INQUIRY':
-        return 'text-[#2E7D32] bg-[#2E7D32]/10';
+        return 'text-[#25B181] bg-[#25B181]/10';
       case 'COMPLAINT':
         return 'text-red-600 bg-red-100';
       default:
@@ -158,9 +158,9 @@ export default function SupportPage() {
       case 'URGENT':
         return 'text-red-600 bg-red-100';
       case 'MEDIUM':
-        return 'text-[#FBC02D] bg-[#FBC02D]/10';
+        return 'text-[#FF9C70] bg-[#FF9C70]/10';
       case 'LOW':
-        return 'text-[#2E7D32] bg-[#2E7D32]/10';
+        return 'text-[#25B181] bg-[#25B181]/10';
       default:
         return 'text-gray-600 bg-gray-100';
     }
@@ -170,12 +170,12 @@ export default function SupportPage() {
     switch (status?.toUpperCase()) {
       case 'OPEN':
       case 'IN_PROGRESS':
-        return 'text-[#1976D2] bg-[#1976D2]/10';
+        return 'text-[#4A66FF] bg-[#4A66FF]/10';
       case 'RESOLVED':
       case 'CLOSED':
-        return 'text-[#2E7D32] bg-[#2E7D32]/10';
+        return 'text-[#25B181] bg-[#25B181]/10';
       case 'PENDING':
-        return 'text-[#FBC02D] bg-[#FBC02D]/10';
+        return 'text-[#FF9C70] bg-[#FF9C70]/10';
       default:
         return 'text-gray-600 bg-gray-100';
     }
@@ -203,7 +203,7 @@ export default function SupportPage() {
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-            className="w-16 h-16 border-4 border-[#2E7D32] border-t-transparent rounded-full mx-auto"
+            className="w-16 h-16 border-4 border-[#25B181] border-t-transparent rounded-full mx-auto"
           />
           <p className="mt-4 text-gray-600">Loading support tickets...</p>
         </div>
@@ -221,8 +221,8 @@ export default function SupportPage() {
       >
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
           <div>
-            <h1 className="text-2xl sm:text-3xl font-bold text-[#1B5E20] flex items-center gap-2 sm:gap-3">
-              <MessageSquare className="w-6 h-6 sm:w-8 sm:h-8 text-[#1976D2]" />
+            <h1 className="text-2xl sm:text-3xl font-bold text-[#1F8F68] flex items-center gap-2 sm:gap-3">
+              <MessageSquare className="w-6 h-6 sm:w-8 sm:h-8 text-[#4A66FF]" />
               Support Tickets
             </h1>
             <p className="text-gray-600 mt-1 text-sm sm:text-base">Get help with your issues and questions</p>
@@ -238,7 +238,7 @@ export default function SupportPage() {
             </button>
             <button
               onClick={() => setShowCreateForm(!showCreateForm)}
-              className="flex-1 sm:flex-none px-3 sm:px-4 py-2 bg-gradient-to-r from-[#2E7D32] to-[#1B5E20] text-white rounded-lg hover:shadow-lg transition-all flex items-center justify-center gap-2 text-sm sm:text-base"
+              className="flex-1 sm:flex-none px-3 sm:px-4 py-2 bg-gradient-to-r from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white rounded-lg hover:shadow-lg transition-all flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               <Plus className="w-4 h-4" />
               <span>New Ticket</span>
@@ -255,7 +255,7 @@ export default function SupportPage() {
           className="bg-white rounded-xl p-4 sm:p-6 border border-[#E0E0E0] shadow-sm mb-6"
         >
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-semibold text-[#1B5E20]">Create New Ticket</h2>
+            <h2 className="text-lg font-semibold text-[#1F8F68]">Create New Ticket</h2>
             <button
               onClick={() => setShowCreateForm(false)}
               className="p-1 hover:bg-[#FAFAFA] rounded-lg transition-colors"
@@ -274,7 +274,7 @@ export default function SupportPage() {
                 value={formData.category}
                 onChange={(e) => setFormData({ ...formData, category: e.target.value })}
                 required
-                className="w-full px-4 py-2 border border-[#E0E0E0] rounded-lg focus:ring-2 focus:ring-[#2E7D32] focus:border-[#2E7D32] focus:outline-none"
+                className="w-full px-4 py-2 border border-[#E0E0E0] rounded-lg focus:ring-2 focus:ring-[#25B181] focus:border-[#25B181] focus:outline-none"
               >
                 <option value="TECHNICAL_ISSUE">Technical Issue</option>
                 <option value="BILLING">Billing</option>
@@ -292,7 +292,7 @@ export default function SupportPage() {
                 value={formData.priority}
                 onChange={(e) => setFormData({ ...formData, priority: e.target.value })}
                 required
-                className="w-full px-4 py-2 border border-[#E0E0E0] rounded-lg focus:ring-2 focus:ring-[#2E7D32] focus:border-[#2E7D32] focus:outline-none"
+                className="w-full px-4 py-2 border border-[#E0E0E0] rounded-lg focus:ring-2 focus:ring-[#25B181] focus:border-[#25B181] focus:outline-none"
               >
                 <option value="LOW">Low</option>
                 <option value="MEDIUM">Medium</option>
@@ -312,7 +312,7 @@ export default function SupportPage() {
                 onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                 required
                 placeholder="Brief description of your issue"
-                className="w-full px-4 py-2 border border-[#E0E0E0] rounded-lg focus:ring-2 focus:ring-[#2E7D32] focus:border-[#2E7D32] focus:outline-none"
+                className="w-full px-4 py-2 border border-[#E0E0E0] rounded-lg focus:ring-2 focus:ring-[#25B181] focus:border-[#25B181] focus:outline-none"
               />
             </div>
 
@@ -327,7 +327,7 @@ export default function SupportPage() {
                 required
                 rows={4}
                 placeholder="Provide detailed information about your issue"
-                className="w-full px-4 py-2 border border-[#E0E0E0] rounded-lg focus:ring-2 focus:ring-[#2E7D32] focus:border-[#2E7D32] focus:outline-none resize-none"
+                className="w-full px-4 py-2 border border-[#E0E0E0] rounded-lg focus:ring-2 focus:ring-[#25B181] focus:border-[#25B181] focus:outline-none resize-none"
               />
             </div>
 
@@ -351,7 +351,7 @@ export default function SupportPage() {
               <button
                 type="submit"
                 disabled={formLoading}
-                className="flex-1 px-4 py-2 bg-gradient-to-r from-[#2E7D32] to-[#1B5E20] text-white rounded-lg hover:shadow-lg transition-all disabled:opacity-50 flex items-center justify-center gap-2"
+                className="flex-1 px-4 py-2 bg-gradient-to-r from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white rounded-lg hover:shadow-lg transition-all disabled:opacity-50 flex items-center justify-center gap-2"
               >
                 {formLoading ? (
                   <>
@@ -386,7 +386,7 @@ export default function SupportPage() {
               placeholder="Search by Ticket ID, Subject, or Category..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-9 sm:pl-10 pr-4 py-2 bg-[#FAFAFA] text-[#1B5E20] rounded-lg border border-[#E0E0E0] focus:border-[#2E7D32] focus:ring-2 focus:ring-[#2E7D32]/20 focus:outline-none text-sm sm:text-base"
+              className="w-full pl-9 sm:pl-10 pr-4 py-2 bg-[#FAFAFA] text-[#1F8F68] rounded-lg border border-[#E0E0E0] focus:border-[#25B181] focus:ring-2 focus:ring-[#25B181]/20 focus:outline-none text-sm sm:text-base"
             />
           </div>
 
@@ -396,7 +396,7 @@ export default function SupportPage() {
               onClick={() => setFilterStatus('all')}
               className={`flex-shrink-0 px-3 sm:px-4 py-2 rounded-lg transition-colors text-xs sm:text-sm whitespace-nowrap ${
                 filterStatus === 'all'
-                  ? 'bg-gradient-to-r from-[#2E7D32] to-[#1B5E20] text-white'
+                  ? 'bg-gradient-to-r from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white'
                   : 'bg-[#FAFAFA] border border-[#E0E0E0] text-gray-700 hover:bg-white'
               }`}
             >
@@ -406,7 +406,7 @@ export default function SupportPage() {
               onClick={() => setFilterStatus('open')}
               className={`flex-shrink-0 px-3 sm:px-4 py-2 rounded-lg transition-colors text-xs sm:text-sm whitespace-nowrap ${
                 filterStatus === 'open'
-                  ? 'bg-[#1976D2] text-white'
+                  ? 'bg-[#4A66FF] text-white'
                   : 'bg-[#FAFAFA] border border-[#E0E0E0] text-gray-700 hover:bg-white'
               }`}
             >
@@ -419,7 +419,7 @@ export default function SupportPage() {
               onClick={() => setFilterStatus('closed')}
               className={`flex-shrink-0 px-3 sm:px-4 py-2 rounded-lg transition-colors text-xs sm:text-sm whitespace-nowrap ${
                 filterStatus === 'closed'
-                  ? 'bg-[#2E7D32] text-white'
+                  ? 'bg-[#25B181] text-white'
                   : 'bg-[#FAFAFA] border border-[#E0E0E0] text-gray-700 hover:bg-white'
               }`}
             >
@@ -442,7 +442,7 @@ export default function SupportPage() {
         {filteredTickets.length === 0 ? (
           <div className="p-8 sm:p-12 text-center">
             <MessageSquare className="w-12 h-12 sm:w-16 sm:h-16 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-lg sm:text-xl font-semibold text-[#1B5E20] mb-2">No Tickets Found</h3>
+            <h3 className="text-lg sm:text-xl font-semibold text-[#1F8F68] mb-2">No Tickets Found</h3>
             <p className="text-sm sm:text-base text-gray-600 mb-6">
               {searchTerm || filterStatus !== 'all'
                 ? 'Try adjusting your filters or search term'
@@ -451,7 +451,7 @@ export default function SupportPage() {
             {!searchTerm && filterStatus === 'all' && (
               <button
                 onClick={() => setShowCreateForm(true)}
-                className="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-[#2E7D32] to-[#1B5E20] text-white rounded-lg hover:shadow-lg transition-all inline-flex items-center gap-2 text-sm sm:text-base"
+                className="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white rounded-lg hover:shadow-lg transition-all inline-flex items-center gap-2 text-sm sm:text-base"
               >
                 <Plus className="w-4 h-4 sm:w-5 sm:h-5" />
                 Create Your First Ticket
@@ -482,7 +482,7 @@ export default function SupportPage() {
                     className="hover:bg-[#FAFAFA] transition-colors"
                   >
                     <td className="px-4 py-4 whitespace-nowrap">
-                      <div className="text-sm font-medium text-[#1B5E20]">
+                      <div className="text-sm font-medium text-[#1F8F68]">
                         {ticket.ticketNumber || ticket._id.slice(-8).toUpperCase()}
                       </div>
                     </td>
@@ -523,7 +523,7 @@ export default function SupportPage() {
                           setSelectedTicket(ticket);
                           setIsDetailModalOpen(true);
                         }}
-                        className="inline-flex items-center px-3 py-1.5 bg-[#1976D2] text-white text-xs font-medium rounded-lg hover:bg-[#1565C0] transition-colors"
+                        className="inline-flex items-center px-3 py-1.5 bg-[#4A66FF] text-white text-xs font-medium rounded-lg hover:bg-[#4A66FF]/90 transition-colors"
                       >
                         <Eye className="w-3.5 h-3.5 mr-1" />
                         View
@@ -555,7 +555,7 @@ export default function SupportPage() {
               className="relative inline-block align-bottom bg-white rounded-2xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full"
             >
               {/* Header */}
-              <div className="bg-gradient-to-r from-[#2E7D32] to-[#1B5E20] px-6 py-4">
+              <div className="bg-gradient-to-r from-[#25B181] via-[#51C9AF] to-[#1F8F68] px-6 py-4">
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-xl font-bold text-white">Ticket Details</h3>
@@ -590,7 +590,7 @@ export default function SupportPage() {
                 {/* Subject */}
                 <div className="mb-6">
                   <h4 className="text-sm font-medium text-gray-600 mb-2">Subject</h4>
-                  <p className="text-lg font-semibold text-[#1B5E20]">{selectedTicket.subject}</p>
+                  <p className="text-lg font-semibold text-[#1F8F68]">{selectedTicket.subject}</p>
                 </div>
 
                 {/* Description */}
@@ -605,10 +605,10 @@ export default function SupportPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="bg-[#FAFAFA] rounded-lg p-4 border border-[#E0E0E0]">
                     <div className="flex items-center mb-2">
-                      <Calendar className="w-4 h-4 text-[#1976D2] mr-2" />
+                      <Calendar className="w-4 h-4 text-[#4A66FF] mr-2" />
                       <span className="text-sm font-medium text-gray-600">Created</span>
                     </div>
-                    <p className="text-sm text-[#1B5E20] font-semibold">
+                    <p className="text-sm text-[#1F8F68] font-semibold">
                       {new Date(selectedTicket.createdAt).toLocaleDateString('en-IN', {
                         day: '2-digit',
                         month: 'long',
@@ -621,10 +621,10 @@ export default function SupportPage() {
 
                   <div className="bg-[#FAFAFA] rounded-lg p-4 border border-[#E0E0E0]">
                     <div className="flex items-center mb-2">
-                      <Clock className="w-4 h-4 text-[#1976D2] mr-2" />
+                      <Clock className="w-4 h-4 text-[#4A66FF] mr-2" />
                       <span className="text-sm font-medium text-gray-600">Last Updated</span>
                     </div>
-                    <p className="text-sm text-[#1B5E20] font-semibold">
+                    <p className="text-sm text-[#1F8F68] font-semibold">
                       {new Date(selectedTicket.updatedAt).toLocaleDateString('en-IN', {
                         day: '2-digit',
                         month: 'long',

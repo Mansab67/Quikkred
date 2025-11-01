@@ -139,7 +139,7 @@ export default function CorporateTieupsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -245,7 +245,7 @@ export default function CorporateTieupsPage() {
                   transition={{ delay: 0.05 * index }}
                   className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#006837] to-[#FFC107] rounded-lg flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#25B181] to-[#51C9AF] rounded-lg flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold mb-2">{benefit.title}</h3>
@@ -316,7 +316,7 @@ export default function CorporateTieupsPage() {
                 transition={{ delay: 0.1 * index }}
                 className="text-center"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                   {item.step}
                 </div>
                 <h3 className="font-bold mb-2">{item.title}</h3>
@@ -444,7 +444,7 @@ export default function CorporateTieupsPage() {
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-gradient-to-r from-[#006837] to-[#FFC107] text-white rounded-lg font-semibold hover:shadow-lg transition-all"
+                className="w-full px-8 py-4 bg-gradient-to-r from-[#25B181] to-[#51C9AF] text-white rounded-lg font-semibold hover:shadow-lg transition-all"
               >
                 Submit Inquiry
               </button>
@@ -459,7 +459,7 @@ export default function CorporateTieupsPage() {
           transition={{ delay: 0.7 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl p-8 text-white text-center">
+          <div className="bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-2xl p-8 text-white text-center">
             <TrendingUp className="w-12 h-12 mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-4">Ready to Enhance Employee Welfare?</h2>
             <p className="text-sm sm:text-base lg:text-xl mb-6 opacity-90">
@@ -467,13 +467,13 @@ export default function CorporateTieupsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:1800-123-4567">
-                <button className="px-8 py-3 bg-white text-[#1976D2] rounded-lg font-semibold hover:shadow-lg transition-all">
+                <button className="px-8 py-3 bg-white text-[#4A66FF] rounded-lg font-semibold hover:shadow-lg transition-all">
                   <Phone className="w-5 h-5 inline mr-2" />
                   Schedule Call
                 </button>
               </a>
               <a href="mailto:corporate@Quikkred.com">
-                <button className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#006837] transition-all">
+                <button className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#25B181] transition-all">
                   <Mail className="w-5 h-5 inline mr-2" />
                   Email Us
                 </button>

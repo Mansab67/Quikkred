@@ -14,14 +14,14 @@ export default function PressPage() {
       title: "Quikkred Crosses ₹500 Crore Milestone in Loan Disbursements",
       excerpt: "Leading NBFC achieves significant growth milestone, serving over 50,000 customers across 15+ cities",
       category: "Company News",
-      color: "#006837"
+      color: "#25B181"
     },
     {
       date: "September 28, 2024",
       title: "AI-Powered Loan Approval System Reduces Processing Time to 30 Seconds",
       excerpt: "Revolutionary technology enables instant loan approvals with 99.2% accuracy rate",
       category: "Technology",
-      color: "#1976D2"
+      color: "#4A66FF"
     },
     {
       date: "September 10, 2024",
@@ -35,7 +35,7 @@ export default function PressPage() {
       title: "New Branch Expansion in Tier 2 Cities Announced",
       excerpt: "Strategic expansion to bring financial services to underserved markets across India",
       category: "Expansion",
-      color: "#F9A825"
+      color: "#FF9C70"
     },
     {
       date: "August 5, 2024",
@@ -49,7 +49,7 @@ export default function PressPage() {
       title: "CSR Initiative: 10,000 Trees Planted Across 15 Cities",
       excerpt: "Environmental sustainability drive as part of corporate social responsibility",
       category: "CSR",
-      color: "#006837"
+      color: "#25B181"
     }
   ];
 
@@ -94,7 +94,7 @@ export default function PressPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div

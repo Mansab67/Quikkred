@@ -18,7 +18,7 @@ export default function MedicalEmergencyPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-emerald-700 via-emerald-600 to-green-600 text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/20" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -61,7 +61,7 @@ export default function MedicalEmergencyPage() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-white text-emerald-700 rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2"
+                  className="px-8 py-4 bg-white text-[#25B181] rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2"
                 >
                   Apply Now
                   <ArrowRight className="w-5 h-5" />
@@ -103,7 +103,7 @@ export default function MedicalEmergencyPage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-emerald-700 to-emerald-600 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-lg flex items-center justify-center mb-4">
                   <feature.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
@@ -139,10 +139,10 @@ export default function MedicalEmergencyPage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow"
               >
-                <Hospital className="w-8 h-8 text-emerald-700 mx-auto mb-3" />
+                <Hospital className="w-8 h-8 text-[#25B181] mx-auto mb-3" />
                 <h3 className="text-lg font-semibold mb-2">{hospital.name}</h3>
                 <p className="text-sm text-gray-600">{hospital.location}</p>
-                <p className="text-xs text-emerald-700 mt-2">{hospital.specialties}</p>
+                <p className="text-xs text-[#25B181] mt-2">{hospital.specialties}</p>
               </motion.div>
             ))}
           </div>
@@ -174,14 +174,14 @@ export default function MedicalEmergencyPage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-emerald-100 to-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <category.icon className="w-6 h-6 text-emerald-700" />
+                <div className="w-12 h-12 bg-gradient-to-r from-[#ecfdf5] to-[#d1fae5] rounded-lg flex items-center justify-center mb-4">
+                  <category.icon className="w-6 h-6 text-[#25B181]" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{category.title}</h3>
                 <ul className="space-y-1">
                   {category.items.map((item, idx) => (
                     <li key={idx} className="text-sm text-gray-600 flex items-center gap-2">
-                      <CheckCircle className="w-3 h-3 text-emerald-700 flex-shrink-0" />
+                      <CheckCircle className="w-3 h-3 text-[#25B181] flex-shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -230,7 +230,7 @@ export default function MedicalEmergencyPage() {
                   transition={{ delay: index * 0.1 }}
                   className="flex gap-6 items-start"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-r from-emerald-700 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
                     {index + 1}
                   </div>
                   <div className="flex-1">
@@ -276,7 +276,7 @@ export default function MedicalEmergencyPage() {
                 </div>
                 <p className="text-gray-600 mb-4">"{testimonial.comment}"</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-r from-emerald-700 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
+                  <div className="w-10 h-10 bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-full flex items-center justify-center text-white font-bold">
                     {testimonial.name[0]}
                   </div>
                   <div>
@@ -291,7 +291,7 @@ export default function MedicalEmergencyPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-emerald-700 to-emerald-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-[#25B181] to-[#51C9AF] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -304,7 +304,7 @@ export default function MedicalEmergencyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/apply">
-                <button className="px-8 py-4 bg-white text-emerald-700 rounded-full font-semibold text-lg hover:shadow-xl transition-all">
+                <button className="px-8 py-4 bg-white text-[#25B181] rounded-full font-semibold text-lg hover:shadow-xl transition-all">
                   Apply for Medical Loan
                 </button>
               </Link>

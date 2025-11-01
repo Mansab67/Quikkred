@@ -23,7 +23,7 @@ export default function SalaryAdvancePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/20" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -66,7 +66,7 @@ export default function SalaryAdvancePage() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-white text-[#006837] rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2"
+                  className="px-8 py-4 bg-white text-[#25B181] rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2"
                 >
                   Get Salary Advance
                   <ArrowRight className="w-5 h-5" />
@@ -107,7 +107,7 @@ export default function SalaryAdvancePage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-[#006837] to-[#006837] rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#25B181] to-[#25B181] rounded-lg flex items-center justify-center mb-4">
                   <benefit.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
@@ -185,7 +185,7 @@ export default function SalaryAdvancePage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-2xl p-8 shadow-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-[#006837]">Basic Requirements</h3>
+                <h3 className="text-xl font-semibold mb-4 text-[#25B181]">Basic Requirements</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
@@ -209,7 +209,7 @@ export default function SalaryAdvancePage() {
                 transition={{ delay: 0.1 }}
                 className="bg-white rounded-2xl p-8 shadow-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-[#006837]">Employment</h3>
+                <h3 className="text-xl font-semibold mb-4 text-[#25B181]">Employment</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
@@ -233,18 +233,18 @@ export default function SalaryAdvancePage() {
                 transition={{ delay: 0.2 }}
                 className="bg-white rounded-2xl p-8 shadow-lg"
               >
-                <h3 className="text-xl font-semibold mb-4 text-[#006837]">Documents</h3>
+                <h3 className="text-xl font-semibold mb-4 text-[#25B181]">Documents</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <FileText className="w-5 h-5 text-blue-500 mt-0.5" />
+                    <FileText className="w-5 h-5 text-[#4A66FF] mt-0.5" />
                     <span>PAN Card</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <FileText className="w-5 h-5 text-blue-500 mt-0.5" />
+                    <FileText className="w-5 h-5 text-[#4A66FF] mt-0.5" />
                     <span>Aadhaar Card</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <FileText className="w-5 h-5 text-blue-500 mt-0.5" />
+                    <FileText className="w-5 h-5 text-[#4A66FF] mt-0.5" />
                     <span>Last 3 Salary Slips</span>
                   </li>
                 </ul>
@@ -280,7 +280,7 @@ export default function SalaryAdvancePage() {
                   transition={{ delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="w-20 h-20 bg-gradient-to-r from-[#006837] to-[#006837] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                  <div className="w-20 h-20 bg-gradient-to-r from-[#25B181] to-[#25B181] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                     {index + 1}
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
@@ -335,7 +335,7 @@ export default function SalaryAdvancePage() {
       </section> */}
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-[#006837] to-[#006837] text-white">
+      <section className="py-20 bg-gradient-to-r from-[#25B181] to-[#25B181] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -350,7 +350,7 @@ export default function SalaryAdvancePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/apply">
-                <button className="px-8 py-4 bg-white text-[#006837] rounded-full font-semibold text-lg hover:shadow-xl transition-all">
+                <button className="px-8 py-4 bg-white text-[#25B181] rounded-full font-semibold text-lg hover:shadow-xl transition-all">
                   Get Salary Advance Now
                 </button>
               </Link>

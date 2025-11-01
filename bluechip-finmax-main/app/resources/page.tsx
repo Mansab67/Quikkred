@@ -13,7 +13,7 @@ export default function FinancialLiteracyPage() {
       title: "Personal Finance Basics",
       description: "Understanding income, expenses, and budgeting fundamentals",
       icon: Wallet,
-      color: "#006837",
+      color: "#25B181",
       articles: [
         "How to Create a Monthly Budget",
         "Understanding Your Salary Slip",
@@ -25,7 +25,7 @@ export default function FinancialLiteracyPage() {
       title: "Smart Borrowing",
       description: "Learn how to borrow responsibly and manage loans effectively",
       icon: CreditCard,
-      color: "#1976D2",
+      color: "#4A66FF",
       articles: [
         "When Should You Take a Loan?",
         "Understanding Interest Rates and EMI",
@@ -37,7 +37,7 @@ export default function FinancialLiteracyPage() {
       title: "Savings & Investments",
       description: "Build wealth through smart saving and investment strategies",
       icon: PiggyBank,
-      color: "#F9A825",
+      color: "#FF9C70",
       articles: [
         "Power of Compound Interest",
         "Different Investment Options in India",
@@ -88,19 +88,19 @@ export default function FinancialLiteracyPage() {
       tip: "Follow the 50-30-20 Rule",
       description: "Allocate 50% for needs, 30% for wants, and 20% for savings",
       icon: "💰",
-      color: "#006837"
+      color: "#25B181"
     },
     {
       tip: "Pay Yourself First",
       description: "Save a portion of your income before spending on anything else",
       icon: "🎯",
-      color: "#1976D2"
+      color: "#4A66FF"
     },
     {
       tip: "Avoid High-Interest Debt",
       description: "Pay off credit card debt and high-interest loans first",
       icon: "⚠️",
-      color: "#F9A825"
+      color: "#FF9C70"
     },
     {
       tip: "Invest Early, Invest Regularly",
@@ -119,7 +119,7 @@ export default function FinancialLiteracyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 relative">
           <motion.div

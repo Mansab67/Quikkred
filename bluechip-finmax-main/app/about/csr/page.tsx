@@ -13,7 +13,7 @@ export default function CSRPage() {
       title: "Financial Literacy Programs",
       description: "Empowering rural communities with financial education and digital literacy workshops",
       icon: GraduationCap,
-      color: "#1976D2",
+      color: "#4A66FF",
       impact: "25,000+ people trained",
       activities: [
         "Free financial literacy workshops in rural areas",
@@ -26,7 +26,7 @@ export default function CSRPage() {
       title: "Environmental Sustainability",
       description: "Committed to green finance and environmental conservation initiatives",
       icon: Leaf,
-      color: "#006837",
+      color: "#25B181",
       impact: "10,000+ trees planted",
       activities: [
         "Paperless loan processing - 100% digital",
@@ -39,7 +39,7 @@ export default function CSRPage() {
       title: "Community Development",
       description: "Supporting underprivileged communities with skill development and healthcare",
       icon: Users,
-      color: "#F9A825",
+      color: "#FF9C70",
       impact: "5,000+ families supported",
       activities: [
         "Free skill development training programs",
@@ -64,16 +64,16 @@ export default function CSRPage() {
   ];
 
   const impactStats = [
-    { value: "+", label: "CSR Investment", icon: Target, color: "#006837" },
-    { value: "+", label: "Villages Reached", icon: Building, color: "#1976D2" },
-    { value: "+", label: "Lives Impacted", icon: Heart, color: "#F9A825" },
+    { value: "+", label: "CSR Investment", icon: Target, color: "#25B181" },
+    { value: "+", label: "Villages Reached", icon: Building, color: "#4A66FF" },
+    { value: "+", label: "Lives Impacted", icon: Heart, color: "#FF9C70" },
     { value: "+", label: "NGO Partners", icon: Users, color: "#4A148C" }
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div

@@ -250,7 +250,7 @@ export default function InterestRatesPage() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
 
       {/* Header Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -313,7 +313,7 @@ export default function InterestRatesPage() {
           transition={{ delay: 0.2 }}
           className="max-w-5xl mx-auto mb-12"
         >
-          <div className="bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl p-8">
+          <div className="bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-2xl p-8">
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
                 <TrendingDown className="w-10 h-10 mx-auto mb-3" />
@@ -364,7 +364,7 @@ export default function InterestRatesPage() {
                     onClick={() => setSelectedCategory(category.id)}
                     className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
                       selectedCategory === category.id
-                        ? 'bg-[#1976D2] text-white'
+                        ? 'bg-[#4A66FF] text-white'
                         : 'bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-600'
                     }`}
                   >
@@ -410,11 +410,11 @@ export default function InterestRatesPage() {
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center">
-                        <div className="w-12 h-12 bg-gradient-to-br from-[#006837] to-[#FFC107] rounded-lg flex items-center justify-center mr-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-[#25B181] to-[#51C9AF] rounded-lg flex items-center justify-center mr-4">
                           <Icon className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold group-hover:text-[#1976D2] transition-colors">
+                          <h3 className="text-xl font-bold group-hover:text-[#4A66FF] transition-colors">
                             {product.name}
                           </h3>
                           <p className="text-sm text-gray-500">{product.category}</p>
@@ -480,7 +480,7 @@ export default function InterestRatesPage() {
                     {/* CTA Buttons */}
                     <div className="flex gap-3">
                       <Link href="/apply/loan" className="flex-1">
-                        <button className="w-full px-4 py-2 bg-[#1976D2] text-white rounded-lg text-sm font-semibold hover:bg-[var(--royal-blue-dark)] transition-colors">
+                        <button className="w-full px-4 py-2 bg-[#4A66FF] text-white rounded-lg text-sm font-semibold hover:bg-[var(--royal-blue-dark)] transition-colors">
                           Apply Now
                         </button>
                       </Link>
@@ -584,7 +584,7 @@ export default function InterestRatesPage() {
           transition={{ delay: 0.7 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl p-8 text-center">
+          <div className="bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-2xl p-8 text-center">
             <Target className="w-12 h-12 mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-4">Ready to Get the Best Rate?</h2>
             <p className="text-xl mb-6 opacity-90">
@@ -592,12 +592,12 @@ export default function InterestRatesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/resources/eligibility-check">
-                <button className="px-8 py-3 bg-white text-[#1976D2] rounded-lg font-semibold hover:shadow-lg transition-all">
+                <button className="px-8 py-3 bg-white text-[#4A66FF] rounded-lg font-semibold hover:shadow-lg transition-all">
                   Check Eligibility
                 </button>
               </Link>
               <Link href="/apply/loan">
-                <button className="px-8 py-3 bg-transparent border-2 border-white  rounded-lg font-semibold hover:bg-white hover:text-[#1976D2] transition-all">
+                <button className="px-8 py-3 bg-transparent border-2 border-white  rounded-lg font-semibold hover:bg-white hover:text-[#4A66FF] transition-all">
                   Apply Now
                 </button>
               </Link>

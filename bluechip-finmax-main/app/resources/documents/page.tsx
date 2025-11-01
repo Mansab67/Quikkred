@@ -236,7 +236,7 @@ export default function DocumentsPage() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
 
       {/* Header Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -345,7 +345,7 @@ export default function DocumentsPage() {
                     onClick={() => setSelectedCategory(category.id)}
                     className={`flex items-center px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
                       selectedCategory === category.id
-                        ? 'bg-[#1976D2] text-white'
+                        ? 'bg-[#4A66FF] text-white'
                         : 'bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-600'
                     }`}
                   >
@@ -415,18 +415,18 @@ export default function DocumentsPage() {
                   >
                     <div className="p-6">
                       <div className="flex items-start justify-between mb-4">
-                        <div className="w-12 h-12 bg-gradient-to-br from-[#006837] to-[#FFC107] rounded-lg flex items-center justify-center">
+                        <div className="w-12 h-12 bg-gradient-to-br from-[#25B181] to-[#51C9AF] rounded-lg flex items-center justify-center">
                           <Icon className="w-6 h-6 text-white" />
                         </div>
                         {doc.isPremium && (
-                          <span className="px-2 py-1 bg-[#FFC107] text-white text-xs rounded-full flex items-center">
+                          <span className="px-2 py-1 bg-[#FF9C70] text-white text-xs rounded-full flex items-center">
                             <Lock className="w-3 h-3 mr-1" />
                             Premium
                           </span>
                         )}
                       </div>
 
-                      <h3 className="text-lg font-bold mb-2 group-hover:text-[#1976D2] transition-colors">
+                      <h3 className="text-lg font-bold mb-2 group-hover:text-[#4A66FF] transition-colors">
                         {doc.title}
                       </h3>
                       <p className="text-sm text-gray-600 mb-4 line-clamp-2">
@@ -447,7 +447,7 @@ export default function DocumentsPage() {
                       <div className="flex gap-2">
                         <button
                           onClick={() => handleDownload(doc.id, doc.title)}
-                          className="flex-1 flex items-center justify-center px-4 py-2 bg-[#1976D2] text-white rounded-lg hover:bg-[var(--royal-blue-dark)] transition-colors text-sm font-semibold"
+                          className="flex-1 flex items-center justify-center px-4 py-2 bg-[#4A66FF] text-white rounded-lg hover:bg-[var(--royal-blue-dark)] transition-colors text-sm font-semibold"
                         >
                           <Download className="w-4 h-4 mr-2" />
                           Download
@@ -479,7 +479,7 @@ export default function DocumentsPage() {
                     setSearchTerm("");
                     setSelectedCategory("all");
                   }}
-                  className="text-[#1976D2] hover:underline"
+                  className="text-[#4A66FF] hover:underline"
                 >
                   Clear all filters
                 </button>
@@ -495,7 +495,7 @@ export default function DocumentsPage() {
           transition={{ delay: 0.6 }}
           className="mt-16 max-w-4xl mx-auto"
         >
-          <div className="bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl p-8  text-center">
+          <div className="bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-2xl p-8  text-center">
             <Upload className="w-12 h-12 mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-4">Need to Upload Documents?</h2>
             <p className="text-xl mb-6 opacity-90">
@@ -503,12 +503,12 @@ export default function DocumentsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/user/documents">
-                <button className="px-8 py-3 bg-white text-[#1976D2] rounded-lg font-semibold hover:shadow-lg transition-all">
+                <button className="px-8 py-3 bg-white text-[#4A66FF] rounded-lg font-semibold hover:shadow-lg transition-all">
                   Go to Document Upload
                 </button>
               </Link>
               <Link href="/resources/faqs">
-                <button className="px-8 py-3 bg-transparent border-2 border-white  rounded-lg font-semibold hover:bg-white hover:text-[#1976D2] transition-all">
+                <button className="px-8 py-3 bg-transparent border-2 border-white  rounded-lg font-semibold hover:bg-white hover:text-[#4A66FF] transition-all">
                   Document FAQs
                 </button>
               </Link>

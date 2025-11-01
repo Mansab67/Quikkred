@@ -57,7 +57,7 @@ export default function GrievancePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -127,7 +127,7 @@ export default function GrievancePage() {
                   transition={{ delay: 0.1 * index }}
                   className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all"
                 >
-                  <Icon className="w-10 h-10 text-[#006837] mb-4" />
+                  <Icon className="w-10 h-10 text-[#25B181] mb-4" />
                   <h3 className="text-lg font-bold mb-2">{type.title}</h3>
                   <p className="text-sm text-gray-600">
                     {type.description}
@@ -156,7 +156,7 @@ export default function GrievancePage() {
                 className="relative"
               >
                 <div className="bg-white rounded-2xl p-6 shadow-sm">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#006837] to-[#006837] rounded-full flex items-center justify-center text-white font-bold text-sm sm:text-base lg:text-xl mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#25B181] to-[#51C9AF] rounded-full flex items-center justify-center text-white font-bold text-sm sm:text-base lg:text-xl mb-4">
                     {item.step}
                   </div>
                   <h3 className="text-lg font-bold mb-2">{item.title}</h3>
@@ -165,7 +165,7 @@ export default function GrievancePage() {
                   </p>
                 </div>
                 {index < resolutionProcess.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r from-[#006837] to-[#006837]" />
+                  <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r from-[#25B181] to-[#51C9AF]" />
                 )}
               </motion.div>
             ))}
@@ -239,7 +239,7 @@ export default function GrievancePage() {
               </div>
               <button
                 type="submit"
-                className="w-full py-4 bg-gradient-to-r from-[#006837] to-[#006837] text-white font-semibold rounded-lg hover:shadow-lg transition-all"
+                className="w-full py-4 bg-gradient-to-r from-[#25B181] to-[#51C9AF] text-white font-semibold rounded-lg hover:shadow-lg transition-all"
               >
                 Submit Grievance
               </button>
@@ -254,7 +254,7 @@ export default function GrievancePage() {
           transition={{ delay: 0.5 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-[#25B181] via-[#51C9AF] to-[#1F8F68] rounded-2xl p-8 text-white">
             <h2 className="text-2xl font-bold mb-6">Alternative Contact Methods</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex items-start gap-4">

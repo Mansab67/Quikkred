@@ -9,7 +9,7 @@ export default function PrivacyPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-br from-[#006837] to-[#FFC107]">
+      <section className="relative py-16 bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68]">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export default function PrivacyPage() {
             {/* Introduction */}
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <Shield className="w-6 h-6 text-[#006837]" />
+                <Shield className="w-6 h-6 text-[#25B181]" />
                 Introduction
               </h2>
               <p className="text-gray-600 mb-4">
@@ -55,7 +55,7 @@ export default function PrivacyPage() {
             {/* Information We Collect */}
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <Database className="w-6 h-6 text-[#1976D2]" />
+                <Database className="w-6 h-6 text-[#4A66FF]" />
                 Information We Collect
               </h2>
 
@@ -96,7 +96,7 @@ export default function PrivacyPage() {
             {/* How We Use Information */}
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <Eye className="w-6 h-6 text-[#006837]" />
+                <Eye className="w-6 h-6 text-[#25B181]" />
                 How We Use Your Information
               </h2>
               <p className="text-gray-600 mb-4">
@@ -104,31 +104,31 @@ export default function PrivacyPage() {
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#006837]">✓</span>
+                  <span className="text-[#25B181]">✓</span>
                   <span>Processing loan applications and disbursements</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#006837]">✓</span>
+                  <span className="text-[#25B181]">✓</span>
                   <span>Verifying identity and creditworthiness</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#006837]">✓</span>
+                  <span className="text-[#25B181]">✓</span>
                   <span>Preventing fraud and money laundering</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#006837]">✓</span>
+                  <span className="text-[#25B181]">✓</span>
                   <span>Complying with legal and regulatory requirements</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#006837]">✓</span>
+                  <span className="text-[#25B181]">✓</span>
                   <span>Improving our services and customer experience</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#006837]">✓</span>
+                  <span className="text-[#25B181]">✓</span>
                   <span>Sending service-related communications</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#006837]">✓</span>
+                  <span className="text-[#25B181]">✓</span>
                   <span>Marketing (with your consent)</span>
                 </li>
               </ul>
@@ -137,7 +137,7 @@ export default function PrivacyPage() {
             {/* Data Sharing */}
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <UserCheck className="w-6 h-6 text-[#1976D2]" />
+                <UserCheck className="w-6 h-6 text-[#4A66FF]" />
                 Information Sharing
               </h2>
               <p className="text-gray-600 mb-4">
@@ -170,7 +170,7 @@ export default function PrivacyPage() {
             {/* Data Security */}
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <Lock className="w-6 h-6 text-[#FFC107]" />
+                <Lock className="w-6 h-6 text-[#FF9C70]" />
                 Data Security
               </h2>
               <p className="text-gray-600 mb-4">
@@ -190,7 +190,7 @@ export default function PrivacyPage() {
             {/* Your Rights */}
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <Globe className="w-6 h-6 text-[#006837]" />
+                <Globe className="w-6 h-6 text-[#25B181]" />
                 Your Rights
               </h2>
               <p className="text-gray-600 mb-4">
@@ -219,7 +219,7 @@ export default function PrivacyPage() {
             {/* Cookies */}
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <Bell className="w-6 h-6 text-[#1976D2]" />
+                <Bell className="w-6 h-6 text-[#4A66FF]" />
                 Cookies and Tracking
               </h2>
               <p className="text-gray-600 mb-4">
@@ -278,7 +278,7 @@ export default function PrivacyPage() {
             {/* Contact */}
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <Mail className="w-6 h-6 text-[#006837]" />
+                <Mail className="w-6 h-6 text-[#25B181]" />
                 Contact Us
               </h2>
               <div className="bg-gradient-to-br from-[var(--emerald-green)]/10 to-[var(--royal-blue)]/10 rounded-lg p-6">

@@ -167,7 +167,7 @@ export default function BlogPage() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
 
       {/* Header Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -252,7 +252,7 @@ export default function BlogPage() {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`flex items-center px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
                     selectedCategory === category.id
-                      ? 'bg-[#1976D2] text-white'
+                      ? 'bg-[#4A66FF] text-white'
                       : 'bg-gray-100 text-gray-600 hover:bg-gray-200:bg-gray-600'
                   }`}
                 >
@@ -275,7 +275,7 @@ export default function BlogPage() {
             className="mb-16"
           >
             <h2 className="text-2xl font-bold mb-6 flex items-center">
-              <TrendingUp className="w-6 h-6 mr-2 text-[#1976D2]" />
+              <TrendingUp className="w-6 h-6 mr-2 text-[#4A66FF]" />
               Featured Articles
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -287,11 +287,11 @@ export default function BlogPage() {
                   transition={{ delay: 0.1 * index }}
                   className="bg-white rounded-2xl shadow-lucky overflow-hidden hover:shadow-2xl transition-all group"
                 >
-                  <div className="relative h-48 bg-gradient-to-br from-[#006837] to-[#FFC107] overflow-hidden">
+                  <div className="relative h-48 bg-gradient-to-br from-[#25B181] to-[#51C9AF] overflow-hidden">
                     <div className="absolute inset-0 flex items-center justify-center text-white">
                       <BookOpen className="w-16 h-16 opacity-20" />
                     </div>
-                    <div className="absolute top-4 right-4 bg-[#FFC107]  px-3 py-1 rounded-full text-xs font-semibold">
+                    <div className="absolute top-4 right-4 bg-[#FF9C70]  px-3 py-1 rounded-full text-xs font-semibold">
                       Featured
                     </div>
                   </div>
@@ -303,7 +303,7 @@ export default function BlogPage() {
                       <Clock className="w-4 h-4 mr-1" />
                       <span>{post.readTime}</span>
                     </div>
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-[#1976D2] transition-colors">
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-[#4A66FF] transition-colors">
                       {post.title}
                     </h3>
                     <p className="text-gray-600 mb-4 line-clamp-2">
@@ -317,7 +317,7 @@ export default function BlogPage() {
                         <span>{post.likes}</span>
                       </div>
                       <Link href={`/resources/blog/${post.id}`}>
-                        <button className="text-[#1976D2] font-semibold hover:underline flex items-center">
+                        <button className="text-[#4A66FF] font-semibold hover:underline flex items-center">
                           Read More
                           <ChevronRight className="w-4 h-4 ml-1" />
                         </button>
@@ -363,7 +363,7 @@ export default function BlogPage() {
                         <Calendar className="w-3 h-3 mr-1" />
                         <span>{new Date(post.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' })}</span>
                       </div>
-                      <h3 className="text-lg font-bold mb-2 group-hover:text-[#1976D2] transition-colors">
+                      <h3 className="text-lg font-bold mb-2 group-hover:text-[#4A66FF] transition-colors">
                         {post.title}
                       </h3>
                       <p className="text-gray-600 text-sm mb-4 line-clamp-3 flex-1">
@@ -387,7 +387,7 @@ export default function BlogPage() {
                           <span>{Math.floor(post.likes / 10)} comments</span>
                         </div>
                         <Link href={`/resources/blog/${post.id}`}>
-                          <button className="text-[#1976D2] font-semibold text-sm hover:underline flex items-center">
+                          <button className="text-[#4A66FF] font-semibold text-sm hover:underline flex items-center">
                             Read
                             <ChevronRight className="w-4 h-4" />
                           </button>
@@ -409,7 +409,7 @@ export default function BlogPage() {
                     setSearchTerm("");
                     setSelectedCategory("all");
                   }}
-                  className="text-[#1976D2] hover:underline"
+                  className="text-[#4A66FF] hover:underline"
                 >
                   Clear all filters
                 </button>

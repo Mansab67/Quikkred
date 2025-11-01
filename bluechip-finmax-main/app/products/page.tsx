@@ -31,7 +31,7 @@ const loanProducts = [
       "6+ months employment",
       "Salary account required"
     ],
-    color: "from-[#006837] to-[#2E7D32]",
+    color: "from-[#25B181] to-[#51C9AF]",
     popular: true
   },
   {
@@ -54,7 +54,7 @@ const loanProducts = [
       "CIBIL Score: 650+",
       "Indian citizen"
     ],
-    color: "from-[#1976D2] to-[#006837]"
+    color: "from-[#4A66FF] to-[#25B181]"
   },
   {
     id: "emergency",
@@ -76,7 +76,7 @@ const loanProducts = [
       "Income proof",
       "Medical documents"
     ],
-    color: "from-[#FFC107] to-[#006837]"
+    color: "from-[#FF9C70] to-[#25B181]"
   },
   {
     id: "festival",
@@ -98,7 +98,7 @@ const loanProducts = [
       "3 months bank statement",
       "Employment proof"
     ],
-    color: "from-[#FFC107] to-[#FFD700]"
+    color: "from-[#FF9C70] to-[#FFD700]"
   },
   {
     id: "medical",
@@ -120,7 +120,7 @@ const loanProducts = [
       "Income documents",
       "Insurance papers"
     ],
-    color: "from-[#006837] to-[#1976D2]"
+    color: "from-[#25B181] to-[#4A66FF]"
   },
   {
     id: "travel",
@@ -142,7 +142,7 @@ const loanProducts = [
       "Income: ₹25,000+",
       "Return tickets"
     ],
-    color: "from-[#1976D2] to-[#FFC107]"
+    color: "from-[#4A66FF] to-[#FF9C70]"
   }
 ];
 
@@ -152,7 +152,7 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white">
         <div className="absolute inset-0 bg-black/10" />
 
         <div className="relative">
@@ -229,11 +229,11 @@ export default function ProductsPage() {
             viewport={{ once: true }}
             className="text-center mb-8 sm:mb-10 lg:mb-12"
           >
-            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-[#006837]/10 rounded-full text-[#006837] font-semibold mb-3 sm:mb-4 border border-[#006837]/20 text-xs sm:text-sm">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-[#25B181]/10 rounded-full text-[#25B181] font-semibold mb-3 sm:mb-4 border border-[#25B181]/20 text-xs sm:text-sm">
               <Zap className="w-4 h-4 sm:w-5 sm:h-5" />
               Most Popular
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-sora mb-3 sm:mb-4 bg-gradient-to-r from-[#006837] to-[#FFC107] bg-clip-text text-transparent px-4">Salary Advance - Our Flagship Product</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-sora mb-3 sm:mb-4 bg-gradient-to-r from-[#25B181] to-[#FF9C70] bg-clip-text text-transparent px-4">Salary Advance - Our Flagship Product</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto px-4">
               Specially designed for salaried employees. Get up to 2 months salary in advance with auto-deduction facility.
             </p>
@@ -248,7 +248,7 @@ export default function ProductsPage() {
             <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
               <div>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-14 h-14 bg-gradient-to-r from-[#006837] to-[#2E7D32] rounded-xl flex items-center justify-center shadow-lg">
+                  <div className="w-14 h-14 bg-gradient-to-r from-[#25B181] to-[#25B181] rounded-xl flex items-center justify-center shadow-lg">
                     <Wallet className="w-7 h-7 text-white" />
                   </div>
                   <div>
@@ -266,14 +266,14 @@ export default function ProductsPage() {
                     "Lowest interest rates"
                   ].map((feature, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-[#006837] mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-[#25B181] mt-0.5 flex-shrink-0" />
                       <span>{feature}</span>
                     </div>
                   ))}
                 </div>
 
                 <Link href="/products/salary-advance">
-                  <button className="px-8 py-3 bg-gradient-to-r from-[#006837] to-[#2E7D32] text-white rounded-full font-semibold hover:shadow-lg transition-all flex items-center gap-2">
+                  <button className="px-8 py-3 bg-gradient-to-r from-[#25B181] to-[#25B181] text-white rounded-full font-semibold hover:shadow-lg transition-all flex items-center gap-2">
                     Apply for Salary Advance
                     <ArrowRight className="w-5 h-5" />
                   </button>
@@ -289,7 +289,7 @@ export default function ProductsPage() {
                   </div>
                   <div className="flex justify-between pb-3 border-b border-gray-200">
                     <span className="text-gray-700">Interest Rate</span>
-                    <span className="font-semibold text-[#006837]">1.5% per month</span>
+                    <span className="font-semibold text-[#25B181]">1.5% per month</span>
                   </div>
                   <div className="flex justify-between pb-3 border-b border-gray-200">
                     <span className="text-gray-700">Tenure</span>
@@ -297,7 +297,7 @@ export default function ProductsPage() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-700">Processing Time</span>
-                    <span className="font-semibold text-[#006837]">30 seconds</span>
+                    <span className="font-semibold text-[#25B181]">30 seconds</span>
                   </div>
                 </div>
               </div>
@@ -315,7 +315,7 @@ export default function ProductsPage() {
             viewport={{ once: true }}
             className="text-center mb-8 sm:mb-10 lg:mb-12"
           >
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-sora mb-3 sm:mb-4 bg-gradient-to-r from-[#006837] to-[#FFC107] bg-clip-text text-transparent px-4">All Loan Products</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-sora mb-3 sm:mb-4 bg-gradient-to-r from-[#25B181] to-[#FF9C70] bg-clip-text text-transparent px-4">All Loan Products</h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto px-4">
               Choose from our comprehensive range of loan offerings designed for every financial need
             </p>
@@ -356,7 +356,7 @@ export default function ProductsPage() {
                     </div>
                     <div className="col-span-2">
                       <p className="text-sm text-gray-600">Interest Rate</p>
-                      <p className="font-semibold text-lg text-[#006837]">
+                      <p className="font-semibold text-lg text-[#25B181]">
                         {product.rate}
                       </p>
                     </div>
@@ -415,7 +415,7 @@ export default function ProductsPage() {
                       <ul className="space-y-2">
                         {product.eligibility.map((item, idx) => (
                           <li key={idx} className="flex items-start gap-2 text-sm">
-                            <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                            <CheckCircle className="w-4 h-4 text-[#4A66FF] mt-0.5 flex-shrink-0" />
                             <span className="text-gray-600">{item}</span>
                           </li>
                         ))}
@@ -454,7 +454,7 @@ export default function ProductsPage() {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#25B181] to-[#FF9C70] rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <item.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">{item.title}</h3>
@@ -466,7 +466,7 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-[#006837] to-[#FFC107] text-white">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-[#25B181] to-[#FF9C70] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -482,7 +482,7 @@ export default function ProductsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-lg mx-auto">
               <Link href="/apply" className="w-full sm:w-auto">
-                <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#006837] rounded-full font-semibold text-base sm:text-lg hover:shadow-xl transition-all">
+                <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#25B181] rounded-full font-semibold text-base sm:text-lg hover:shadow-xl transition-all">
                   Apply Now
                 </button>
               </Link>

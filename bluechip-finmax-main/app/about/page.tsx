@@ -103,7 +103,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white">
+      <section className="relative py-20 bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 relative">
           <motion.div
@@ -139,7 +139,7 @@ export default function AboutPage() {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="w-16 h-16 gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#25B181] to-[#51C9AF] rounded-full flex items-center justify-center mx-auto mb-4">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-3xl font-bold text-[rgb(var(--text-primary))] mb-2">
@@ -161,7 +161,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-sora text-[rgb(var(--primary-500))] text-center mb-12">Our Story</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-sora text-[#25B181] text-center mb-12">Our Story</h2>
 
             <div className="prose prose-lg mx-auto">
               <p className="text-[rgb(var(--text-secondary))] leading-relaxed mb-6">
@@ -185,7 +185,7 @@ export default function AboutPage() {
                 needs of modern India.
               </p>
 
-              <div className="gradient-primary text-white p-8 rounded-2xl mt-8">
+              <div className="bg-gradient-to-br from-[#25B181] to-[#51C9AF] text-white p-8 rounded-2xl mt-8">
                 <h3 className="text-2xl font-bold mb-4 text-white">Our Vision</h3>
                 <p className="text-lg text-white">
                   To be India's most trusted financial partner, making credit accessible to
@@ -197,25 +197,25 @@ export default function AboutPage() {
                 <h3 className="text-2xl font-bold mb-4 text-[rgb(var(--text-primary))]">Our Mission</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-[rgb(var(--success))] flex-shrink-0 mt-1" />
+                    <CheckCircle className="w-6 h-6 text-[#3AC6A0] flex-shrink-0 mt-1" />
                     <span className="text-[rgb(var(--text-secondary))]">
                       Provide instant, affordable credit to millions of Indians
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-[rgb(var(--success))] flex-shrink-0 mt-1" />
+                    <CheckCircle className="w-6 h-6 text-[#3AC6A0] flex-shrink-0 mt-1" />
                     <span className="text-[rgb(var(--text-secondary))]">
                       Use AI to make lending decisions fair and unbiased
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-[rgb(var(--success))] flex-shrink-0 mt-1" />
+                    <CheckCircle className="w-6 h-6 text-[#3AC6A0] flex-shrink-0 mt-1" />
                     <span className="text-[rgb(var(--text-secondary))]">
                       Maintain complete transparency in our operations
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-[rgb(var(--success))] flex-shrink-0 mt-1" />
+                    <CheckCircle className="w-6 h-6 text-[#3AC6A0] flex-shrink-0 mt-1" />
                     <span className="text-[rgb(var(--text-secondary))]">
                       Contribute to India's financial inclusion goals
                     </span>
@@ -252,7 +252,7 @@ export default function AboutPage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border-default))] rounded-2xl p-8 hover:shadow-card transition-shadow"
               >
-                <div className="w-14 h-14 gradient-primary rounded-xl flex items-center justify-center mb-6">
+                <div className="w-14 h-14 bg-gradient-to-br from-[#25B181] to-[#51C9AF] rounded-xl flex items-center justify-center mb-6">
                   <value.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-[rgb(var(--text-primary))]">{value.title}</h3>
@@ -294,14 +294,14 @@ export default function AboutPage() {
                   <div className={`bg-[rgb(var(--bg-primary))] border border-[rgb(var(--border-default))] p-6 rounded-xl shadow-card ${
                     index % 2 === 0 ? "text-right" : "text-left"
                   }`}>
-                    <span className="text-[rgb(var(--secondary-500))] font-bold text-lg">
+                    <span className="text-[#4A66FF] font-bold text-lg">
                       {milestone.year}
                     </span>
                     <h3 className="text-xl font-bold mt-2 mb-3 text-[rgb(var(--text-primary))]">{milestone.title}</h3>
                     <p className="text-[rgb(var(--text-secondary))]">{milestone.description}</p>
                   </div>
                 </div>
-                <div className="w-4 h-4 bg-[rgb(var(--secondary-500))] rounded-full flex-shrink-0" />
+                <div className="w-4 h-4 bg-[#4A66FF] rounded-full flex-shrink-0" />
                 <div className="flex-1" />
               </motion.div>
             ))}
@@ -334,11 +334,11 @@ export default function AboutPage() {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="w-32 h-32 gradient-primary rounded-full mx-auto mb-4 flex items-center justify-center">
+                <div className="w-32 h-32 bg-gradient-to-br from-[#25B181] to-[#51C9AF] rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Users className="w-16 h-16 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-1 text-[rgb(var(--text-primary))]">{leader.name}</h3>
-                <p className="text-[rgb(var(--secondary-500))] font-medium mb-3">{leader.role}</p>
+                <p className="text-[#4A66FF] font-medium mb-3">{leader.role}</p>
                 <p className="text-sm text-[rgb(var(--text-tertiary))] mb-4">{leader.bio}</p>
                 <div className="flex flex-wrap gap-2 justify-center">
                   {leader.expertise.map((skill: string) => (
@@ -357,7 +357,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-[#006837] to-[#1976D2] text-white">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-[#25B181] to-[#4A66FF] text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ y: 20, opacity: 0 }}
@@ -375,7 +375,7 @@ export default function AboutPage() {
                 href="/apply"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white text-[rgb(var(--primary-600))] rounded-full font-semibold text-lg hover:shadow-xl transition-all"
+                className="px-8 py-4 bg-white text-[#25B181] rounded-full font-semibold text-lg hover:shadow-xl transition-all"
               >
                 Apply for Loan
               </motion.a>
@@ -383,7 +383,7 @@ export default function AboutPage() {
                 href="/careers"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-semibold text-lg hover:bg-white hover:text-[rgb(var(--primary-600))] transition-all"
+                className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-semibold text-lg hover:bg-white hover:text-[#25B181] transition-all"
               >
                 Join Our Team
               </motion.a>

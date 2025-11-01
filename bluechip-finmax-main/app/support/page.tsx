@@ -74,7 +74,7 @@ export default function SupportPage() {
 
   const priorities = [
     { value: "low", label: "Low", color: "bg-gray-100 text-gray-800" },
-    { value: "medium", label: "Medium", color: "bg-yellow-100 text-yellow-800" },
+    { value: "medium", label: "Medium", color: "bg-[#FF9C70]/10 text-[#FF9C70]" },
     { value: "high", label: "High", color: "bg-orange-100 text-orange-800" },
     { value: "critical", label: "Critical", color: "bg-red-100 text-red-800" }
   ];
@@ -295,9 +295,9 @@ export default function SupportPage() {
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case "open": return "bg-blue-100 text-blue-800";
-      case "in_progress": return "bg-yellow-100 text-yellow-800";
-      case "resolved": return "bg-green-100 text-green-800";
+      case "open": return "bg-[#4A66FF]/10 text-[#4A66FF]";
+      case "in_progress": return "bg-[#FF9C70]/10 text-[#FF9C70]";
+      case "resolved": return "bg-[#25B181]/10 text-[#25B181]";
       case "closed": return "bg-gray-100 text-gray-800";
       default: return "bg-gray-100 text-gray-800";
     }
@@ -312,7 +312,7 @@ export default function SupportPage() {
     return (
       <ProtectedRoute>
         <div className="min-h-screen flex items-center justify-center">
-          <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
+          <Loader2 className="w-8 h-8 animate-spin text-[#4A66FF]" />
         </div>
       </ProtectedRoute>
     );
@@ -331,7 +331,7 @@ export default function SupportPage() {
           {/* Quick Actions */}
           <div className="grid md:grid-cols-4 gap-4 mb-8">
             <button className="bg-white rounded-lg shadow p-4 flex items-center space-x-3 hover:shadow-md transition-shadow">
-              <Phone className="w-8 h-8 text-blue-600" />
+              <Phone className="w-8 h-8 text-[#4A66FF]" />
               <div className="text-left">
                 <p className="font-semibold text-gray-900">Call Us</p>
                 <p className="text-sm text-gray-600">1800-123-4567</p>
@@ -339,7 +339,7 @@ export default function SupportPage() {
             </button>
 
             <button className="bg-white rounded-lg shadow p-4 flex items-center space-x-3 hover:shadow-md transition-shadow">
-              <Mail className="w-8 h-8 text-green-600" />
+              <Mail className="w-8 h-8 text-[#25B181]" />
               <div className="text-left">
                 <p className="font-semibold text-gray-900">Email</p>
                 <p className="text-sm text-gray-600">support@quikkred.com</p>
@@ -355,7 +355,7 @@ export default function SupportPage() {
             </button>
 
             <button className="bg-white rounded-lg shadow p-4 flex items-center space-x-3 hover:shadow-md transition-shadow">
-              <Clock className="w-8 h-8 text-orange-600" />
+              <Clock className="w-8 h-8 text-[#FF9C70]" />
               <div className="text-left">
                 <p className="font-semibold text-gray-900">Working Hours</p>
                 <p className="text-sm text-gray-600">Mon-Sat 9AM-7PM</p>
@@ -371,7 +371,7 @@ export default function SupportPage() {
                   onClick={() => setActiveTab("tickets")}
                   className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
                     activeTab === "tickets"
-                      ? "border-blue-500 text-blue-600"
+                      ? "border-[#4A66FF] text-[#4A66FF]"
                       : "border-transparent text-gray-500 hover:text-gray-700"
                   }`}
                 >
@@ -381,7 +381,7 @@ export default function SupportPage() {
                   onClick={() => setActiveTab("faq")}
                   className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
                     activeTab === "faq"
-                      ? "border-blue-500 text-blue-600"
+                      ? "border-[#4A66FF] text-[#4A66FF]"
                       : "border-transparent text-gray-500 hover:text-gray-700"
                   }`}
                 >
@@ -391,7 +391,7 @@ export default function SupportPage() {
                   onClick={() => setActiveTab("live-chat")}
                   className={`py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
                     activeTab === "live-chat"
-                      ? "border-blue-500 text-blue-600"
+                      ? "border-[#4A66FF] text-[#4A66FF]"
                       : "border-transparent text-gray-500 hover:text-gray-700"
                   }`}
                 >
@@ -411,7 +411,7 @@ export default function SupportPage() {
                       <h3 className="font-semibold text-gray-900">Your Tickets</h3>
                       <button
                         onClick={() => setIsCreatingTicket(true)}
-                        className="flex items-center space-x-2 text-blue-600 hover:text-blue-700"
+                        className="flex items-center space-x-2 text-[#4A66FF] hover:text-[#4A66FF]/80"
                       >
                         <Plus className="w-4 h-4" />
                         <span>New</span>
@@ -425,7 +425,7 @@ export default function SupportPage() {
                           <p className="text-gray-600">No support tickets yet</p>
                           <button
                             onClick={() => setIsCreatingTicket(true)}
-                            className="mt-3 text-blue-600 hover:text-blue-700"
+                            className="mt-3 text-[#4A66FF] hover:text-[#4A66FF]/80"
                           >
                             Create your first ticket
                           </button>
@@ -438,7 +438,7 @@ export default function SupportPage() {
                             onClick={() => setSelectedTicket(ticket)}
                             className={`p-4 border rounded-lg cursor-pointer transition-colors ${
                               selectedTicket?.id === ticket.id
-                                ? "border-blue-500 bg-blue-50"
+                                ? "border-[#4A66FF] bg-[#4A66FF]/5"
                                 : "border-gray-200 hover:border-gray-300"
                             }`}
                           >
@@ -488,7 +488,7 @@ export default function SupportPage() {
                             >
                               <div className={`max-w-[70%] ${
                                 msg.sender === "user"
-                                  ? "bg-blue-600 text-white rounded-l-lg rounded-br-lg"
+                                  ? "bg-[#4A66FF] text-white rounded-l-lg rounded-br-lg"
                                   : "bg-gray-100 text-gray-900 rounded-r-lg rounded-bl-lg"
                               } p-3`}>
                                 {msg.sender !== "user" && (
@@ -498,7 +498,7 @@ export default function SupportPage() {
                                 )}
                                 <p className="text-sm">{msg.message}</p>
                                 <p className={`text-xs mt-1 ${
-                                  msg.sender === "user" ? "text-blue-100" : "text-gray-500"
+                                  msg.sender === "user" ? "text-white/70" : "text-gray-500"
                                 }`}>
                                   {new Date(msg.timestamp).toLocaleTimeString()}
                                 </p>
@@ -520,12 +520,12 @@ export default function SupportPage() {
                               onChange={(e) => setMessage(e.target.value)}
                               onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
                               placeholder="Type your message..."
-                              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A66FF] focus:border-[#4A66FF]"
                             />
                             <button
                               onClick={handleSendMessage}
                               disabled={!message.trim() || isSending}
-                              className="p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50"
+                              className="p-2 bg-[#4A66FF] text-white rounded-lg hover:bg-[#4A66FF]/90 disabled:opacity-50"
                             >
                               {isSending ? (
                                 <Loader2 className="w-5 h-5 animate-spin" />
@@ -565,7 +565,7 @@ export default function SupportPage() {
                         placeholder="Search FAQs..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A66FF] focus:border-[#4A66FF]"
                       />
                     </div>
                   </div>
@@ -585,7 +585,7 @@ export default function SupportPage() {
                           className="bg-white border border-gray-200 rounded-lg p-6"
                         >
                           <div className="flex items-start space-x-3">
-                            <HelpCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                            <HelpCircle className="w-6 h-6 text-[#4A66FF] flex-shrink-0 mt-1" />
                             <div className="flex-1">
                               <h3 className="font-semibold text-gray-900 mb-2">{faq.question}</h3>
                               <p className="text-gray-600 mb-4">{faq.answer}</p>
@@ -594,7 +594,7 @@ export default function SupportPage() {
                                 <button
                                   onClick={() => handleFAQRating(faq.id, true)}
                                   className={`p-1 rounded ${
-                                    faq.helpful ? "text-green-600" : "text-gray-400 hover:text-green-600"
+                                    faq.helpful ? "text-[#25B181]" : "text-gray-400 hover:text-[#25B181]"
                                   }`}
                                 >
                                   <CheckCircle className="w-5 h-5" />
@@ -617,10 +617,10 @@ export default function SupportPage() {
               {/* Live Chat Tab */}
               {activeTab === "live-chat" && (
                 <div className="text-center py-12">
-                  <Bot className="w-20 h-20 text-blue-600 mx-auto mb-6" />
+                  <Bot className="w-20 h-20 text-[#4A66FF] mx-auto mb-6" />
                   <h2 className="text-2xl font-bold text-gray-900 mb-2">AI Assistant</h2>
                   <p className="text-gray-600 mb-6">Get instant help from our AI-powered assistant</p>
-                  <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                  <button className="px-6 py-3 bg-[#4A66FF] text-white rounded-lg hover:bg-[#4A66FF]/90">
                     Start Chat
                   </button>
                 </div>
@@ -666,7 +666,7 @@ export default function SupportPage() {
                       <select
                         value={newTicket.category}
                         onChange={(e) => setNewTicket({ ...newTicket, category: e.target.value })}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A66FF]"
                       >
                         {categories.map((cat) => (
                           <option key={cat.value} value={cat.value}>{cat.label}</option>
@@ -679,7 +679,7 @@ export default function SupportPage() {
                       <select
                         value={newTicket.priority}
                         onChange={(e) => setNewTicket({ ...newTicket, priority: e.target.value })}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4A66FF]"
                       >
                         {priorities.map((priority) => (
                           <option key={priority.value} value={priority.value}>{priority.label}</option>
@@ -710,7 +710,7 @@ export default function SupportPage() {
                   <button
                     onClick={handleCreateTicket}
                     disabled={!newTicket.subject || !newTicket.description || isSending}
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50"
+                    className="px-4 py-2 bg-[#4A66FF] text-white rounded-lg hover:bg-[#4A66FF]/90 disabled:opacity-50"
                   >
                     {isSending ? "Creating..." : "Create Ticket"}
                   </button>

@@ -18,7 +18,7 @@ export default function FestivalAdvancePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-500 via-amber-500 to-yellow-500 text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#FF9C70] via-[#FFB596] to-[#FF9C70] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/20" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -61,7 +61,7 @@ export default function FestivalAdvancePage() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-white text-orange-600 rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2"
+                  className="px-8 py-4 bg-white text-[#FF9C70] rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2"
                 >
                   Apply Now
                   <ArrowRight className="w-5 h-5" />
@@ -103,7 +103,7 @@ export default function FestivalAdvancePage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#FF9C70] to-[#FFB596] rounded-lg flex items-center justify-center mb-4">
                   <feature.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
@@ -186,7 +186,7 @@ export default function FestivalAdvancePage() {
                   transition={{ delay: index * 0.1 }}
                   className="flex gap-6 items-start"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#FF9C70] to-[#FFB596] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
                     {index + 1}
                   </div>
                   <div className="flex-1">
@@ -232,7 +232,7 @@ export default function FestivalAdvancePage() {
                 </div>
                 <p className="text-gray-600 mb-4">"{testimonial.comment}"</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full flex items-center justify-center text-white font-bold">
+                  <div className="w-10 h-10 bg-gradient-to-r from-[#FF9C70] to-[#FFB596] rounded-full flex items-center justify-center text-white font-bold">
                     {testimonial.name[0]}
                   </div>
                   <div>
@@ -247,7 +247,7 @@ export default function FestivalAdvancePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 to-yellow-500 text-white">
+      <section className="py-20 bg-gradient-to-r from-[#FF9C70] to-[#FFB596] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -260,7 +260,7 @@ export default function FestivalAdvancePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/apply">
-                <button className="px-8 py-4 bg-white text-orange-600 rounded-full font-semibold text-lg hover:shadow-xl transition-all">
+                <button className="px-8 py-4 bg-white text-[#FF9C70] rounded-full font-semibold text-lg hover:shadow-xl transition-all">
                   Apply for Festival Advance
                 </button>
               </Link>

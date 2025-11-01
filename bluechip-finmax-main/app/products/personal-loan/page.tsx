@@ -101,7 +101,7 @@ export default function PersonalLoanPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#2563EB] via-[#10B981] to-[#2563EB] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#4A66FF] via-[#25B181] to-[#4A66FF] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/20" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -144,7 +144,7 @@ export default function PersonalLoanPage() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-white text-[#2563EB] rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2"
+                  className="px-8 py-4 bg-white text-[#4A66FF] rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transition-all flex items-center gap-2"
                 >
                   {t.common.apply}
                   <ArrowRight className="w-5 h-5" />
@@ -186,7 +186,7 @@ export default function PersonalLoanPage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-[#2563EB] to-[#10B981] rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#4A66FF] to-[#25B181] rounded-lg flex items-center justify-center mb-4">
                   <feature.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">{feature.title}</h3>
@@ -253,13 +253,13 @@ export default function PersonalLoanPage() {
                 className="bg-white rounded-2xl p-8 shadow-lg"
               >
                 <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-gray-900">
-                  <FileText className="w-6 h-6 text-blue-500" />
+                  <FileText className="w-6 h-6 text-[#4A66FF]" />
                   {t.eligibility.documents}
                 </h3>
                 <ul className="space-y-4">
                   {documents.map((item, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <FileText className="w-5 h-5 text-blue-500 mt-1 flex-shrink-0" />
+                      <FileText className="w-5 h-5 text-[#4A66FF] mt-1 flex-shrink-0" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -296,7 +296,7 @@ export default function PersonalLoanPage() {
                   transition={{ delay: index * 0.1 }}
                   className="flex gap-6 items-start"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-r from-[#2563EB] to-[#10B981] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#4A66FF] to-[#25B181] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
                     {index + 1}
                   </div>
                   <div className="flex-1">
@@ -342,7 +342,7 @@ export default function PersonalLoanPage() {
                 </div>
                 <p className="text-gray-600 mb-4">"{testimonial.comment}"</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-r from-[#2563EB] to-[#10B981] rounded-full flex items-center justify-center text-white font-bold">
+                  <div className="w-10 h-10 bg-gradient-to-r from-[#4A66FF] to-[#25B181] rounded-full flex items-center justify-center text-white font-bold">
                     {testimonial.name[0]}
                   </div>
                   <div>
@@ -357,7 +357,7 @@ export default function PersonalLoanPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#2563EB] to-[#10B981] text-white">
+      <section className="py-20 bg-gradient-to-r from-[#4A66FF] to-[#25B181] text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -370,7 +370,7 @@ export default function PersonalLoanPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/apply">
-                <button className="px-8 py-4 bg-white text-[#2563EB] rounded-full font-semibold text-lg hover:shadow-xl transition-all">
+                <button className="px-8 py-4 bg-white text-[#4A66FF] rounded-full font-semibold text-lg hover:shadow-xl transition-all">
                   {t.common.apply}
                 </button>
               </Link>

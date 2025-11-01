@@ -179,7 +179,7 @@ export default function FAQsPage() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
 
       {/* Header Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -266,7 +266,7 @@ export default function FAQsPage() {
                 onClick={() => setShowPopularOnly(!showPopularOnly)}
                 className={`flex items-center px-3 py-1 rounded-full text-sm font-medium transition-colors ${
                   showPopularOnly
-                    ? 'bg-[#FFC107] text-white'
+                    ? 'bg-[#FF9C70] text-white'
                     : 'bg-gray-100 text-gray-600'
                 }`}
               >
@@ -294,7 +294,7 @@ export default function FAQsPage() {
                     onClick={() => setSelectedCategory(category.id)}
                     className={`flex items-center px-4 py-3 rounded-lg font-medium whitespace-nowrap transition-colors ${
                       selectedCategory === category.id
-                        ? 'bg-[#1976D2] text-white'
+                        ? 'bg-[#4A66FF] text-white'
                         : 'bg-white text-gray-600 hover:bg-gray-50:bg-gray-700'
                     }`}
                   >
@@ -375,7 +375,7 @@ export default function FAQsPage() {
                         <h3 className="text-lg font-semibold mb-2 pr-4">{faq.question}</h3>
                         <div className="flex items-center space-x-2">
                           {faq.isPopular && (
-                            <span className="inline-flex items-center px-2 py-1 bg-[#FFC107] text-white text-xs rounded-full">
+                            <span className="inline-flex items-center px-2 py-1 bg-[#FF9C70] text-white text-xs rounded-full">
                               <Star className="w-3 h-3 mr-1" />
                               Popular
                             </span>
@@ -439,7 +439,7 @@ export default function FAQsPage() {
                     setSelectedCategory("all");
                     setShowPopularOnly(false);
                   }}
-                  className="text-[#1976D2] hover:underline"
+                  className="text-[#4A66FF] hover:underline"
                 >
                   Clear all filters
                 </button>
@@ -455,7 +455,7 @@ export default function FAQsPage() {
           transition={{ delay: 0.6 }}
           className="mt-16 max-w-4xl mx-auto"
         >
-          <div className="bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl p-8  text-center">
+          <div className="bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-2xl p-8  text-center">
             <MessageCircle className="w-12 h-12 mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-4">Still Have Questions?</h2>
             <p className="text-xl mb-6 opacity-90">
@@ -463,18 +463,18 @@ export default function FAQsPage() {
             </p>
             <div className="grid md:grid-cols-3 gap-4">
               <Link href="/contact">
-                <button className="w-full bg-white text-[#1976D2] py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all">
+                <button className="w-full bg-white text-[#4A66FF] py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all">
                   Contact Us
                 </button>
               </Link>
               <a href="tel:1800-123-4567">
-                <button className="w-full bg-transparent border-2 border-white  py-3 px-6 rounded-lg font-semibold hover:bg-white hover:text-[#1976D2] transition-all">
+                <button className="w-full bg-transparent border-2 border-white  py-3 px-6 rounded-lg font-semibold hover:bg-white hover:text-[#4A66FF] transition-all">
                   <Phone className="w-4 h-4 inline mr-2" />
                   Call Support
                 </button>
               </a>
               <a href="mailto:support@quikkred.com">
-                <button className="w-full bg-transparent border-2 border-white py-3 px-6 rounded-lg font-semibold hover:bg-white hover:text-[#1976D2] transition-all">
+                <button className="w-full bg-transparent border-2 border-white py-3 px-6 rounded-lg font-semibold hover:bg-white hover:text-[#4A66FF] transition-all">
                   <Mail className="w-4 h-4 inline mr-2" />
                   Email Us
                 </button>

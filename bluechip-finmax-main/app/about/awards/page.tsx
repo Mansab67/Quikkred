@@ -23,7 +23,7 @@ export default function AwardsPage() {
       organization: "Digital Finance Awards India",
       description: "Awarded for our AI-powered loan approval system and digital-first approach",
       icon: Star,
-      color: "#1976D2"
+      color: "#4A66FF"
     },
     {
       year: "2023",
@@ -31,7 +31,7 @@ export default function AwardsPage() {
       organization: "CRISIL",
       description: "Highest safety rating for financial stability and trustworthiness",
       icon: Shield,
-      color: "#006837"
+      color: "#25B181"
     },
     {
       year: "2023",
@@ -39,7 +39,7 @@ export default function AwardsPage() {
       organization: "National Consumer Forum",
       description: "Voted as the most preferred NBFC by customers across India",
       icon: Medal,
-      color: "#F9A825"
+      color: "#FF9C70"
     },
     {
       year: "2023",
@@ -85,7 +85,7 @@ export default function AwardsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div

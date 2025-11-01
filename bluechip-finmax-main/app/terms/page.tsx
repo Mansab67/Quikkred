@@ -9,7 +9,7 @@ export default function TermsPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-br from-[#006837] to-[#FFC107]">
+      <section className="relative py-16 bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68]">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export default function TermsPage() {
             {/* Introduction */}
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <FileText className="w-6 h-6 text-[#006837]" />
+                <FileText className="w-6 h-6 text-[#25B181]" />
                 1. Introduction
               </h2>
               <p className="text-gray-600 mb-4">
@@ -55,7 +55,7 @@ export default function TermsPage() {
             {/* Eligibility */}
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <CheckCircle className="w-6 h-6 text-[#006837]" />
+                <CheckCircle className="w-6 h-6 text-[#25B181]" />
                 2. Eligibility Criteria
               </h2>
               <p className="text-gray-600 mb-4">
@@ -63,23 +63,23 @@ export default function TermsPage() {
               </p>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#006837]">•</span>
+                  <span className="text-[#25B181]">•</span>
                   Be at least 21 years of age and not more than 65 years
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#006837]">•</span>
+                  <span className="text-[#25B181]">•</span>
                   Be an Indian citizen or resident
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#006837]">•</span>
+                  <span className="text-[#25B181]">•</span>
                   Have a valid PAN card and Aadhaar card
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#006837]">•</span>
+                  <span className="text-[#25B181]">•</span>
                   Have a minimum monthly income as specified for each loan product
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#006837]">•</span>
+                  <span className="text-[#25B181]">•</span>
                   Have a satisfactory credit score as determined by our credit assessment
                 </li>
               </ul>
@@ -117,7 +117,7 @@ export default function TermsPage() {
             {/* Privacy and Security */}
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <Shield className="w-6 h-6 text-[#1976D2]" />
+                <Shield className="w-6 h-6 text-[#4A66FF]" />
                 4. Privacy and Security
               </h2>
               <p className="text-gray-600 mb-4">
@@ -130,19 +130,19 @@ export default function TermsPage() {
               </p>
               <ul className="space-y-2 text-gray-600 mt-2">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#1976D2]">•</span>
+                  <span className="text-[#4A66FF]">•</span>
                   Processing your loan application
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#1976D2]">•</span>
+                  <span className="text-[#4A66FF]">•</span>
                   Credit assessment and verification
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#1976D2]">•</span>
+                  <span className="text-[#4A66FF]">•</span>
                   Regulatory compliance and reporting
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#1976D2]">•</span>
+                  <span className="text-[#4A66FF]">•</span>
                   Customer service and support
                 </li>
               </ul>

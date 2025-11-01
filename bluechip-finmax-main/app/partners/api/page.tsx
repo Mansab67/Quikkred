@@ -147,7 +147,7 @@ if (eligibility.isEligible) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#006837] via-[#FFC107] to-[#006837] text-white py-12 sm:py-16 lg:py-20">
+      <section className="relative bg-gradient-to-br from-[#25B181] via-[#51C9AF] to-[#1F8F68] text-white py-12 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
@@ -252,7 +252,7 @@ if (eligibility.isEligible) {
                 onClick={() => setActiveTab(tab.id as any)}
                 className={`px-6 py-3 rounded-lg font-semibold transition-colors ${
                   activeTab === tab.id
-                    ? 'bg-[#1976D2] text-white'
+                    ? 'bg-[#4A66FF] text-white'
                     : 'bg-white text-gray-700 hover:bg-gray-100:bg-gray-700'
                 }`}
               >
@@ -283,7 +283,7 @@ if (eligibility.isEligible) {
                       transition={{ delay: 0.05 * index }}
                       className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all"
                     >
-                      <div className="w-12 h-12 bg-gradient-to-br from-[#006837] to-[#FFC107] rounded-lg flex items-center justify-center mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-[#25B181] to-[#51C9AF] rounded-lg flex items-center justify-center mb-4">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
@@ -426,12 +426,12 @@ if (eligibility.isEligible) {
                   }`}
                 >
                   {plan.popular && (
-                    <div className="bg-[#1976D2] text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-4">
+                    <div className="bg-[#4A66FF] text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-4">
                       RECOMMENDED
                     </div>
                   )}
                   <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
-                  <div className="text-3xl font-bold text-[#1976D2] mb-6">{plan.price}</div>
+                  <div className="text-3xl font-bold text-[#4A66FF] mb-6">{plan.price}</div>
                   <ul className="space-y-3 mb-6">
                     {plan.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start text-sm">
@@ -442,7 +442,7 @@ if (eligibility.isEligible) {
                   </ul>
                   <button className={`w-full py-3 rounded-lg font-semibold transition-colors ${
                     plan.popular
-                      ? 'bg-[#1976D2] text-white hover:bg-[var(--royal-blue-dark)]'
+                      ? 'bg-[#4A66FF] text-white hover:bg-[var(--royal-blue-dark)]'
                       : 'bg-gray-100 hover:bg-gray-200:bg-gray-600'
                   }`}>
                     {plan.name === "Sandbox" ? "Start Testing" : "Contact Sales"}
@@ -472,17 +472,17 @@ if (eligibility.isEligible) {
           transition={{ delay: 0.4 }}
           className="max-w-4xl mx-auto mt-16"
         >
-          <div className="bg-gradient-to-r from-[#006837] to-[#FFC107] rounded-2xl p-8 text-white text-center">
+          <div className="bg-gradient-to-r from-[#25B181] to-[#51C9AF] rounded-2xl p-8 text-white text-center">
             <Key className="w-12 h-12 mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-4">Ready to Get Started?</h2>
             <p className="text-sm sm:text-base lg:text-xl mb-6 opacity-90">
               Get your API keys and start integrating in minutes
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 bg-white text-[#1976D2] rounded-lg font-semibold hover:shadow-lg transition-all">
+              <button className="px-8 py-3 bg-white text-[#4A66FF] rounded-lg font-semibold hover:shadow-lg transition-all">
                 Get API Keys
               </button>
-              <button className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#006837] transition-all">
+              <button className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#25B181] transition-all">
                 <BookOpen className="w-5 h-5 inline mr-2" />
                 View Documentation
               </button>
